@@ -12,12 +12,12 @@ export default function Home() {
           <div className="flex items-center justify-center mb-6">
             <Mountain className="w-16 h-16 text-blue-300 mr-4" />
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-200 to-green-200 bg-clip-text text-transparent">
-              Tien Shan Adventures
+              Tien Shan Journeys
             </h1>
           </div>
           
           <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
-            Discover the mystical beauty of Central Asia's crown jewel - Kyrgyzstan. 
+            Discover the mystical beauty of Central Asia&apos;s crown jewel - Kyrgyzstan. 
             Experience authentic nomadic culture, pristine mountain landscapes, and the legendary Silk Road heritage.
           </p>
           
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              Why Choose Central Asia's Hidden Gem?
+              Why Choose Central Asia&apos;s Hidden Gem?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Kyrgyzstan offers untouched natural beauty, rich nomadic traditions, and adventure experiences 
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Song Kul Lake Trek</h3>
-                <p className="text-gray-600 mb-4">3-day adventure to Central Asia's most pristine alpine lake</p>
+                <p className="text-gray-600 mb-4">3-day adventure to Central Asia&apos;s most pristine alpine lake</p>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-blue-600">$299</span>
                   <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors">
@@ -141,7 +141,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Ala Archa National Park</h3>
-                <p className="text-gray-600 mb-4">Day trip to Kyrgyzstan's most accessible mountain paradise</p>
+                <p className="text-gray-600 mb-4">Day trip to Kyrgyzstan&apos;s most accessible mountain paradise</p>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-green-600">$89</span>
                   <button className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors">
@@ -178,7 +178,7 @@ export default function Home() {
             Ready for Your Central Asian Adventure?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join thousands of travelers who have discovered the beauty of Central Asia's pristine wilderness
+            Join thousands of travelers who have discovered the beauty of Central Asia&apos;s pristine wilderness
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg">

@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Central Asia Tours | Tien Shan Adventures | Kyrgyzstan Travel | Silk Road Discovery",
+  title: "Central Asia Tours | Tien Shan Journeys | Kyrgyzstan Travel | Silk Road Discovery",
   description: "Discover Central Asia's hidden gem - Kyrgyzstan. Experience authentic Tien Shan mountain adventures, nomadic culture, and Silk Road heritage. Book your Central Asian journey today with local experts.",
   keywords: [
     "Central Asia tours",
@@ -95,6 +95,7 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
         {children}
       </body>

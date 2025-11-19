@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(cmd /c \"cd /d \"\"C:\\Users\\erkeb\\Documents\\OneDrive\\Documents\\Docs\\5 Super senior year\\Thesis\\kyrgyzstan-ai-tourism\"\" && set \"\"PATH=C:\\Program Files\\nodejs;%PATH%\"\" && npm run dev\")",
+      "Bash(powershell:*)",
+      "Bash(dev-server.bat)",
+      "Bash(echo $0)",
+      "Bash(echo $TERM)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": [],
+    "defaultMode": "acceptEdits"
+  }
+}
