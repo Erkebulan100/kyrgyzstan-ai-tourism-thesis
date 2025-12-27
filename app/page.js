@@ -4,21 +4,18 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-green-900/70 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-800/20 to-green-800/20"></div>
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-blue-900 to-green-900">
         
-        <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
-          <div className="flex items-center justify-center mb-6">
-            <Mountain className="w-16 h-16 text-blue-300 mr-4" />
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-200 to-green-200 bg-clip-text text-transparent">
-              Tien Shan Journeys
-            </h1>
-          </div>
+        
+        <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto pt-5">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            Discover Central Asia's Hidden Gem
+          </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
-            Discover the mystical beauty of Central Asia&apos;s crown jewel - Kyrgyzstan. 
-            Experience authentic nomadic culture, pristine mountain landscapes, and the legendary Silk Road heritage.
+            Experience the mystical beauty of Kyrgyzstan - authentic nomadic culture, 
+            pristine Tien Shan mountain landscapes, and legendary Silk Road heritage.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -191,56 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-16 bg-gray-900 text-white px-4">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-3xl font-bold mb-6">Get in Touch</h3>
-            <p className="text-gray-300 mb-8">
-              Ready to explore Central Asia? Contact our local experts for personalized tour planning.
-            </p>
-            
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <MapPin className="w-5 h-5 text-blue-400 mr-3" />
-                <span>Bishkek, Kyrgyzstan</span>
-              </div>
-              <div className="flex items-center">
-                <Phone className="w-5 h-5 text-blue-400 mr-3" />
-                <span>+996 (312) 123-456</span>
-              </div>
-              <div className="flex items-center">
-                <Mail className="w-5 h-5 text-blue-400 mr-3" />
-                <span>info@tienshanjourneys.com</span>
-              </div>
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="text-3xl font-bold mb-6">Quick Links</h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <a href="#" className="block text-gray-300 hover:text-white transition-colors">Tours</a>
-                <a href="#" className="block text-gray-300 hover:text-white transition-colors">About</a>
-                <a href="#" className="block text-gray-300 hover:text-white transition-colors">Gallery</a>
-                <a href="#" className="block text-gray-300 hover:text-white transition-colors">Blog</a>
-              </div>
-              <div className="space-y-2">
-                <a href="#" className="block text-gray-300 hover:text-white transition-colors">Contact</a>
-                <a href="#" className="block text-gray-300 hover:text-white transition-colors">Reviews</a>
-                <a href="#" className="block text-gray-300 hover:text-white transition-colors">FAQ</a>
-                <a href="#" className="block text-gray-300 hover:text-white transition-colors">Booking</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="max-w-6xl mx-auto pt-8 mt-8 border-t border-gray-700 text-center">
-          <p className="text-gray-400">
-            © 2024 Tienshan Journeys. Discover the beauty of Central Asia - Kyrgyzstan.
-          </p>
-        </div>
-      </section>
+      
     </main>
   );
 }

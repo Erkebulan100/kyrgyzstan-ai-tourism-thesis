@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
 import "./globals.css";
+import { Search, Facebook, Instagram } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -81,6 +84,159 @@ export const metadata = {
   },
 };
 
+// Header Component - Black background, white text (preserved from old site)
+function Header() {
+  return (
+    <header className="bg-black text-white w-full">
+      {/* Social Media & Language Bar - Constrained Container */}
+      <div className="border-b border-gray-800 py-2">
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 80px' }}>
+          <div className="flex justify-between items-center">
+            {/* Social Media Icons - Left Side */}
+            <div className="flex items-center gap-2">
+              {/* Facebook */}
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+                 className="hover:opacity-80 transition-opacity">
+                <div className="w-7 h-7 bg-[#3b5998] rounded flex items-center justify-center">
+                  <span className="text-white text-base font-bold">f</span>
+                </div>
+              </a>
+              {/* Pinterest */}
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                 className="hover:opacity-80 transition-opacity">
+                <div className="w-7 h-7 bg-[#bd081c] rounded flex items-center justify-center">
+                  <span className="text-white text-base font-bold">P</span>
+                </div>
+              </a>
+              {/* Instagram */}
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                 className="hover:opacity-80 transition-opacity">
+                <div className="w-7 h-7 rounded flex items-center justify-center"
+                     style={{ background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' }}>
+                  <Instagram className="w-4 h-4 text-white" />
+                </div>
+              </a>
+            </div>
+            
+            {/* Language Selector - Right Side */}
+            <div className="flex items-center gap-2 text-sm">
+  <a href="#" className="cursor-pointer hover:text-blue-400 transition-colors flex items-center gap-1">
+    <span role="img" aria-label="English" style={{ display: 'inline-block', width: '25px', height: '20px', backgroundImage: 'url(https://flagcdn.com/16x12/gb.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></span>
+    <span>English</span>
+  </a>
+  <span className="text-gray-600">|</span>
+  <a href="#" className="cursor-pointer hover:text-blue-400 transition-colors flex items-center gap-1">
+    <span role="img" aria-label="Russian" style={{ display: 'inline-block', width: '25px', height: '20px', backgroundImage: 'url(https://flagcdn.com/16x12/ru.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></span>
+    <span>Русский</span>
+  </a>
+</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Header - Logo & Navigation - Constrained Container */}
+      <div className="py-6">
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 80px' }}>
+          {/* Logo Section */}
+          <div className="flex flex-col items-center mb-6">
+            <Link href="/" className="flex flex-col items-center">
+              <Image 
+                src="/images/logo/logo.png" 
+                alt="Tien Shan Journeys - Central Asia Tours" 
+                width={300}
+                height={100}
+                className="mb-2"
+                priority
+              />
+            </Link>
+          </div>
+
+          {/* Navigation Menu */}
+          <nav className="flex items-center justify-center space-x-8 text-base">
+            <Link href="/about" className="hover:text-blue-400 transition-colors">
+              About us
+            </Link>
+            <Link href="/destinations" className="hover:text-blue-400 transition-colors">
+              Destinations
+            </Link>
+            <Link href="/tours" className="hover:text-blue-400 transition-colors">
+              Itineraries
+            </Link>
+            <Link href="/contact" className="hover:text-blue-400 transition-colors">
+              Contact us
+            </Link>
+            <button className="hover:text-blue-400 transition-colors" aria-label="Search">
+              <Search className="w-5 h-5" />
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+// Footer Component - Exact match from old website (Image 2)
+function Footer() {
+  return (
+    <footer className="bg-gray-900 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          {/* Company Info - Left Column */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Tien Shan Journeys</h3>
+            <p className="text-gray-400">
+              Bespoke travel experiences in Kyrgyzstan and Central Asia. 
+              Discover the beauty of the Tien Shan mountains and nomadic culture.
+            </p>
+          </div>
+
+          {/* Quick Links - Center Column */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <div className="space-y-2">
+              <Link href="/about" className="block text-gray-400 hover:text-white transition-colors">
+                About Us
+              </Link>
+              <Link href="/destinations" className="block text-gray-400 hover:text-white transition-colors">
+                Destinations
+              </Link>
+              <Link href="/tours" className="block text-gray-400 hover:text-white transition-colors">
+                Tours
+              </Link>
+              <Link href="/contact" className="block text-gray-400 hover:text-white transition-colors">
+                Contact Us
+              </Link>
+            </div>
+          </div>
+
+          {/* Contact Information - Right Column */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <div className="text-gray-400 space-y-1">
+              <p>Tien Shan Journeys, LLC</p>
+              <p>7, Ak-Cholmok St., Bishkek, 720077</p>
+              <p>Kyrgyz Republic</p>
+              <p className="mt-3">Phone: +996 550 31 33 55</p>
+              <p>International: +49 1578 0797051</p>
+              <p className="mt-3">
+                E-Mail: <a href="mailto:info@tienshanjourneys.com" 
+                   className="hover:text-blue-400 transition-colors">
+                  info@tienshanjourneys.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright - Exactly as old website */}
+        <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <p>© Bishkek 2025. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -97,7 +253,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
