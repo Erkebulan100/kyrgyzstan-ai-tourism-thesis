@@ -10,7 +10,7 @@ export default function Home() {
         
         <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto pt-5">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Discover Central Asia's Hidden Gem
+            Discover Central Asia&apos;s Hidden Gem
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
