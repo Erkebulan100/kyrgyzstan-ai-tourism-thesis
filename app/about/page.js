@@ -18,7 +18,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Company Story */}
       {/* Company Introduction - Original Text */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -36,8 +35,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-    
 
       {/* 4 Value Propositions */}
       <section className="py-16 px-4">
@@ -63,7 +60,7 @@ export default function AboutPage() {
                 We pay special attention to details, from hand sanitizers to cold water and soft drinks during your trip.
               </p>
               <p className="text-gray-600">
-                You don't have to worry about anything from the day you arrive in Kyrgyzstan to the day you leave. 
+                You do not have to worry about anything from the day you arrive in Kyrgyzstan to the day you leave. 
                 Tien Shan Journeys ensures your trip is smooth and continuous.
               </p>
             </div>
@@ -81,7 +78,7 @@ export default function AboutPage() {
               </p>
               <p className="text-gray-600">
                 We devote significant time to each client before, during, and after travel. We are very 
-                flexible with our clients' requests.
+                flexible with our client requests.
               </p>
             </div>
 
@@ -111,12 +108,12 @@ export default function AboutPage() {
               <p className="text-gray-600 mb-4">
                 Many people in the West do not know that a country named Kyrgyzstan really exists. We want 
                 to promote Kyrgyzstan worldwide. We want people from other parts of the world to visit 
-                Kyrgyzstan, discover its unique culture, enjoy the country's lush natural beauty, and meet 
+                Kyrgyzstan, discover its unique culture, enjoy the lush natural beauty, and meet 
                 our exceptionally hospitable people.
               </p>
               <p className="text-gray-600">
                 We recognize that by doing our job well, we help not only ourselves but also help Kyrgyzstan 
-                and its people gain recognition worldwide. We want people to move beyond "-stan" stereotypes 
+                and its people gain recognition worldwide. We want people to move beyond stereotypes 
                 when referring to Kyrgyzstan and understand that it is a modern, democratic state with an 
                 open-minded society.
               </p>
@@ -124,6 +121,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
       {/* Founders Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -156,9 +154,8 @@ export default function AboutPage() {
             {/* Founder 2 - Erkebulan */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="h-80 bg-gradient-to-br from-blue-300 to-green-200">
-                {/* Placeholder - you'll add real photo later */}
                 <div className="w-full h-full flex items-center justify-center text-gray-400">
-                  [Erkebulan's Photo]
+                  [Erkebulan Photo]
                 </div>
               </div>
               <div className="p-8">
@@ -175,6 +172,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
       {/* Links to Sub-pages */}
       <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-green-600">
         <div className="max-w-4xl mx-auto">
@@ -212,7 +210,7 @@ export default function AboutPage() {
             Ready to Explore Kyrgyzstan with Us?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Let's plan your perfect Central Asian adventure together
+            Let us plan your perfect Central Asian adventure together
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/tours" 
