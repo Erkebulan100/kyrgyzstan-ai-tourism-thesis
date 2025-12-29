@@ -1,5 +1,17 @@
 import { Mountain, Star, Users, MapPin, Phone, Mail, Calendar, Camera, Compass, Heart } from 'lucide-react';
 
+export const metadata = {
+  title: "Tien Shan Journeys | Central Asia Tours & Kyrgyzstan Travel Experts",
+  description: "Experience the beauty of Central Asia. Discover pristine Tien Shan mountains, authentic nomadic culture, and legendary Silk Road heritage with Kyrgyzstan's premier tour company.",
+  openGraph: {
+    title: "Tien Shan Journeys | Central Asia Tours & Kyrgyzstan Travel",
+    description: "Experience pristine Tien Shan mountains, authentic nomadic culture, and legendary Silk Road heritage in Kyrgyzstan.",
+    url: 'https://kyrgyzstan-ai-tourism-thesis.vercel.app',
+    siteName: 'Tien Shan Journeys',
+    type: 'website',
+  },
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
