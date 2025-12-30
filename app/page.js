@@ -4,26 +4,45 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-green-900">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-        <div className="relative z-10 text-center text-white px-4">
-          
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-wider text-white">
-            TIEN SHAN JOURNEYS
-          </h1>
-          <div className="bg-white bg-opacity-10 backdrop-blur-sm inline-block px-8 py-3 mt-4 rounded-lg">
-            <p className="text-lg md:text-xl tracking-wide uppercase text-blue-50">
-              Bespoke travel in Kyrgyzstan and Central Asia
-            </p>
-          </div>
-        </div>
-      </section>
+{/* Hero Section */}
+<section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 90px)', marginTop: '0' }}>
+  {/* Background Image */}
+  <div 
+    className="absolute inset-0 bg-cover bg-no-repeat"
+    style={{ 
+      backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
+      backgroundPosition: 'center bottom'
+    }}
+  ></div>
+  
+  {/* Dark Overlay */}
+  {/* <div className="absolute inset-0 bg-black opacity-30"></div> */}
+  {/* Logo - Top Left */}
+<div className="absolute top-12 left-12 z-10">
+  <img 
+    src="/images/logo/logo_without_slogan.png" 
+    alt="Tien Shan Journeys" 
+    className="w-96 h-auto opacity-90"
+  />
+</div>
+  {/* Content - Tagline Only */}
+<div className="absolute top-12 right-55 z-10 text-white">
+  {/* Tagline Box */}
+  <div className="px-6 py-3 rounded" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
+    <p className="text-white text-base md:text-lg font-light tracking-wider uppercase">
+      Bespoke Travel in Kyrgyzstan and Central Asia
+    </p>
+  </div>
+</div>
+</section>
+      
 
       {/* Tours Section */}
       <section 
         className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-900 to-green-900 min-h-[900px]"
-        style={{ width: '100vw', marginLeft: 'calc(50% - 50vw)', position: 'relative' }}
+        
       >
         <div className="relative w-full max-w-[1400px] mx-auto h-[700px]">
 
@@ -156,22 +175,42 @@ export default function Home() {
               style={{ filter: 'invert(1) brightness(0.8)' }}
             />
           </div>
-
-          {/* Winding Map Dots */}
-          {[
-            // Trail 1
-            { top: '15%', left: '20%' }, { top: '13%', left: '25%' }, { top: '11%', left: '30%' }, { top: '10%', left: '35%' }, { top: '10%', left: '40%' },
-            // Trail 2
-            { top: '12%', right: '35%' }, { top: '15%', right: '30%' }, { top: '18%', right: '25%' }, { top: '22%', right: '20%' },
-            // Trail 3
-            { top: '25%', left: '12%' }, { top: '35%', left: '15%' }, { top: '45%', left: '18%' }, { top: '55%', left: '21%' }, { top: '65%', left: '23%' },
-            // Trail 4
-            { bottom: '25%', right: '35%' }, { bottom: '20%', right: '30%' }, { bottom: '30%', right: '25%' }, { bottom: '40%', right: '22%' },
-            // Scatter
-            { top: '50%', left: '35%' }, { top: '45%', right: '35%' }, { bottom: '15%', left: '40%' }, { top: '5%', left: '55%' }
-          ].map((pos, i) => (
-            <div key={i} className="absolute w-1.5 h-1.5 rounded-full bg-white/25" style={pos} />
-          ))}
+{/* Winding Map Dots - Curved paths connecting tour circles */}
+{[
+  // Path from Classic Kyrgyzstan down to Golden Circle (left side)
+  { top: '26%', left: '11%' }, { top: '29%', left: '11.5%' }, { top: '32%', left: '12%' },
+  { top: '35%', left: '12.5%' }, { top: '38%', left: '13%' }, { top: '41%', left: '13.5%' },
+  { top: '44%', left: '14%' }, { top: '47%', left: '15%' }, { top: '50%', left: '16%' },
+  { top: '53%', left: '17%' }, { top: '56%', left: '18%' }, { top: '59%', left: '19%' },
+  { top: '62%', left: '20%' }, { top: '65%', left: '21%' }, { top: '68%', left: '22%' },
+  
+  // Path from Golden Circle curving right toward bottom center
+  { bottom: '18%', left: '30%' }, { bottom: '19%', left: '33%' }, { bottom: '20%', left: '36%' },
+  { bottom: '21%', left: '39%' }, { bottom: '22%', left: '42%' }, { bottom: '22.5%', left: '45%' },
+  
+  // Path from bottom center to Where Tien Shan meets Pamir
+  { bottom: '22.5%', right: '45%' }, { bottom: '22%', right: '42%' }, { bottom: '21%', right: '39%' },
+  { bottom: '20%', right: '36%' }, { bottom: '19%', right: '33%' }, { bottom: '18%', right: '30%' },
+  
+  // Path from Where Tien Shan meets Pamir up to Treasures of Tien Shan
+  { top: '62%', right: '14%' }, { top: '58%', right: '13%' }, { top: '54%', right: '12%' },
+  { top: '50%', right: '11%' }, { top: '46%', right: '10%' }, { top: '42%', right: '9.5%' },
+  { top: '38%', right: '9%' }, { top: '34%', right: '9%' },
+  
+  // Path from Treasures curving left toward Nomads
+  { top: '20%', right: '16%' }, { top: '18%', right: '19%' }, { top: '16%', right: '22%' },
+  { top: '14%', right: '25%' }, { top: '12%', right: '28%' }, { top: '11%', right: '31%' },
+  { top: '10%', right: '34%' },
+  
+  // Path from Nomads curving left toward Classic Kyrgyzstan
+  { top: '10%', left: '40%' }, { top: '11%', left: '37%' }, { top: '12%', left: '34%' },
+  { top: '13%', left: '31%' }, { top: '14%', left: '28%' }, { top: '15%', left: '25%' },
+  { top: '16%', left: '22%' }, { top: '17%', left: '19%' }, { top: '18%', left: '16%' },
+  
+].map((pos, i) => (
+  <div key={i} className="absolute w-1.5 h-1.5 rounded-full bg-white/30" style={pos} />
+))}
+          
         </div>
       </section>
     </main>

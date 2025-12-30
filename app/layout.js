@@ -90,7 +90,7 @@ function Header() {
     <header className="bg-black text-white w-full">
       {/* Social Media & Language Bar - Constrained Container */}
       <div className="border-b border-gray-800 py-2">
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 80px' }}>
+        <div style={{ width: '100%', padding: '0 40px' }}>
           <div className="flex justify-between items-center">
             {/* Social Media Icons - Left Side */}
             <div className="flex items-center gap-2">
@@ -135,42 +135,43 @@ function Header() {
       </div>
 
       {/* Main Header - Logo & Navigation - Constrained Container */}
-      <div className="py-6">
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 80px' }}>
-          {/* Logo Section */}
-          <div className="flex flex-col items-center mb-6">
-            <Link href="/" className="flex flex-col items-center">
-              <Image 
-                src="/images/logo/logo.png" 
-                alt="Tien Shan Journeys - Central Asia Tours" 
-                width={300}
-                height={100}
-                className="mb-2"
-                priority
-              />
-            </Link>
-          </div>
+      {/* Main Header - Logo & Navigation - Constrained Container */}
+<div className="py-0">
+  <div style={{ maxWidth: '100%', margin: '0', padding: '0 40px' }}>
+    {/* Logo and Navigation - Side by Side */}
+    <div className="flex items-center justify-between">
+      {/* Logo Section - LEFT SIDE */}
+      <Link href="/" className="flex items-center">
+        <Image 
+          src="/images/logo/logo_only.png" 
+          alt="Tien Shan Journeys - Central Asia Tours" 
+          width={180}
+          height={60}
+          priority
+        />
+      </Link>
 
-          {/* Navigation Menu */}
-          <nav className="flex items-center justify-center space-x-8 text-base">
-            <Link href="/about" className="hover:text-blue-400 transition-colors">
-              About us
-            </Link>
-            <Link href="/destinations" className="hover:text-blue-400 transition-colors">
-              Destinations
-            </Link>
-            <Link href="/tours" className="hover:text-blue-400 transition-colors">
-              Itineraries
-            </Link>
-            <Link href="/contact" className="hover:text-blue-400 transition-colors">
-              Contact us
-            </Link>
-            <button className="hover:text-blue-400 transition-colors" aria-label="Search">
-              <Search className="w-5 h-5" />
-            </button>
-          </nav>
-        </div>
-      </div>
+      {/* Navigation Menu - RIGHT SIDE */}
+      <nav className="flex items-center space-x-8 text-base">
+        <Link href="/about" className="hover:text-blue-400 transition-colors">
+          About us
+        </Link>
+        <Link href="/destinations" className="hover:text-blue-400 transition-colors">
+          Destinations
+        </Link>
+        <Link href="/tours" className="hover:text-blue-400 transition-colors">
+          Itineraries
+        </Link>
+        <Link href="/contact" className="hover:text-blue-400 transition-colors">
+          Contact us
+        </Link>
+        <button className="hover:text-blue-400 transition-colors" aria-label="Search">
+          <Search className="w-5 h-5" />
+        </button>
+      </nav>
+    </div>
+  </div>
+</div>
     </header>
   );
 }
