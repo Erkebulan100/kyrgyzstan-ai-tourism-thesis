@@ -90,7 +90,7 @@ function Header() {
     <header className="bg-black text-white w-full">
       {/* Social Media & Language Bar - Constrained Container */}
       <div className="border-b border-gray-800 py-2">
-        <div style={{ width: '100%', padding: '0 40px' }}>
+        <div className="w-full px-4 md:px-10">
           <div className="flex justify-between items-center">
             {/* Social Media Icons - Left Side */}
             <div className="flex items-center gap-2">
@@ -135,9 +135,9 @@ function Header() {
       </div>
 
       {/* Main Header - Logo & Navigation - Constrained Container */}
-      {/* Main Header - Logo & Navigation - Constrained Container */}
+     
 <div className="py-0">
-  <div style={{ maxWidth: '100%', margin: '0', padding: '0 40px' }}>
+  <div className="w-full px-4 md:px-10">
     {/* Logo and Navigation - Side by Side */}
     <div className="flex items-center justify-between">
       {/* Logo Section - LEFT SIDE */}
@@ -145,14 +145,15 @@ function Header() {
         <Image 
           src="/images/logo/logo_only.png" 
           alt="Tien Shan Journeys - Central Asia Tours" 
-          width={180}
-          height={60}
+          width={120}
+          height={40}
+          className="md:w-[180px] md:h-[60px]"
           priority
         />
       </Link>
 
       {/* Navigation Menu - RIGHT SIDE */}
-      <nav className="flex items-center space-x-8 text-base">
+      <nav className="flex items-center space-x-2 md:space-x-8 text-xs md:text-base">
         <Link href="/about" className="hover:text-blue-400 transition-colors">
           About us
         </Link>
