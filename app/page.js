@@ -20,7 +20,7 @@ export default function Home() {
   {/* Dark Overlay */}
   {/* <div className="absolute inset-0 bg-black opacity-30"></div> */}
   {/* Logo - Top Left */}
-<div className="absolute top-8 left-8 z-10">
+<div className="absolute top-4 left-4 md:top-8 md:left-8 z-10">
   <img 
     src="/images/logo/logo_without_slogan.png" 
     alt="Tien Shan Journeys" 
@@ -28,10 +28,9 @@ export default function Home() {
   />
 </div>
   {/* Content - Tagline Only */}
-<div className="absolute top-8 right-8 z-10 text-white">
-  {/* Tagline Box */}
-  <div className="px-3 py-1 rounded" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
-    <p className="text-white text-sm md:text-base font-light tracking-wider uppercase">
+<div className="absolute top-4 right-4 md:top-8 md:right-8 z-10 text-white">
+  <div className="px-3 py-1 md:px-6 md:py-3 rounded" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
+    <p className="text-xs md:text-base font-light tracking-wider uppercase">
       Bespoke Travel in Kyrgyzstan and Central Asia
     </p>
   </div>
@@ -71,8 +70,8 @@ export default function Home() {
             { name: "Where Tien Shan\nmeets Pamir", href: "/tours/tien-shan-meets-pamir", pos: { right: '19%', bottom: '18%' } },
           ].map((tour, idx) => (
             <Link key={idx} href={tour.href} className="absolute z-30 hover:scale-105 transition-transform" style={tour.pos}>
-              <div className="bg-white/95 rounded-full w-28 h-28 md:w-36 md:h-36 flex items-center justify-center shadow-2xl border border-white/10 p-4 text-center">
-                <h3 className="font-bold text-gray-800 text-xs md:text-sm whitespace-pre-line leading-tight">{tour.name}</h3>
+              <div className="bg-white/95 rounded-full w-20 h-20 md:w-36 md:h-36 flex items-center justify-center shadow-2xl border border-white/10 p-2 md:p-4 text-center">
+                <h3 className="font-bold text-gray-800 text-[10px] md:text-sm whitespace-pre-line leading-tight">{tour.name}</h3>
               </div>
             </Link>
           ))}
@@ -81,7 +80,7 @@ export default function Home() {
           
 
           {/* Eagle SVG - Realistic Flying Eagle Silhouette */}
-          <div className="absolute top-[1%] right-[21%] z-10">
+          <div className="hidden md:block absolute top-[1%] right-[21%] z-10">
             <img 
               src="/images/eagle.svg" 
               alt="Eagle" 
@@ -90,7 +89,7 @@ export default function Home() {
             />
           </div>
           {/* Horse 1 - Between Classic Kyrgyzstan and Golden Circle */}
-          <div className="absolute top-[55%] left-[15%] z-10">
+          <div className="hidden md:block absolute top-[55%] left-[15%] z-10">
             <img 
               src="/images/horse.svg" 
               alt="Horse" 
@@ -100,7 +99,7 @@ export default function Home() {
           </div>
 
           {/* Horse 2 - Next to Horse 1 */}
-          <div className="absolute top-[45%] left-[21%] z-10">
+          <div className="hidden md:block absolute top-[45%] left-[21%] z-10">
             <img 
               src="/images/horse1.svg" 
               alt="Horse" 
@@ -109,7 +108,7 @@ export default function Home() {
             />
           </div>
           {/* Camel 1 - the big one - Bottom right area */}
-          <div className="absolute bottom-[19%] right-[11%] z-10">
+          <div className="hidden md:block absolute bottom-[19%] right-[11%] z-10">
             <img 
               src="/images/camel.svg" 
               alt="Camel" 
@@ -119,7 +118,7 @@ export default function Home() {
           </div>
 
           {/* Camel 2 -the slim one- Next to Camel 1 */}
-          <div className="absolute bottom-[5%] right-[25%] z-10">
+          <div className="hidden md:block absolute bottom-[5%] right-[25%] z-10">
             <img 
               src="/images/camel1.svg" 
               alt="Camel" 
@@ -129,7 +128,7 @@ export default function Home() {
           </div>
 
           {/* Camel 3 with a rider- Third camel */}
-          <div className="absolute bottom-[5%] right-[15%] z-10">
+          <div className="hidden md:block absolute bottom-[5%] right-[15%] z-10">
             <img 
               src="/images/camels.svg" 
               alt="Camel" 
@@ -138,7 +137,7 @@ export default function Home() {
             />
           </div>
           {/* Snow Leopard - Right side of the page */}
-          <div className="absolute top-[45%] right-[8%] z-10">
+          <div className="hidden md:block absolute top-[45%] right-[8%] z-10">
             <img 
               src="/images/snow-leopard.svg" 
               alt="Snow Leopard" 
@@ -147,7 +146,7 @@ export default function Home() {
             />
           </div>
           {/* Yurt 1 - Left of "Nomads of Tien Shan" */}
-          <div className="absolute top-[9%] left-[29%] z-10">
+          <div className="hidden md:block absolute top-[9%] left-[29%] z-10">
             <img 
               src="/images/yurt.svg" 
               alt="Yurt" 
@@ -157,7 +156,7 @@ export default function Home() {
           </div>
 
           {/* Yurt 2 - Next to Yurt 1 */}
-          <div className="absolute top-[1%] left-[33%] z-10">
+          <div className="hidden md:block absolute top-[1%] left-[33%] z-10">
             <img 
               src="/images/yurt1.svg" 
               alt="Yurt" 
@@ -167,7 +166,7 @@ export default function Home() {
           </div>
 
           {/* Yurt 3 - Third yurt */}
-          <div className="absolute top-[9%] left-[37%] z-10">
+          <div className="hidden md:block absolute top-[9%] left-[37%] z-10">
             <img 
               src="/images/yurt2.svg" 
               alt="Yurt" 
@@ -208,7 +207,7 @@ export default function Home() {
   { top: '16%', left: '22%' }, { top: '17%', left: '19%' }, { top: '18%', left: '16%' },
   
 ].map((pos, i) => (
-  <div key={i} className="absolute w-1.5 h-1.5 rounded-full bg-white/30" style={pos} />
+  <div key={i} className="hidden md:block absolute w-1.5 h-1.5 rounded-full bg-white/30" style={pos} />
 ))}
           
         </div>
