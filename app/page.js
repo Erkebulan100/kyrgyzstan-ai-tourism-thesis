@@ -80,7 +80,7 @@ export default function Home() {
           
 
           {/* Eagle SVG - Realistic Flying Eagle Silhouette */}
-          <div className="absolute top-[1%] right-[21%] z-10">
+          <div className="absolute top-[11%] right-[19%] z-10">
             <img 
               src="/images/eagle.svg" 
               alt="Eagle" 
@@ -177,34 +177,46 @@ export default function Home() {
 {/* Winding Map Dots - Curved paths connecting tour circles */}
 {[
   // Path from Classic Kyrgyzstan down to Golden Circle (left side)
+  { top: '18%', left: '12%' }, { top: '21%', left: '12.5%' }, { top: '24%', left: '13%' },
   { top: '26%', left: '11%' }, { top: '29%', left: '11.5%' }, { top: '32%', left: '12%' },
   { top: '35%', left: '12.5%' }, { top: '38%', left: '13%' }, { top: '41%', left: '13.5%' },
   { top: '44%', left: '14%' }, { top: '47%', left: '15%' }, { top: '50%', left: '16%' },
   { top: '53%', left: '17%' }, { top: '56%', left: '18%' }, { top: '59%', left: '19%' },
   { top: '62%', left: '20%' }, { top: '65%', left: '21%' }, { top: '68%', left: '22%' },
+  { top: '71%', left: '23%' }, { top: '74%', left: '24%' }, { top: '77%', left: '25%' },
   
   // Path from Golden Circle curving right toward bottom center
   { bottom: '18%', left: '30%' }, { bottom: '19%', left: '33%' }, { bottom: '20%', left: '36%' },
   { bottom: '21%', left: '39%' }, { bottom: '22%', left: '42%' }, { bottom: '22.5%', left: '45%' },
+  { bottom: '22%', left: '48%' }, { bottom: '21.5%', left: '51%' }, { bottom: '21.7%', left: '54%' },
+  { bottom: '22%', left: '57%' }, { bottom: '22.5%', left: '60%' }, { bottom: '23%', left: '63%' },
+  { bottom: '23.5%', left: '66%' }, { bottom: '24%', left: '69%' }, { bottom: '24.5%', left: '72%' },
+  { bottom: '25%', left: '75%' }, { bottom: '25.5%', left: '78%' }, 
   
-  // Path from bottom center to Where Tien Shan meets Pamir
-  { bottom: '22.5%', right: '45%' }, { bottom: '22%', right: '42%' }, { bottom: '21%', right: '39%' },
-  { bottom: '20%', right: '36%' }, { bottom: '19%', right: '33%' }, { bottom: '18%', right: '30%' },
+  
   
   // Path from Where Tien Shan meets Pamir up to Treasures of Tien Shan
-  { top: '62%', right: '14%' }, { top: '58%', right: '13%' }, { top: '54%', right: '12%' },
-  { top: '50%', right: '11%' }, { top: '46%', right: '10%' }, { top: '42%', right: '9.5%' },
-  { top: '38%', right: '9%' }, { top: '34%', right: '9%' },
-  
+  { bottom: '25%', right: '25%' }, { bottom: '28%', right: '24%' }, { bottom: '31%', right: '23%' },
+  { bottom: '34%', right: '22%' }, { bottom: '37%', right: '21%' }, { bottom: '40%', right: '20%' },
+  { bottom: '43%', right: '19%' }, { bottom: '46%', right: '18%' }, { bottom: '49%', right: '17%' },
+  { bottom: '52%', right: '16%' }, { bottom: '55%', right: '15%' }, { bottom: '58%', right: '14%' },
+  { bottom: '61%', right: '13%' }, { bottom: '64%', right: '12%' }, { bottom: '67%', right: '11%' },
+  { bottom: '70%', right: '10%' },
+ 
   // Path from Treasures curving left toward Nomads
-  { top: '20%', right: '16%' }, { top: '18%', right: '19%' }, { top: '16%', right: '22%' },
-  { top: '14%', right: '25%' }, { top: '12%', right: '28%' }, { top: '11%', right: '31%' },
-  { top: '10%', right: '34%' },
+  { top: '30%', right: '16%' }, { top: '28%', right: '19%' }, { top: '26%', right: '22%' },
+  { top: '24%', right: '25%' }, { top: '22%', right: '28%' }, { top: '21%', right: '31%' },
+  { top: '20%', right: '34%' }, { top: '19%', right: '37%' }, { top: '18%', right: '40%' },
+  { top: '17%', right: '43%' }, { top: '16%', right: '46%' }, { top: '15%', right: '49%' },
+  
   
   // Path from Nomads curving left toward Classic Kyrgyzstan
-  { top: '10%', left: '40%' }, { top: '11%', left: '37%' }, { top: '12%', left: '34%' },
+  { top: '14%', left: '55%' }, { top: '13.5%', left: '53%' }, { top: '13%', left: '51%' },
+  { top: '13%', left: '49%'}, { top: '12%', left: '46%' }, { top: '11%', left: '43%' },
+  { top: '10.5%', left: '40%' }, { top: '11%', left: '37%' }, { top: '12%', left: '34%' },
   { top: '13%', left: '31%' }, { top: '14%', left: '28%' }, { top: '15%', left: '25%' },
-  { top: '16%', left: '22%' }, { top: '17%', left: '19%' }, { top: '18%', left: '16%' },
+  { top: '16%', left: '22%' }, { top: '17%', left: '19%' }, { top: '18.5%', left: '16%' },
+  { top: '20%', left: '13%' }, { top: '21.5%', left: '10%' },
   
 ].map((pos, i) => (
   <div key={i} className="absolute w-1.5 h-1.5 rounded-full bg-white/30" style={pos} />
