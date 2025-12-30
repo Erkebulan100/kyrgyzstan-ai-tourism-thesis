@@ -1,206 +1,179 @@
-import { Mountain, Star, Users, MapPin, Phone, Mail, Calendar, Camera, Compass, Heart } from 'lucide-react';
 
-export const metadata = {
-  title: "Tien Shan Journeys | Central Asia Tours & Kyrgyzstan Travel Experts",
-  description: "Experience the beauty of Central Asia. Discover pristine Tien Shan mountains, authentic nomadic culture, and legendary Silk Road heritage with Kyrgyzstan's premier tour company.",
-  openGraph: {
-    title: "Tien Shan Journeys | Central Asia Tours & Kyrgyzstan Travel",
-    description: "Experience pristine Tien Shan mountains, authentic nomadic culture, and legendary Silk Road heritage in Kyrgyzstan.",
-    url: 'https://kyrgyzstan-ai-tourism-thesis.vercel.app',
-    siteName: 'Tien Shan Journeys',
-    type: 'website',
-  },
-};
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-blue-900 to-green-900">
-        
-        
-        <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto pt-5">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Discover Central Asia&apos;s Hidden Gem
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-green-900">
+        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="relative z-10 text-center text-white px-4">
+          
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-wider text-white">
+            TIEN SHAN JOURNEYS
           </h1>
-          
-          <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
-            Experience the mystical beauty of Kyrgyzstan - authentic nomadic culture, 
-            pristine Tien Shan mountain landscapes, and legendary Silk Road heritage.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-              Explore Tours
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">
-              Watch Video
-            </button>
-          </div>
-          
-          <div className="flex items-center justify-center space-x-8 text-blue-200">
-            <div className="flex items-center">
-              <Star className="w-5 h-5 text-yellow-400 mr-2" />
-              <span>4.9/5 Rating</span>
-            </div>
-            <div className="flex items-center">
-              <Users className="w-5 h-5 mr-2" />
-              <span>1000+ Happy Travelers</span>
-            </div>
-            <div className="flex items-center">
-              <Mountain className="w-5 h-5 mr-2" />
-              <span>15+ Years Experience</span>
-            </div>
-          </div>
-        </div>
-        
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              Why Choose Central Asia&apos;s Hidden Gem?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Kyrgyzstan offers untouched natural beauty, rich nomadic traditions, and adventure experiences 
-              that you simply cannot find anywhere else in the world.
+          <div className="bg-white bg-opacity-10 backdrop-blur-sm inline-block px-8 py-3 mt-4 rounded-lg">
+            <p className="text-lg md:text-xl tracking-wide uppercase text-blue-50">
+              Bespoke travel in Kyrgyzstan and Central Asia
             </p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Mountain className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Majestic Mountains</h3>
-              <p className="text-gray-600">
-                Experience the breathtaking Tien Shan mountain range, pristine alpine lakes, 
-                and snow-capped peaks that rival the Alps at a fraction of the cost.
-              </p>
-            </div>
-
-            <div className="text-center p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Compass className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Nomadic Culture</h3>
-              <p className="text-gray-600">
-                Live with traditional nomadic families, stay in authentic yurts, 
-                and experience a way of life unchanged for centuries.
-              </p>
-            </div>
-
-            <div className="text-center p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="w-8 h-8 text-purple-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Authentic Adventures</h3>
-              <p className="text-gray-600">
-                From horse trekking to eagle hunting, experience adventures that connect you 
-                with nature and ancient traditions.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* Popular Tours Section */}
-      <section className="py-20 bg-gray-50 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              Popular Central Asia Tours
+      {/* Tours Section */}
+      <section 
+        className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-900 to-green-900 min-h-[900px]"
+        style={{ width: '100vw', marginLeft: 'calc(50% - 50vw)', position: 'relative' }}
+      >
+        <div className="relative w-full max-w-[1400px] mx-auto h-[700px]">
+
+          
+          {/* Central Logo & Text */}
+          <div className="absolute left-1/2 top-[52%] -translate-x-1/2 -translate-y-1/2 text-center z-20">
+            <img 
+              src="/images/mountain.svg" 
+              alt="Mountain" 
+              className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 object-contain opacity-80"
+              style={{ filter: 'invert(1) brightness(1)' }}
+            />
+            <h2 className="text-2xl md:text-3xl font-serif text-white leading-tight">
+              Five paths.<br />
+              One land.<br />
+              Infinite memories.
             </h2>
-            <p className="text-xl text-gray-600">
-              Discover our most beloved adventures in the heart of Central Asia
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Tour Card 1 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                <Camera className="w-16 h-16 text-white" />
+          {/* Tour Circles */}
+          {[
+            { name: "Classic\nKyrgyzstan", href: "/tours/classic-kyrgyzstan", pos: { left: '8%', top: '15%' } },
+            { name: "Nomads of\nTien Shan", href: "/tours/nomads-tien-shan", pos: { left: '46%', top: '8%' } },
+            { name: "Treasures of\nTien Shan", href: "/tours/treasures-tien-shan", pos: { right: '8%', top: '22%' } },
+            { name: "Golden circle of\nKyrgyzstan", href: "/tours/golden-circle", pos: { left: '22%', bottom: '10%' } },
+            { name: "Where Tien Shan\nmeets Pamir", href: "/tours/tien-shan-meets-pamir", pos: { right: '19%', bottom: '18%' } },
+          ].map((tour, idx) => (
+            <Link key={idx} href={tour.href} className="absolute z-30 hover:scale-105 transition-transform" style={tour.pos}>
+              <div className="bg-white/95 rounded-full w-28 h-28 md:w-36 md:h-36 flex items-center justify-center shadow-2xl border border-white/10 p-4 text-center">
+                <h3 className="font-bold text-gray-800 text-xs md:text-sm whitespace-pre-line leading-tight">{tour.name}</h3>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Song Kul Lake Trek</h3>
-                <p className="text-gray-600 mb-4">3-day adventure to Central Asia&apos;s most pristine alpine lake</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-blue-600">$299</span>
-                  <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors">
-                    View Details
-                  </button>
-                </div>
-              </div>
-            </div>
+            </Link>
+          ))}
 
-            {/* Tour Card 2 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                <Mountain className="w-16 h-16 text-white" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Ala Archa National Park</h3>
-                <p className="text-gray-600 mb-4">Day trip to Kyrgyzstan&apos;s most accessible mountain paradise</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-green-600">$89</span>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors">
-                    View Details
-                  </button>
-                </div>
-              </div>
-            </div>
+          {/* Decorative Icons (Eagle, Horse, Camel, Yurt, Leopard) */}
+          
 
-            {/* Tour Card 3 */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-                <Compass className="w-16 h-16 text-white" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Silk Road Discovery</h3>
-                <p className="text-gray-600 mb-4">7-day journey through ancient Silk Road cities</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-purple-600">$699</span>
-                  <button className="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition-colors">
-                    View Details
-                  </button>
-                </div>
-              </div>
-            </div>
+          {/* Eagle SVG - Realistic Flying Eagle Silhouette */}
+          <div className="absolute top-[1%] right-[21%] z-10">
+            <img 
+              src="/images/eagle.svg" 
+              alt="Eagle" 
+              className="w-16 h-16 md:w-20 md:h-20 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
           </div>
+          {/* Horse 1 - Between Classic Kyrgyzstan and Golden Circle */}
+          <div className="absolute top-[55%] left-[15%] z-10">
+            <img 
+              src="/images/horse.svg" 
+              alt="Horse" 
+              className="w-14 h-14 md:w-16 md:h-16 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
+
+          {/* Horse 2 - Next to Horse 1 */}
+          <div className="absolute top-[45%] left-[21%] z-10">
+            <img 
+              src="/images/horse1.svg" 
+              alt="Horse" 
+              className="w-14 h-14 md:w-16 md:h-16 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
+          {/* Camel 1 - the big one - Bottom right area */}
+          <div className="absolute bottom-[19%] right-[11%] z-10">
+            <img 
+              src="/images/camel.svg" 
+              alt="Camel" 
+              className="w-14 h-14 md:w-16 md:h-16 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
+
+          {/* Camel 2 -the slim one- Next to Camel 1 */}
+          <div className="absolute bottom-[5%] right-[25%] z-10">
+            <img 
+              src="/images/camel1.svg" 
+              alt="Camel" 
+              className="w-14 h-14 md:w-16 md:h-16 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
+
+          {/* Camel 3 with a rider- Third camel */}
+          <div className="absolute bottom-[5%] right-[15%] z-10">
+            <img 
+              src="/images/camels.svg" 
+              alt="Camel" 
+              className="w-14 h-14 md:w-16 md:h-16 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
+          {/* Snow Leopard - Right side of the page */}
+          <div className="absolute top-[45%] right-[8%] z-10">
+            <img 
+              src="/images/snow-leopard.svg" 
+              alt="Snow Leopard" 
+              className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
+          {/* Yurt 1 - Left of "Nomads of Tien Shan" */}
+          <div className="absolute top-[9%] left-[29%] z-10">
+            <img 
+              src="/images/yurt.svg" 
+              alt="Yurt" 
+              className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
+
+          {/* Yurt 2 - Next to Yurt 1 */}
+          <div className="absolute top-[1%] left-[33%] z-10">
+            <img 
+              src="/images/yurt1.svg" 
+              alt="Yurt" 
+              className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
+
+          {/* Yurt 3 - Third yurt */}
+          <div className="absolute top-[9%] left-[37%] z-10">
+            <img 
+              src="/images/yurt2.svg" 
+              alt="Yurt" 
+              className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
+
+          {/* Winding Map Dots */}
+          {[
+            // Trail 1
+            { top: '15%', left: '20%' }, { top: '13%', left: '25%' }, { top: '11%', left: '30%' }, { top: '10%', left: '35%' }, { top: '10%', left: '40%' },
+            // Trail 2
+            { top: '12%', right: '35%' }, { top: '15%', right: '30%' }, { top: '18%', right: '25%' }, { top: '22%', right: '20%' },
+            // Trail 3
+            { top: '25%', left: '12%' }, { top: '35%', left: '15%' }, { top: '45%', left: '18%' }, { top: '55%', left: '21%' }, { top: '65%', left: '23%' },
+            // Trail 4
+            { bottom: '25%', right: '35%' }, { bottom: '20%', right: '30%' }, { bottom: '30%', right: '25%' }, { bottom: '40%', right: '22%' },
+            // Scatter
+            { top: '50%', left: '35%' }, { top: '45%', right: '35%' }, { bottom: '15%', left: '40%' }, { top: '5%', left: '55%' }
+          ].map((pos, i) => (
+            <div key={i} className="absolute w-1.5 h-1.5 rounded-full bg-white/25" style={pos} />
+          ))}
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-green-600 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Ready for Your Central Asian Adventure?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Join thousands of travelers who have discovered the beauty of Central Asia&apos;s pristine wilderness
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              Plan My Journey
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">
-              Get Free Consultation
-            </button>
-          </div>
-        </div>
-      </section>
-
-      
     </main>
   );
 }
