@@ -10,28 +10,28 @@ export default function Home() {
 <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 90px)', marginTop: '0' }}>
   {/* Background Image */}
   <div 
-    className="absolute inset-0 bg-cover bg-no-repeat"
+    className="absolute inset-0 bg-cover bg-no-repeat bg-bottom"
     style={{ 
       backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
-      backgroundPosition: 'center bottom'
+      // backgroundPosition: 'center bottom'
     }}
   ></div>
   
   {/* Dark Overlay */}
   {/* <div className="absolute inset-0 bg-black opacity-30"></div> */}
   {/* Logo - Top Left */}
-<div className="absolute top-12 left-12 z-10">
+<div className="absolute top-8 left-8 z-10">
   <img 
     src="/images/logo/logo_without_slogan.png" 
     alt="Tien Shan Journeys" 
-    className="w-96 h-auto opacity-90"
+    className="w-32 md:w-56 h-auto opacity-90"
   />
 </div>
   {/* Content - Tagline Only */}
-<div className="absolute top-12 right-55 z-10 text-white">
+<div className="absolute top-8 right-8 z-10 text-white">
   {/* Tagline Box */}
-  <div className="px-6 py-3 rounded" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
-    <p className="text-white text-base md:text-lg font-light tracking-wider uppercase">
+  <div className="px-3 py-1 rounded" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
+    <p className="text-white text-sm md:text-base font-light tracking-wider uppercase">
       Bespoke Travel in Kyrgyzstan and Central Asia
     </p>
   </div>
