@@ -1,0 +1,135 @@
+import Link from 'next/link';
+import ImageSlider from '@/components/ImageSlider';
+
+
+// ## folder structure:
+// project/
+// ├── components/
+// │   └── imageslider.js      ← create this
+// ├── public/images/destinations/slider/
+// │   ├── slide-1.jpg         ← download from old site
+// │   ├── slide-2.jpg
+// │   └── slide-3.jpg
+// └── app/destinations/page.js ← update this
+export const metadata = {
+  title: "Destinations | Tienshan Journeys | Explore Kyrgyzstan",
+  description: "Discover Kyrgyzstan's most beautiful destinations - from Issyk-Kul lake to Arslanbob walnut forests. Plan your Central Asia adventure.",
+};
+
+export default function DestinationsPage() {
+  return (
+    <main className="min-h-screen bg-white">
+      
+      {/* Hero Section with Slider */}
+        <section className="relative h-[100vh] max-h-[600px]">
+        <ImageSlider 
+            images={[
+            '/images/destinations/slider/slide-1.jpg',
+            '/images/destinations/slider/slide-2.jpg',
+            '/images/destinations/slider/slide-3.jpg',
+            '/images/destinations/slider/slide-4.jpg',
+            '/images/destinations/slider/slide-5.jpg',
+            '/images/destinations/slider/slide-6.jpg',
+            '/images/destinations/slider/slide-7.jpg',
+            ]}
+            interval={4000}
+        />
+        {/* Overlay Text */}
+        <div className="absolute inset-0 bg-black/30 flex items-center justify-center z-5">
+            <div className="text-center text-white px-4">
+            <h1 className="text-5xl font-bold mb-4">Destinations</h1>
+            <p className="text-xl text-blue-100">Explore the wonders of Kyrgyzstan</p>
+            </div>
+        </div>
+        </section>
+      
+
+      {/* Destinations Constellation Section */}
+      <section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-900 to-green-900 min-h-[900px]">
+        <div className="relative w-full max-w-[1400px] mx-auto h-[750px]">
+
+          {/* Central Text */}
+          <div className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2 text-center z-20">
+            <img 
+              src="/images/mountain.svg" 
+              alt="Mountain" 
+              className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 object-contain opacity-80"
+              style={{ filter: 'invert(1) brightness(1)' }}
+            />
+            <h2 className="text-2xl md:text-3xl font-serif text-white leading-tight">
+              Nine regions.<br />
+              Endless beauty.<br />
+              Your adventure awaits.
+            </h2>
+          </div>
+
+          {/* Destination Circles */}
+          {[
+            { name: "Issyk-Kul", subtitle: "The Hot Lake", href: "/destinations/issyk-kul", pos: { left: '11%', top: '12%' } },
+            { name: "Bishkek", subtitle: "Capital City", href: "/destinations/bishkek", pos: { left: '30%', top: '5%' } },
+            { name: "Arslanbob", subtitle: "Walnut Forest", href: "/destinations/arslanbob", pos: { right: '25%', top: '8%' } },
+            { name: "Naryn", subtitle: "Mountain Heart", href: "/destinations/naryn", pos: { right: '5%', top: '20%' } },
+            { name: "Song Kul", subtitle: "Alpine Lake", href: "/destinations/song-kul", pos: { left: '5%', top: '39%' } },
+            { name: "Chong-Kemin", subtitle: "Green Valley", href: "/destinations/chong-kemin", pos: { right: '8%', top: '49%' } },
+            { name: "Suusamyr", subtitle: "High Pastures", href: "/destinations/suusamyr", pos: { left: '15%', bottom: '11%' } },
+            { name: "At-Bashy", subtitle: "Wild Valley", href: "/destinations/at-bashy", pos: { left: '37%', bottom: '3%' } },
+            { name: "Osh", subtitle: "Silk Road City", href: "/destinations/osh", pos: { right: '22%', bottom: '5%' } },
+          ].map((dest, idx) => (
+            <Link key={idx} href={dest.href} className="absolute z-30 group" style={dest.pos}>
+              <div className="bg-white/95 rounded-full w-24 h-24 md:w-40 md:h-40 flex flex-col items-center justify-center shadow-2xl border border-white/10 p-2 md:p-4 text-center hover:scale-105 transition-transform">
+                <h3 className="font-bold text-gray-800 text-xs md:text-base">{dest.name}</h3>
+                <p className="text-gray-500 text-[8px] md:text-xs mt-1">{dest.subtitle}</p>
+              </div>
+            </Link>
+          ))}
+
+          {/* Decorative Icons */}
+          <div className="absolute top-[8%] right-[43%] z-10">
+            <img src="/images/eagle.svg" alt="Eagle" className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+          </div>
+          
+          <div className="absolute top-[35%] left-[25%] z-10">
+            <img src="/images/horse.svg" alt="Horse" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+          </div>
+
+          <div className="absolute bottom-[31%] right-[27%] z-10">
+            <img src="/images/yurt.svg" alt="Yurt" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+          </div>
+
+          <div className="absolute bottom-[25%] left-[35%] z-10">
+            <img src="/images/snow-leopard.svg" alt="Snow Leopard" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+          </div>
+
+          {/* Decorative Dots */}
+          {[
+            { top: '20%', left: '20%' }, { top: '25%', left: '22%' }, { top: '30%', left: '18%' },
+            { top: '60%', right: '20%' }, { top: '65%', right: '25%' }, { top: '55%', right: '22%' },
+            { bottom: '30%', left: '28%' }, { bottom: '35%', left: '32%' }, { bottom: '25%', left: '30%' },
+          ].map((pos, i) => (
+            <div key={i} className="absolute w-1.5 h-1.5 rounded-full bg-white/30" style={pos} />
+          ))}
+
+        </div>
+      </section>
+
+      {/* Info Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Discover Kyrgyzstan</h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-8">
+            Kyrgyzstan is a beautiful country with many sunny days and exceptionally friendly people. Kyrgyzstan is a small Central Asian state with population close to 6 million people and growing market economy. Kyrgyzstan is a mountainous country; 94% of its area is covered by mountain ranges of Tien Shan and Pamir. Rich highland pastures allowed Kyrgyz people to keep nomadic life for centuries; they became settled only in the last century. However, in Kyrgyzstan, some people still lead nomadic way of life in the summer due to the needs of animal husbandry. Their seasonal nomadic lifestyle is very similar to what was several centuries ago.
+
+            Kyrgyz lands witnessed many historical events. The most famous invaders as Alexander the Great, Genghis Khan, and Tamerlane marched through Kyrgyzstan. Kyrgyzstan had an important segment of the Silk Road which connected Asia with Europe. In the XIX century when Russian and British Empires had fought for the Central Asia Kyrgyzstan joined Russia. The XX century was a turning point in Kyrgyz history as the country became part of the Soviet Union. Today Kyrgyzstan is an independent and democratic country.
+
+            Massive gorges and passes, highland pastures, beautiful valleys, crystalline lakes, swift rivers, and snow-capped mountains are only some of numerous attractions in Kyrgyzstan. Horseback-riding, hiking, camping, and rafting are but some options for the tourist.
+            Tien Shan Journeys offers you bespoke travel in Kyrgyzstan providing experiences which would best fit your tastes and interests. If you want to get to know this wonderful country, visit our Itineraries page. After that contact us today to start planning your unforgettable journey to Kyrgyzstan!
+          </p>
+          <Link href="/contact" className="inline-block bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all">
+            Plan Your Journey
+          </Link>
+        </div>
+      </section>
+
+    </main>
+  );
+}

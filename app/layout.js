@@ -121,12 +121,10 @@ function Header() {
             {/* Language Selector - Right Side */}
             <div className="flex items-center gap-2 text-sm">
   <a href="#" className="cursor-pointer hover:text-blue-400 transition-colors flex items-center gap-1">
-    <span role="img" aria-label="English" style={{ display: 'inline-block', width: '25px', height: '20px', backgroundImage: 'url(https://flagcdn.com/16x12/gb.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></span>
     <span>English</span>
   </a>
   <span className="text-gray-600">|</span>
   <a href="#" className="cursor-pointer hover:text-blue-400 transition-colors flex items-center gap-1">
-    <span role="img" aria-label="Russian" style={{ display: 'inline-block', width: '25px', height: '20px', backgroundImage: 'url(https://flagcdn.com/16x12/ru.png)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></span>
     <span>Русский</span>
   </a>
 </div>
