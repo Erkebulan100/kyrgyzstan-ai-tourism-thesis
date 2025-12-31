@@ -20,7 +20,7 @@ export default function Home() {
   {/* Dark Overlay */}
   {/* <div className="absolute inset-0 bg-black opacity-30"></div> */}
   {/* Logo - Top Left */}
-<div className="absolute top-4 left-4 md:top-8 md:left-8 z-10">
+<div className="absolute top-2 left-4 md:top-8 md:left-8 z-10">
   <img 
     src="/images/logo/logo_without_slogan.png" 
     alt="Tien Shan Journeys" 
@@ -28,7 +28,7 @@ export default function Home() {
   />
 </div>
   {/* Content - Tagline Only */}
-<div className="absolute top-20 right-0 md:top-8 md:right-8 z-10 text-white">
+<div className="absolute top-16 right-4 md:top-8 md:right-8 z-10 text-white">
   <div className="px-3 py-1 md:px-6 md:py-3 rounded text-center" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
     <p className="text-xs md:text-base font-light tracking-wider uppercase">
       Bespoke Travel in Kyrgyzstan and Central Asia
@@ -80,7 +80,7 @@ export default function Home() {
           
 
           {/* Eagle SVG - Realistic Flying Eagle Silhouette */}
-          <div className="absolute top-[11%] right-[19%] z-10">
+          <div className="absolute top-[8%] right-[6%] md:top-[7%] md:right-[25%] z-10">
             <img 
               src="/images/eagle.svg" 
               alt="Eagle" 
@@ -88,8 +88,8 @@ export default function Home() {
               style={{ filter: 'invert(1) brightness(0.8)' }}
             />
           </div>
-          {/* Horse 1 - Between Classic Kyrgyzstan and Golden Circle */}
-          <div className="absolute top-[55%] left-[15%] z-10">
+          {/* Horse 1 - With a cap - Between Classic Kyrgyzstan and Golden Circle */}
+          <div className="absolute top-[55%] left-[8%] md:top-[55%] md:left-[15%] z-10">
             <img 
               src="/images/horse.svg" 
               alt="Horse" 
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
 
           {/* Horse 2 - Next to Horse 1 */}
-          <div className="absolute top-[45%] left-[21%] z-10">
+          <div className="absolute top-[45%] left-[11%] z-10">
             <img 
               src="/images/horse1.svg" 
               alt="Horse" 
@@ -108,7 +108,7 @@ export default function Home() {
             />
           </div>
           {/* Camel 1 - the big one - Bottom right area */}
-          <div className="absolute bottom-[19%] right-[11%] z-10">
+          <div className="absolute bottom-[15%] right-[2%] md:bottom-[19%] md:right-[11%] z-10">
             <img 
               src="/images/camel.svg" 
               alt="Camel" 
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
 
           {/* Camel 2 -the slim one- Next to Camel 1 */}
-          <div className="absolute bottom-[5%] right-[25%] z-10">
+          <div className="absolute bottom-[7%] right-[33%] md:bottom-[5%] md:right-[25%] z-10">
             <img 
               src="/images/camel1.svg" 
               alt="Camel" 
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
 
           {/* Camel 3 with a rider- Third camel */}
-          <div className="absolute bottom-[5%] right-[15%] z-10">
+          <div className="absolute bottom-[5%] right-[16%] md:bottom-[7%] md:right-[15%] z-10">
             <img 
               src="/images/camels.svg" 
               alt="Camel" 
@@ -145,8 +145,8 @@ export default function Home() {
               style={{ filter: 'invert(1) brightness(0.8)' }}
             />
           </div>
-          {/* Yurt 1 - Left of "Nomads of Tien Shan" */}
-          <div className="absolute top-[9%] left-[29%] z-10">
+          {/* Yurt 1 - yurt frame - Left of "Nomads of Tien Shan" */}
+          <div className="absolute top-[5%] left-[19%] md:top-[5%] md:left-[21%] z-10">
             <img 
               src="/images/yurt.svg" 
               alt="Yurt" 
@@ -155,8 +155,8 @@ export default function Home() {
             />
           </div>
 
-          {/* Yurt 2 - Next to Yurt 1 */}
-          <div className="absolute top-[1%] left-[33%] z-10">
+          {/* Yurt 2 - filled icon */}
+          <div className="absolute top-[1%] left-[33%] md:top-[1%] md:left-[28%] z-10">
             <img 
               src="/images/yurt1.svg" 
               alt="Yurt" 
@@ -165,8 +165,8 @@ export default function Home() {
             />
           </div>
 
-          {/* Yurt 3 - Third yurt */}
-          <div className="absolute top-[9%] left-[37%] z-10">
+          {/* Yurt 3 - Mongolian yurt */}
+          <div className="absolute top-[9%] left-[29%] md:top-[1%] md:left-[37%] z-10">
             <img 
               src="/images/yurt2.svg" 
               alt="Yurt" 
@@ -191,8 +191,7 @@ export default function Home() {
   { bottom: '22%', left: '48%' }, { bottom: '21.5%', left: '51%' }, { bottom: '21.7%', left: '54%' },
   { bottom: '22%', left: '57%' }, { bottom: '22.5%', left: '60%' }, { bottom: '23%', left: '63%' },
   { bottom: '23.5%', left: '66%' }, { bottom: '24%', left: '69%' }, { bottom: '24.5%', left: '72%' },
-  { bottom: '25%', left: '75%' }, { bottom: '25.5%', left: '78%' }, 
-  
+  { bottom: '25%', left: '75%' }, { bottom: '25.5%', left: '78%' },
   
   
   // Path from Where Tien Shan meets Pamir up to Treasures of Tien Shan
@@ -211,10 +210,11 @@ export default function Home() {
   
   
   // Path from Nomads curving left toward Classic Kyrgyzstan
-  { top: '14%', left: '55%' }, { top: '13.5%', left: '53%' }, { top: '13%', left: '51%' },
-  { top: '13%', left: '49%'}, { top: '12%', left: '46%' }, { top: '11%', left: '43%' },
-  { top: '10.5%', left: '40%' }, { top: '11%', left: '37%' }, { top: '12%', left: '34%' },
-  { top: '13%', left: '31%' }, { top: '14%', left: '28%' }, { top: '15%', left: '25%' },
+  { top: '11.5%', left: '57%' }, { top: '11%', left: '54%' },
+  { top: '14%', left: '55%' }, {top:'15%', left: '56%'}, { top: '13.5%', left: '53%' }, {top: '13.3%', left: '52%'}, { top: '13%', left: '51%' }, 
+  { top: '13%', left: '49%'}, { top: '12.5%', left: '47.5%' }, { top: '12%', left: '46%' },{ top: '11.5%', left: '44.5%' }, { top: '11%', left: '43%' },
+  { top: '10.5%', left: '40%' }, { top: '10.75%', left: '39%' }, { top: '11%', left: '37%' }, { top: '12%', left: '34%' },
+  { top: '13%', left: '31%' }, { top: '13.5%', left: '29.5%' }, { top: '14%', left: '28%' }, { top: '15%', left: '25%' },
   { top: '16%', left: '22%' }, { top: '17%', left: '19%' }, { top: '18.5%', left: '16%' },
   { top: '20%', left: '13%' }, { top: '21.5%', left: '10%' },
   
