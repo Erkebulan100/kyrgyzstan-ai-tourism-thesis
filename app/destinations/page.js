@@ -65,17 +65,17 @@ export default function DestinationsPage() {
 
           {/* Destination Circles */}
           {[
-            { name: "Issyk-Kul", subtitle: "The Hot Lake", href: "/destinations/issyk-kul", pos: { left: '11%', top: '12%' } },
-            { name: "Bishkek", subtitle: "Capital City", href: "/destinations/bishkek", pos: { left: '30%', top: '5%' } },
-            { name: "Arslanbob", subtitle: "Walnut Forest", href: "/destinations/arslanbob", pos: { right: '25%', top: '8%' } },
-            { name: "Naryn", subtitle: "Mountain Heart", href: "/destinations/naryn", pos: { right: '5%', top: '20%' } },
-            { name: "Song Kul", subtitle: "Alpine Lake", href: "/destinations/song-kul", pos: { left: '5%', top: '39%' } },
-            { name: "Chong-Kemin", subtitle: "Green Valley", href: "/destinations/chong-kemin", pos: { right: '8%', top: '49%' } },
-            { name: "Suusamyr", subtitle: "High Pastures", href: "/destinations/suusamyr", pos: { left: '15%', bottom: '11%' } },
-            { name: "At-Bashy", subtitle: "Wild Valley", href: "/destinations/at-bashy", pos: { left: '37%', bottom: '3%' } },
-            { name: "Osh", subtitle: "Silk Road City", href: "/destinations/osh", pos: { right: '22%', bottom: '5%' } },
-          ].map((dest, idx) => (
-            <Link key={idx} href={dest.href} className="absolute z-30 group" style={dest.pos}>
+            { name: "Issyk-Kul", subtitle: "The Hot Lake", href: "/destinations/issyk-kul", className: "left-[5%] top-[8%] md:left-[11%] md:top-[12%]" },
+            { name: "Bishkek", subtitle: "Capital City", href: "/destinations/bishkek", className: "left-[35%] top-[3%] md:left-[30%] md:top-[5%]" },
+            { name: "Arslanbob", subtitle: "Walnut Forest", href: "/destinations/arslanbob", className: "right-[5%] top-[15%] md:right-[25%] md:top-[8%]" },
+            { name: "Naryn", subtitle: "Mountain Heart", href: "/destinations/naryn", className: "right-[5%] top-[30%] md:right-[5%] md:top-[20%]" },
+            { name: "Song Kul", subtitle: "Alpine Lake", href: "/destinations/song-kul", className: "left-[5%] top-[25%] md:left-[5%] md:top-[39%]" },
+            { name: "Chong-Kemin", subtitle: "Green Valley", href: "/destinations/chong-kemin", className: "right-[5%] top-[45%] md:right-[8%] md:top-[49%]" },
+            { name: "Suusamyr", subtitle: "High Pastures", href: "/destinations/suusamyr", className: "left-[5%] bottom-[25%] md:left-[15%] md:bottom-[11%]" },
+            { name: "At-Bashy", subtitle: "Wild Valley", href: "/destinations/at-bashy", className: "left-[35%] bottom-[10%] md:left-[37%] md:bottom-[3%]" },
+            { name: "Osh", subtitle: "Silk Road City", href: "/destinations/osh", className: "right-[5%] bottom-[15%] md:right-[22%] md:bottom-[5%]" },
+            ].map((dest, idx) => (
+            <Link key={idx} href={dest.href} className={`absolute z-30 group ${dest.className}`}>
               <div className="bg-white/95 rounded-full w-24 h-24 md:w-40 md:h-40 flex flex-col items-center justify-center shadow-2xl border border-white/10 p-2 md:p-4 text-center hover:scale-105 transition-transform">
                 <h3 className="font-bold text-gray-800 text-xs md:text-base">{dest.name}</h3>
                 <p className="text-gray-500 text-[8px] md:text-xs mt-1">{dest.subtitle}</p>
@@ -84,7 +84,7 @@ export default function DestinationsPage() {
           ))}
 
           {/* Decorative Icons */}
-          <div className="absolute top-[8%] right-[43%] z-10">
+          <div className="absolute top-[5%] right-[25%] md:top-[8%] md:right-[43%] z-10">
             <img src="/images/eagle.svg" alt="Eagle" className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           

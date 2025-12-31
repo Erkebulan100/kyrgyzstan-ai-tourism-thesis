@@ -152,16 +152,16 @@ function Header() {
 
       {/* Navigation Menu - RIGHT SIDE */}
       <nav className="flex items-center space-x-2 md:space-x-8 text-xs md:text-base">
-        <Link href="/about" className="hover:text-blue-400 transition-colors">
+        <Link href="/about" className="hover:text-blue-400 text-center transition-colors">
           About us
         </Link>
-        <Link href="/destinations" className="hover:text-blue-400 transition-colors">
+        <Link href="/destinations" className="hover:text-blue-400 text-center transition-colors">
           Destinations
         </Link>
-        <Link href="/tours" className="hover:text-blue-400 transition-colors">
+        <Link href="/tours" className="hover:text-blue-400 text-center transition-colors">
           Itineraries
         </Link>
-        <Link href="/contact" className="hover:text-blue-400 transition-colors">
+        <Link href="/contact" className="hover:text-blue-400 text-center transition-colors">
           Contact us
         </Link>
         <button className="hover:text-blue-400 transition-colors" aria-label="Search">
