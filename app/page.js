@@ -203,21 +203,23 @@ export default function Home() {
   { bottom: '70%', right: '10%' },
  
   // Path from Treasures curving left toward Nomads
-  { top: '30%', right: '16%' }, { top: '28%', right: '19%' }, { top: '26%', right: '22%' },
-  { top: '24%', right: '25%' }, { top: '22%', right: '28%' }, { top: '21%', right: '31%' },
-  { top: '20%', right: '34%' }, { top: '19%', right: '37%' }, { top: '18%', right: '40%' },
+  { top: '30%', right: '16%' }, { top: '28%', right: '19%' }, { top: '26%', right: '22%' }, { top: '25%', right: '23.5%' },
+  { top: '24%', right: '25%' }, { top: '23%', right: '26.5%' }, { top: '22%', right: '28%' }, { top: '21.5%', right: '29.5%' }, { top: '21%', right: '31%' }, { top: '20.5%', right: '32.5%' },
+  { top: '20%', right: '34%' }, { top: '19.5%', right: '35.5%' }, { top: '19%', right: '37%' }, { top: '18%', right: '40%' },
   { top: '17%', right: '43%' }, { top: '16%', right: '46%' }, { top: '15%', right: '49%' },
   
   
   // Path from Nomads curving left toward Classic Kyrgyzstan
   { top: '11.5%', left: '57%' }, { top: '11%', left: '54%' },
   { top: '14%', left: '55%' }, {top:'15%', left: '56%'}, { top: '13.5%', left: '53%' }, {top: '13.3%', left: '52%'}, { top: '13%', left: '51%' }, 
-  { top: '13%', left: '49%'}, { top: '12.5%', left: '47.5%' }, { top: '12%', left: '46%' },{ top: '11.5%', left: '44.5%' }, { top: '11%', left: '43%' },
-  { top: '10.5%', left: '40%' }, { top: '10.75%', left: '39%' }, { top: '11%', left: '37%' }, { top: '12%', left: '34%' },
-  { top: '13%', left: '31%' }, { top: '13.5%', left: '29.5%' }, { top: '14%', left: '28%' }, { top: '15%', left: '25%' },
-  { top: '16%', left: '22%' }, { top: '17%', left: '19%' }, { top: '18.5%', left: '16%' },
+  { top: '13%', left: '49%'}, { top: '12.5%', left: '47.5%' }, { top: '12.25%', left: '46%' },{ top: '11.5%', left: '44.5%' }, { top: '11%', left: '43%' },{ top: '10.75%', left: '41.5%' },
+  { top: '10.5%', left: '40%' }, { top: '10.6%', left: '38.5%' }, { top: '11%', left: '37%' }, { top: '11.5%', left: '35.5%' }, { top: '12%', left: '34%' },{ top: '12.5%', left: '32.5%' },
+  { top: '13%', left: '31%' }, { top: '13.5%', left: '29.5%' }, { top: '14%', left: '28%' }, { top: '14.5%', left: '26.5%' }, { top: '15%', left: '25%' },{ top: '15.5%', left: '23.5%' },
+  { top: '16%', left: '22%' }, { top: '16.5%', left: '20.5%' }, { top: '17%', left: '19%' }, { top: '18.5%', left: '16%' },
   { top: '20%', left: '13%' }, { top: '21.5%', left: '10%' },
-  
+//   <div className="absolute top-[18%] left-[12%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+// <div className="absolute top-[10%] left-[8%] md:top-[21%] md:left-[12.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
+// {/* ... repeat for each dot */}
 ].map((pos, i) => (
   <div key={i} className="absolute w-1.5 h-1.5 rounded-full bg-white/30" style={pos} />
 ))}
