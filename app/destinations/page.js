@@ -32,7 +32,7 @@ export default function DestinationsPage() {
             '/images/destinations/slider/slide-6.jpg',
             '/images/destinations/slider/slide-7.jpg',
             ]}
-            interval={4000}
+            
         />
         {/* Overlay Text */}
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center z-5">
@@ -49,7 +49,7 @@ export default function DestinationsPage() {
         <div className="relative w-full max-w-[1400px] mx-auto h-[750px]">
 
           {/* Central Text */}
-          <div className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2 text-center z-20">
+          <div className="absolute left-1/2 top-[31%] md:top-[50%] -translate-x-1/2 -translate-y-1/2 text-center z-20">
             <img 
               src="/images/mountain.svg" 
               alt="Mountain" 
@@ -67,13 +67,13 @@ export default function DestinationsPage() {
           {[
             { name: "Issyk-Kul", subtitle: "The Hot Lake", href: "/destinations/issyk-kul", className: "left-[5%] top-[8%] md:left-[11%] md:top-[12%]" },
             { name: "Bishkek", subtitle: "Capital City", href: "/destinations/bishkek", className: "left-[35%] top-[3%] md:left-[30%] md:top-[5%]" },
-            { name: "Arslanbob", subtitle: "Walnut Forest", href: "/destinations/arslanbob", className: "right-[5%] top-[15%] md:right-[25%] md:top-[8%]" },
-            { name: "Naryn", subtitle: "Mountain Heart", href: "/destinations/naryn", className: "right-[5%] top-[30%] md:right-[5%] md:top-[20%]" },
-            { name: "Song Kul", subtitle: "Alpine Lake", href: "/destinations/song-kul", className: "left-[5%] top-[25%] md:left-[5%] md:top-[39%]" },
+            { name: "Arslanbob", subtitle: "Walnut Forest", href: "/destinations/arslanbob", className: "right-[2%] top-[15%] md:right-[25%] md:top-[8%]" },
+            { name: "Naryn", subtitle: "Mountain Heart", href: "/destinations/naryn", className: "right-[2%] top-[31%] md:right-[5%] md:top-[20%]" },
+            { name: "Song Kul", subtitle: "Alpine Lake", href: "/destinations/song-kul", className: "left-[1%] top-[25%] md:left-[5%] md:top-[39%]" },
             { name: "Chong-Kemin", subtitle: "Green Valley", href: "/destinations/chong-kemin", className: "right-[5%] top-[45%] md:right-[8%] md:top-[49%]" },
-            { name: "Suusamyr", subtitle: "High Pastures", href: "/destinations/suusamyr", className: "left-[5%] bottom-[25%] md:left-[15%] md:bottom-[11%]" },
-            { name: "At-Bashy", subtitle: "Wild Valley", href: "/destinations/at-bashy", className: "left-[35%] bottom-[10%] md:left-[37%] md:bottom-[3%]" },
-            { name: "Osh", subtitle: "Silk Road City", href: "/destinations/osh", className: "right-[5%] bottom-[15%] md:right-[22%] md:bottom-[5%]" },
+            { name: "Suusamyr", subtitle: "High Pastures", href: "/destinations/suusamyr", className: "left-[1%] bottom-[48%] md:left-[15%] md:bottom-[11%]" },
+            { name: "At-Bashy", subtitle: "Wild Valley", href: "/destinations/at-bashy", className: "left-[20%] bottom-[37%] md:left-[37%] md:bottom-[3%]" },
+            { name: "Osh", subtitle: "Silk Road City", href: "/destinations/osh", className: "right-[27%] bottom-[35%] md:right-[22%] md:bottom-[5%]" },
             ].map((dest, idx) => (
             <Link key={idx} href={dest.href} className={`absolute z-30 group ${dest.className}`}>
               <div className="bg-white/95 rounded-full w-24 h-24 md:w-40 md:h-40 flex flex-col items-center justify-center shadow-2xl border border-white/10 p-2 md:p-4 text-center hover:scale-105 transition-transform">
@@ -84,30 +84,26 @@ export default function DestinationsPage() {
           ))}
 
           {/* Decorative Icons */}
-          <div className="absolute top-[5%] right-[25%] md:top-[8%] md:right-[43%] z-10">
+          <div className="absolute top-[5%] right-[15%] md:top-[8%] md:right-[43%] z-10">
             <img src="/images/eagle.svg" alt="Eagle" className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           
-          <div className="absolute top-[35%] left-[25%] z-10">
+          <div className="absolute top-[39%] left-[25%] md:top-[39%] md:left-[25%] z-10">
             <img src="/images/horse.svg" alt="Horse" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
-          <div className="absolute bottom-[31%] right-[27%] z-10">
+          <div className="absolute bottom-[55%] right-[27%] md:bottom-[31%] md:right-[27%] z-10">
             <img src="/images/yurt.svg" alt="Yurt" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
-          <div className="absolute bottom-[25%] left-[35%] z-10">
+          <div className="absolute bottom-[49%] left-[45%] md:bottom-[25%] md:left-[35%] z-10">
             <img src="/images/snow-leopard.svg" alt="Snow Leopard" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
           {/* Decorative Dots */}
-          {[
-            { top: '20%', left: '20%' }, { top: '25%', left: '22%' }, { top: '30%', left: '18%' },
-            { top: '60%', right: '20%' }, { top: '65%', right: '25%' }, { top: '55%', right: '22%' },
-            { bottom: '30%', left: '28%' }, { bottom: '35%', left: '32%' }, { bottom: '25%', left: '30%' },
-          ].map((pos, i) => (
-            <div key={i} className="absolute w-1.5 h-1.5 rounded-full bg-white/30" style={pos} />
-          ))}
+          <div className="absolute top-[53%] left-[17%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[21%] left-[12.5%] md:top-[21%] md:left-[12.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[24%] left-[13%] md:top-[24%] md:left-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
         </div>
       </section>

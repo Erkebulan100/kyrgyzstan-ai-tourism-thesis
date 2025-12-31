@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-export default function ImageSlider({ images, interval = 4000 }) {
+export default function ImageSlider({ images, interval = 7000 }) {
   const [current, setCurrent] = useState(0);
 
   // Auto-slide
@@ -11,7 +11,7 @@ export default function ImageSlider({ images, interval = 4000 }) {
       setCurrent((prev) => (prev + 1) % images.length);
     }, interval);
     return () => clearInterval(timer);
-  }, [images.length, interval]);
+  }, [images.length, interval, current]);
 
   const goLeft = () => setCurrent((prev) => (prev - 1 + images.length) % images.length);
   const goRight = () => setCurrent((prev) => (prev + 1) % images.length);
@@ -22,7 +22,7 @@ export default function ImageSlider({ images, interval = 4000 }) {
       {images.map((img, idx) => (
         <div
           key={idx}
-          className={`absolute inset-0 transition-opacity duration-700 ${idx === current ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${idx === current ? 'opacity-100' : 'opacity-0'}`}
         >
           <img src={img} alt={`Slide ${idx + 1}`} className="w-full h-full object-cover object-bottom" />
         </div>
