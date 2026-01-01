@@ -92,7 +92,15 @@ export default function DestinationsPage() {
           <div className="absolute top-[35%] left-[25%] md:top-[39%] md:left-[25%] z-10">
             <img src="/images/horse.svg" alt="Horse" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
-
+          {/* Camel 1 - the big one - Bottom right area */}
+          <div className="absolute bottom-[67%] right-[29%] md:bottom-[49%] md:right-[31%] z-10">
+            <img 
+              src="/images/camel.svg" 
+              alt="Camel" 
+              className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
+          </div>
           <div className="absolute bottom-[59%] right-[27%] md:bottom-[31%] md:right-[27%] z-10">
             <img src="/images/yurt.svg" alt="Yurt" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
