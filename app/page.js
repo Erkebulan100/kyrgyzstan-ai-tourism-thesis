@@ -20,7 +20,7 @@ export default function Home() {
   {/* Dark Overlay */}
   {/* <div className="absolute inset-0 bg-black opacity-30"></div> */}
   {/* Logo - Top Left */}
-<div className="absolute top-2 left-4 md:top-8 md:left-8 z-10">
+<div className="absolute top-2 left-4 md:top-5 md:left-8 z-10">
   <img 
     src="/images/logo/logo_without_slogan.png" 
     alt="Tien Shan Journeys" 

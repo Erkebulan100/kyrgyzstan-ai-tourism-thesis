@@ -56,7 +56,12 @@ export default function ContactPage() {
             </div>
 
             {/* Office Card */}
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=7+Ak-Cholmok+St+Bishkek+Kyrgyzstan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 block"
+            >
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <MapPin className="w-8 h-8 text-purple-600" />
               </div>
@@ -68,7 +73,7 @@ export default function ContactPage() {
                 Kyrgyz Republic
               </p>
               <p className="text-sm text-gray-500 mt-4">By appointment</p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
