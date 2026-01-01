@@ -241,8 +241,10 @@ export default function Home() {
           <div className="absolute bottom-[70%] right-[10%] md:bottom-[70%] md:right-[10%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
           {/* Path from Treasures curving left toward Nomads */}
+          <div className="absolute top-[30%] right-[16%] md:top-[32%] md:right-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[30%] right-[16%] md:top-[30%] md:right-[16%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[28%] right-[19%] md:top-[28%] md:right-[19%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[28%] right-[19%] md:top-[27%] md:right-[20.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[26%] right-[22%] md:top-[26%] md:right-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[25%] right-[23.5%] md:top-[25%] md:right-[23.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[24%] right-[25%] md:top-[24%] md:right-[25%] w-1.5 h-1.5 rounded-full bg-white/30" />
@@ -254,6 +256,7 @@ export default function Home() {
           <div className="absolute top-[20%] right-[34%] md:top-[20%] md:right-[34%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[19.5%] right-[35.5%] md:top-[19.5%] md:right-[35.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[19%] right-[37%] md:top-[19%] md:right-[37%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="hidden md:block absolute top-[19%] right-[37%] md:top-[18.5%] md:right-[38.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[18%] right-[40%] md:top-[18%] md:right-[40%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[17%] right-[43%] md:top-[17%] md:right-[43%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[16%] right-[46%] md:top-[16%] md:right-[46%] w-1.5 h-1.5 rounded-full bg-white/30" />
@@ -288,7 +291,7 @@ export default function Home() {
           <div className="absolute top-[16%] left-[22%] md:top-[16%] md:left-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[16.5%] left-[20.5%] md:top-[16.5%] md:left-[20.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[17%] left-[19%] md:top-[17%] md:left-[19%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[18.5%] left-[16%] md:top-[18.5%] md:left-[16%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[18.5%] left-[16%] md:top-[18.5%] md:left-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[20%] left-[13%] md:top-[20%] md:left-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[21.5%] left-[10%] md:top-[21.5%] md:left-[10%] w-1.5 h-1.5 rounded-full bg-white/30" />
           

@@ -103,17 +103,19 @@ export default function DestinationsPage() {
 
           {/* Decorative Dots */}
           {/* between Suusamyr and At-Bashy */}
+          <div className="block md:hidden absolute top-[62%] left-[16%] md:top-[83.9%] md:left-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[61%] left-[15%] md:top-[83%] md:left-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[59%] left-[13%] md:top-[83.3%] md:left-[31%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[57%] left-[11%] md:top-[83.6%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="hidden md:block absolute top-[57%] left-[11%] md:top-[83.9%] md:left-[35%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="hidden md:block absolute top-[57%] left-[11%] md:top-[83.9%] md:left-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[60%] left-[14%] md:top-[83.3%] md:left-[31%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[59%] left-[13%] md:top-[83.6%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[58%] left-[11.5%] md:top-[83.9%] md:left-[35%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[57%] left-[10%] md:top-[83.9%] md:left-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          
 
           {/* between Song Kul and Suusamyr */}
-          <div className="absolute top-[43%] left-[9%] md:top-[63%] md:left-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="block md:hiddenabsolute top-[41%] left-[8.5%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="block md:hidden absolute top-[39%] left-[8.7%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="block md:hidden absolute top-[37.5%] left-[8.6%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[43%] left-[8.6%] md:top-[63%] md:left-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[41%] left-[8.6%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[39%] left-[8.6%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[37.3%] left-[8.6%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
           {/* between Song Kul and Issyk-Kul */}
           <div className="absolute top-[21%] left-[12.5%] md:top-[38.5%] md:left-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
