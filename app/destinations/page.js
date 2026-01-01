@@ -103,68 +103,70 @@ export default function DestinationsPage() {
 
           {/* Decorative Dots */}
           {/* between Suusamyr and At-Bashy */}
-          <div className="absolute top-[61%] left-[15%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[59%] left-[13%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[57%] left-[11%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[61%] left-[15%] md:top-[83%] md:left-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[59%] left-[13%] md:top-[83.3%] md:left-[31%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[57%] left-[11%] md:top-[83.6%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="hidden md:block absolute top-[57%] left-[11%] md:top-[83.9%] md:left-[35%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="hidden md:block absolute top-[57%] left-[11%] md:top-[83.9%] md:left-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
           {/* between Song Kul and Suusamyr */}
-          <div className="absolute top-[43%] left-[9%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[41%] left-[8.5%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[39%] left-[8.7%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[37.5%] left-[8.6%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[43%] left-[9%] md:top-[63%] md:left-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="block md:hiddenabsolute top-[41%] left-[8.5%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="block md:hidden absolute top-[39%] left-[8.7%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="block md:hidden absolute top-[37.5%] left-[8.6%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
           {/* between Song Kul and Issyk-Kul */}
-          <div className="absolute top-[21%] left-[12.5%] md:top-[21%] md:left-[12.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[22.5%] left-[12%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[24%] left-[11.5%] md:top-[24%] md:left-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[21%] left-[12.5%] md:top-[38.5%] md:left-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="block md:hidden absolute top-[22.5%] left-[12%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="block md:hidden absolute top-[24%] left-[11.5%] md:top-[24%] md:left-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
           {/* between Issyk-Kul and Bishkek */}
-          <div className="absolute top-[9%] left-[34%] md:top-[21%] md:left-[12.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[10%] left-[31.5%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[11%] left-[29%] md:top-[24%] md:left-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[9%] left-[34%] md:top-[21%] md:left-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[10%] left-[31.5%] md:top-[22%] md:left-[27.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[11%] left-[29%] md:top-[23%] md:left-[26%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
           {/* between Bishkek and Arslanbob*/}
-          <div className="absolute top-[9%] left-[61%] md:top-[21%] md:left-[12.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[10%] left-[63%] md:top-[25%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[11%] left-[65%] md:top-[29%] md:left-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[12%] left-[67%] md:top-[33%] md:left-[14%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[13%] left-[69%] md:top-[37%] md:left-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[14%] left-[71%] md:top-[41%] md:left-[16%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[15%] left-[73%] md:top-[45%] md:left-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[16%] left-[75%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[9%] left-[61%] md:top-[21%] md:left-[59%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[10%] left-[63%] md:top-[21%] md:left-[57%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[11%] left-[65%] md:top-[21%] md:left-[55%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[12%] left-[67%] md:top-[21%] md:left-[53%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[13%] left-[69%] md:top-[21%] md:left-[51%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[14%] left-[71%] md:top-[21%] md:left-[49%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[15%] left-[73%] md:top-[21%] md:left-[47%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[16%] left-[75%] md:top-[21%] md:left-[45%] w-1.5 h-1.5 rounded-full bg-white/30" />
           {/* <div className="absolute top-[17%] left-[77%] md:top-[53%] md:left-[19%] w-1.5 h-1.5 rounded-full bg-white/30" /> */}
 
           {/* between Arslanbob and Naryn*/}
-          <div className="absolute top-[28%] left-[85%] md:top-[45%] md:left-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[29%] left-[85%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[30%] left-[85%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[28%] left-[85%] md:top-[23%] md:left-[76%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[29%] left-[85%] md:top-[25%] md:left-[78%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[30%] left-[85%] md:top-[27%] md:left-[80%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
           {/* between Naryn and Chong-Kemin */}
-          <div className="absolute top-[44%] left-[85%] md:top-[45%] md:left-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="block md:hidden absolute top-[44%] left-[85%] md:top-[23%] md:left-[75%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[45%] left-[85%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[46%] left-[85%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[47%] left-[85%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[48%] left-[85%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
-          {/* between Naryn and Chong-Kemin */}
-          <div className="absolute top-[62%] left-[85%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* between Chong-Kemin and Osh on mobile only*/}
+          <div className="absolute top-[62%] left-[85%] md:top-[47%] md:left-[85%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[63%] left-[83%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[64%] left-[81%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[65%] left-[79%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[66%] left-[77%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[67%] left-[75%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
+
+          {/* between Chong-Kemin and Osh on desktop and on mobile */}
+          <div className="absolute top-[65%] left-[79%] md:top-[77%] md:left-[83%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[66%] left-[77%] md:top-[79%] md:left-[81%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[67%] left-[75%] md:top-[79%] md:left-[79%] w-1.5 h-1.5 rounded-full bg-white/30" /> 
 
 
-          {/* between Chong-Kemin and Osh*/}
-          <div className="absolute top-[65%] left-[79%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[66%] left-[77%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[67%] left-[75%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          
 
           {/* between Osh and At-Bashy*/}
-          <div className="absolute top-[69%] left-[48%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[68.75%] left-[45%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[68.5%] left-[42%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[68.25%] left-[39%] md:top-[49%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[69%] left-[48%] md:top-[89%] md:left-[63%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[68.75%] left-[45%] md:top-[90%] md:left-[60%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[68.5%] left-[42%] md:top-[90%] md:left-[57%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[68.25%] left-[39%] md:top-[90%] md:left-[54%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="hidden md:block absolute top-[68.25%] left-[39%] md:top-[90%] md:left-[51%] w-1.5 h-1.5 rounded-full bg-white/30" />
         </div>
       </section>
 
