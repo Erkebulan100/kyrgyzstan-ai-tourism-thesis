@@ -49,7 +49,7 @@ export default function DestinationsPage() {
         <div className="relative w-full max-w-[1400px] mx-auto h-[750px]">
 
           {/* Central Text */}
-          <div className="absolute left-1/2 top-[31%] md:top-[50%] -translate-x-1/2 -translate-y-1/2 text-center z-20">
+          <div className="absolute left-1/2 top-[39%] md:top-[50%] -translate-x-1/2 -translate-y-1/2 text-center z-20">
             <img 
               src="/images/mountain.svg" 
               alt="Mountain" 
@@ -57,7 +57,8 @@ export default function DestinationsPage() {
               style={{ filter: 'invert(1) brightness(1)' }}
             />
             <h2 className="text-2xl md:text-3xl font-serif text-white leading-tight">
-              Nine regions.<br />
+              Nine <br />
+              regions.<br />
               Endless beauty.<br />
               Your adventure awaits.
             </h2>
@@ -66,14 +67,14 @@ export default function DestinationsPage() {
           {/* Destination Circles */}
           {[
             { name: "Issyk-Kul", subtitle: "The Hot Lake", href: "/destinations/issyk-kul", className: "left-[5%] top-[8%] md:left-[11%] md:top-[12%]" },
-            { name: "Bishkek", subtitle: "Capital City", href: "/destinations/bishkek", className: "left-[35%] top-[3%] md:left-[30%] md:top-[5%]" },
+            { name: "Bishkek", subtitle: "Capital City", href: "/destinations/bishkek", className: "left-[36%] top-[1%] md:left-[30%] md:top-[5%]" },
             { name: "Arslanbob", subtitle: "Walnut Forest", href: "/destinations/arslanbob", className: "right-[2%] top-[15%] md:right-[25%] md:top-[8%]" },
             { name: "Naryn", subtitle: "Mountain Heart", href: "/destinations/naryn", className: "right-[2%] top-[31%] md:right-[5%] md:top-[20%]" },
             { name: "Song Kul", subtitle: "Alpine Lake", href: "/destinations/song-kul", className: "left-[1%] top-[25%] md:left-[5%] md:top-[39%]" },
-            { name: "Chong-Kemin", subtitle: "Green Valley", href: "/destinations/chong-kemin", className: "right-[5%] top-[45%] md:right-[8%] md:top-[49%]" },
-            { name: "Suusamyr", subtitle: "High Pastures", href: "/destinations/suusamyr", className: "left-[1%] bottom-[48%] md:left-[15%] md:bottom-[11%]" },
-            { name: "At-Bashy", subtitle: "Wild Valley", href: "/destinations/at-bashy", className: "left-[20%] bottom-[37%] md:left-[37%] md:bottom-[3%]" },
-            { name: "Osh", subtitle: "Silk Road City", href: "/destinations/osh", className: "right-[27%] bottom-[35%] md:right-[22%] md:bottom-[5%]" },
+            { name: "Chong-Kemin", subtitle: "Green Valley", href: "/destinations/chong-kemin", className: "right-[1%] top-[49%] md:right-[8%] md:top-[49%]" },
+            { name: "Suusamyr", subtitle: "High Pastures", href: "/destinations/suusamyr", className: "left-[1%] bottom-[43%] md:left-[15%] md:bottom-[11%]" },
+            { name: "At-Bashy", subtitle: "Wild Valley", href: "/destinations/at-bashy", className: "left-[15%] bottom-[27%] md:left-[37%] md:bottom-[3%]" },
+            { name: "Osh", subtitle: "Silk Road City", href: "/destinations/osh", className: "right-[25%] bottom-[25%] md:right-[22%] md:bottom-[5%]" },
             ].map((dest, idx) => (
             <Link key={idx} href={dest.href} className={`absolute z-30 group ${dest.className}`}>
               <div className="bg-white/95 rounded-full w-24 h-24 md:w-40 md:h-40 flex flex-col items-center justify-center shadow-2xl border border-white/10 p-2 md:p-4 text-center hover:scale-105 transition-transform">
@@ -88,20 +89,31 @@ export default function DestinationsPage() {
             <img src="/images/eagle.svg" alt="Eagle" className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           
-          <div className="absolute top-[39%] left-[25%] md:top-[39%] md:left-[25%] z-10">
+          <div className="absolute top-[35%] left-[25%] md:top-[39%] md:left-[25%] z-10">
             <img src="/images/horse.svg" alt="Horse" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
-          <div className="absolute bottom-[55%] right-[27%] md:bottom-[31%] md:right-[27%] z-10">
+          <div className="absolute bottom-[59%] right-[27%] md:bottom-[31%] md:right-[27%] z-10">
             <img src="/images/yurt.svg" alt="Yurt" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
-          <div className="absolute bottom-[49%] left-[45%] md:bottom-[25%] md:left-[35%] z-10">
+          <div className="absolute bottom-[41%] left-[45%] md:bottom-[25%] md:left-[35%] z-10">
             <img src="/images/snow-leopard.svg" alt="Snow Leopard" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
           {/* Decorative Dots */}
-          <div className="absolute top-[53%] left-[17%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* between Suusamyr and At-Bashy */}
+          <div className="absolute top-[61%] left-[15%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[59%] left-[13%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[57%] left-[11%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+
+          {/* between Song Kul and Suusamyr */}
+          <div className="absolute top-[43%] left-[9%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[41%] left-[8.5%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[39%] left-[8.7%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[37.5%] left-[8.6%] md:top-[18%] md:left-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
+
+          {/* between Song Kul and Issyk-Kul */}
           <div className="absolute top-[21%] left-[12.5%] md:top-[21%] md:left-[12.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[24%] left-[13%] md:top-[24%] md:left-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
