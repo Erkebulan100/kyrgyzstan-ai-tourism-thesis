@@ -25,7 +25,7 @@ export default function ArslanbobPage() {
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
             <div className="text-center text-white px-4">
             <h1 className="text-5xl font-bold mb-4">Arslanbob</h1>
-            <p className="text-xl text-blue-100">The World's Largest Walnut Forest</p>
+            <p className="text-xl text-blue-100">The World&apos;s Largest Walnut Forest</p>
             </div>
         </div>
         </section>
@@ -203,7 +203,7 @@ export default function ArslanbobPage() {
             Ready to Explore Arslanbob?
           </h2>
           <p className="text-xl text-green-100 mb-8">
-            Let us plan your journey to the world's largest walnut forest
+            Let us plan your journey to the world&apos;s largest walnut forest
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" 
