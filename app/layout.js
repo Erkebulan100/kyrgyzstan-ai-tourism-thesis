@@ -109,7 +109,7 @@ function Header() {
                 </div>
               </a>
               {/* Instagram */}
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.instagram.com/tienshanjourneys/?utm_source=qr&igsh=MWxqNnF2ejRnbGJpZQ%3D%3D#" target="_blank" rel="noopener noreferrer"
                  className="hover:opacity-80 transition-opacity">
                 <div className="w-7 h-7 rounded flex items-center justify-center"
                      style={{ background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' }}>

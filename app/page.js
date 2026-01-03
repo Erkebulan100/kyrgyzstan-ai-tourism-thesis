@@ -29,7 +29,7 @@ export default function Home() {
 </div>
   {/* Content - Tagline Only */}
 <div className="absolute top-16 right-4 md:top-8 md:right-8 z-10 text-white">
-  <div className="px-3 py-1 md:px-6 md:py-3 rounded text-center" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
+  <div className="px-3 py-1 md:px-3 md:py-1 rounded text-center" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
     <p className="text-xs md:text-base font-light tracking-wider uppercase">
       Bespoke Travel in Kyrgyzstan and Central Asia
     </p>
