@@ -115,14 +115,14 @@ export default function ClassicKyrgyzstanPage() {
 
   // Journey points for the constellation map
   const journeyPoints = [
-    { day: 1, name: "Bishkek", position: "left-[8%] top-[20%]" },
-    { day: 2, name: "Kochkor", position: "left-[25%] top-[10%]" },
-    { day: 3, name: "Karakol", position: "left-[50%] top-[8%]" },
-    { day: 4, name: "Bokonbaevo", position: "right-[20%] top-[18%]" },
-    { day: 5, name: "Chon-Kemin", position: "right-[8%] top-[45%]" },
-    { day: 6, name: "Chunkurchak", position: "right-[25%] bottom-[25%]" },
-    { day: 7, name: "Adventure", position: "left-[35%] bottom-[15%]" },
-    { day: 8, name: "Departure", position: "left-[10%] bottom-[30%]" },
+    { day: 1, name: "Bishkek", position: "left-[8%] top-[20%] md:left-[3%] md:top-[17%]" },
+    { day: 2, name: "Kochkor", position: "left-[25%] top-[10%] md:left-[23%] md:top-[1%]" },
+    { day: 3, name: "Karakol", position: "left-[50%] top-[8%] md:left-[50%] md:top-[0%]" },
+    { day: 4, name: "Bokonbaevo", position: "right-[20%] top-[18%] md:right-[13%] md:top-[15%]" },
+    { day: 5, name: "Chon-Kemin", position: "right-[8%] top-[45%] md:right-[3%] md:top-[57%]" },
+    { day: 6, name: "Chunkurchak", position: "right-[25%] bottom-[25%] md:right-[21%] md:bottom-[0%]" },
+    { day: 7, name: "Adventure", position: "left-[35%] bottom-[15%] md:left-[37%] md:bottom-[1%]" },
+    { day: 8, name: "Departure", position: "left-[10%] bottom-[30%] md:left-[5%] md:bottom-[25%]" },
   ];
 
   return (
@@ -242,7 +242,7 @@ export default function ClassicKyrgyzstanPage() {
           ))}
 
           {/* Decorative Icons */}
-          <div className="absolute top-[5%] right-[40%] z-10">
+          <div className="absolute top-[5%] right-[40%] md:top-[25%] md:right-[55%] z-10">
             <img src="/images/eagle.svg" alt="Eagle" className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-60" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           
@@ -250,24 +250,24 @@ export default function ClassicKyrgyzstanPage() {
             <img src="/images/horse.svg" alt="Horse" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-60" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           
-          <div className="absolute bottom-[40%] right-[15%] z-10">
+          <div className="absolute bottom-[40%] right-[15%] md:bottom-[55%] right-[35%] z-10">
             <img src="/images/yurt.svg" alt="Yurt" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-60" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
-          <div className="absolute bottom-[10%] right-[45%] z-10">
+          <div className="absolute bottom-[10%] right-[45%] md:bottom-[40%] md:right-[25%] z-10">
             <img src="/images/camel.svg" alt="Camel" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-60" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
           {/* Connecting Dots Path */}
           {/* Path from Day 1 to Day 2 */}
-          <div className="absolute top-[18%] left-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[18%] left-[15%] md:top-[18%] md:left[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[16%] left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[14%] left-[21%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
           {/* Path from Day 2 to Day 3 */}
-          <div className="absolute top-[10%] left-[32%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[9%] left-[38%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[8%] left-[44%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[10%] left-[37%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[9%] left-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[8%] left-[47%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
           {/* Path from Day 3 to Day 4 */}
           <div className="absolute top-[10%] right-[35%] w-1.5 h-1.5 rounded-full bg-white/30" />
@@ -275,24 +275,24 @@ export default function ClassicKyrgyzstanPage() {
           <div className="absolute top-[16%] right-[25%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
           {/* Path from Day 4 to Day 5 */}
-          <div className="absolute top-[25%] right-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[32%] right-[14%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[38%] right-[10%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[25%] right-[18%] md:top-[41%] md:right-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[32%] right-[14%] md:top-[47%] md:right-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[38%] right-[10%] md:top-[53%] md:right-[11%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
           {/* Path from Day 5 to Day 6 */}
-          <div className="absolute top-[55%] right-[12%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[62%] right-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[68%] right-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[55%] right-[12%] md:top-[79%] md:right-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[62%] right-[18%] md:top-[84%] md:right-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[68%] right-[22%] md:top-[89%] md:right-[19%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
           {/* Path from Day 6 to Day 7 */}
-          <div className="absolute bottom-[28%] right-[35%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[22%] right-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[18%] left-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[28%] right-[35%] md:bottom-[10%] md:right-[37%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[22%] right-[42%] md:bottom-[10%] md:right-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[18%] left-[42%] md:bottom-[10%] md:left-[52%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
           {/* Path from Day 7 to Day 8 */}
-          <div className="absolute bottom-[18%] left-[28%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[22%] left-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[26%] left-[16%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[18%] left-[28%] md:bottom-[18%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[22%] left-[22%] md:bottom-[22%] md:left-[28%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[26%] left-[16%] md:bottom-[26%] md:left-[23%] w-1.5 h-1.5 rounded-full bg-white/30" />
         </div>
         
         <p className="text-center text-white/60 text-sm mt-4">Click on a day to see details below</p>
