@@ -122,7 +122,7 @@ export default function ClassicKyrgyzstanPage() {
     { day: 5, name: "Chon-Kemin", position: "right-[8%] top-[45%] md:right-[3%] md:top-[57%]" },
     { day: 6, name: "Chunkurchak", position: "right-[25%] bottom-[25%] md:right-[21%] md:bottom-[0%]" },
     { day: 7, name: "Adventure", position: "left-[35%] bottom-[15%] md:left-[37%] md:bottom-[1%]" },
-    { day: 8, name: "Departure", position: "left-[10%] bottom-[30%] md:left-[5%] md:bottom-[25%]" },
+    { day: 8, name: "Departure", position: "left-[11%] bottom-[30%] md:left-[11%] md:bottom-[25%]" },
   ];
 
   return (
@@ -230,9 +230,14 @@ export default function ClassicKyrgyzstanPage() {
           {/* Journey Point Circles */}
           {journeyPoints.map((point, idx) => (
             <button
-              key={idx}
-              onClick={() => setExpandedDay(expandedDay === point.day ? null : point.day)}
-              className={`absolute z-30 hover:scale-110 transition-all duration-300 ${point.position}`}
+                key={idx}
+                onClick={() => {
+                setExpandedDay(point.day);
+                setTimeout(() => {
+                    document.getElementById(`day-${point.day}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+                }}
+                className={`absolute z-30 hover:scale-110 transition-all duration-300 ${point.position}`}
             >
               <div className={`bg-white/95 rounded-full w-20 h-20 md:w-28 md:h-28 flex flex-col items-center justify-center shadow-2xl border-2 ${expandedDay === point.day ? 'border-yellow-400 scale-110' : 'border-white/20'} p-2 text-center`}>
                 <span className="text-blue-600 font-bold text-xs md:text-sm">Day {point.day}</span>
@@ -246,7 +251,7 @@ export default function ClassicKyrgyzstanPage() {
             <img src="/images/eagle.svg" alt="Eagle" className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-60" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           
-          <div className="absolute top-[60%] left-[20%] z-10">
+          <div className="absolute top-[60%] left-[27%] z-10">
             <img src="/images/horse.svg" alt="Horse" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-60" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           
@@ -256,6 +261,16 @@ export default function ClassicKyrgyzstanPage() {
 
           <div className="absolute bottom-[10%] right-[45%] md:bottom-[40%] md:right-[25%] z-10">
             <img src="/images/camel.svg" alt="Camel" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-60" style={{ filter: 'invert(1) brightness(0.8)' }} />
+          </div>
+
+          {/* Snow Leopard - Right side of the page */}
+          <div className="absolute top-[67%] right-[38%] md:top-[67%] md:right-[38%] z-10">
+            <img 
+              src="/images/snow-leopard.svg" 
+              alt="Snow Leopard" 
+              className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-70"
+              style={{ filter: 'invert(1) brightness(0.8)' }}
+            />
           </div>
 
           {/* Connecting Dots Path */}
