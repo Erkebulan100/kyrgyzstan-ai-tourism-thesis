@@ -208,41 +208,52 @@ export default function ClassicKyrgyzstanPage() {
         </div>
       </section>
                 {/* Itinerary Map Section */}
-        <section className="py-16 px-4 bg-gray-50">
+        {/* Itinerary Map Section */}
+      <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Itinerary on the Map</h2>
-            
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{ height: '450px' }}>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d586751.6925561641!2d76.5!3d42.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38865f51d08a3b4f%3A0x8d8b1c1aef8c455b!2sIssyk-Kul%20Lake!5e0!3m2!1sen!2skg!4v1700000000000!5m2!1sen!2skg"
-                width="100%"
-                height="100%"
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Itinerary on the Map</h2>
+          
+          <div className="w-full rounded-xl overflow-hidden shadow-lg relative" style={{ height: '450px' }}>
+            {/* Click overlay */}
+            <div 
+              className="absolute inset-0 z-10 cursor-pointer flex items-center justify-center hover:bg-black/10 transition-colors group"
+              onClick={(e) => e.currentTarget.style.display = 'none'}
+            >
+              <span className="bg-black/70 text-white px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                Click to interact with map
+              </span>
+            </div>
+            {/* Map with hidden header */}
+            <div style={{ marginTop: '-67px', height: 'calc(100% + 67px)' }}>
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=11ELx6nu-lRWn9CkSNuvr6fDvU6JvwRI&hl=en&ehbc=2E312F"
+                className="w-full h-full"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+              ></iframe>
             </div>
+          </div>
 
-            {/* Trip Overview Below Map */}
-            <div className="mt-6 bg-white p-6 rounded-xl shadow-md">
+          {/* Trip Overview Below Map */}
+          <div className="mt-6 bg-white p-6 rounded-xl shadow-md">
             <div className="grid md:grid-cols-3 gap-4 text-sm">
-                <div>
+              <div>
                 <span className="font-semibold text-gray-700">Duration:</span>
                 <span className="text-gray-600 ml-2">7 nights / 8 days</span>
-                </div>
-                <div>
+              </div>
+              <div>
                 <span className="font-semibold text-gray-700">Season:</span>
                 <span className="text-gray-600 ml-2">From May to October</span>
-                </div>
-                <div className="md:col-span-3">
+              </div>
+              <div className="md:col-span-3">
                 <span className="font-semibold text-gray-700">Trip overview:</span>
                 <span className="text-gray-600 ml-2">Bishkek – Kochkor – Issyk-Kul (Chok-Tal) – Karakol – Jety-Oguz – Barskoon – Bokonbaevo – Chon-Kemin (Kalmak-Ashuu) – Bishkek</span>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
-        </section>
+      </section>
       {/* Journey Map - Constellation Style */}
       <section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-900 to-green-900 min-h-[700px]">
         <div className="relative w-full max-w-[1400px] mx-auto h-[550px]">
