@@ -203,17 +203,28 @@ export default function NomadsTienShanPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Itinerary on the Map</h2>
-          <div className="w-full rounded-xl overflow-hidden shadow-lg" style={{ height: '450px' }}>
+          <div className="w-full rounded-xl overflow-hidden shadow-lg relative" style={{ height: '450px' }}>
+            {/* Overlay to prevent scroll zoom until clicked */}
+            {/* Click overlay */}
+            <div 
+                className="absolute inset-0 z-10 cursor-pointer flex items-center justify-center hover:bg-black/10 transition-colors group"
+                onClick={(e) => e.currentTarget.style.display = 'none'}
+                >
+                <span className="bg-black/70 text-white px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                    Click to interact with map
+                </span>
+            </div>
+            {/* Map with hidden header */}
             <div style={{ marginTop: '-67px', height: 'calc(100% + 67px)' }}>
                 <iframe
                 src="https://www.google.com/maps/d/embed?mid=1cCQHzlHCOrmOUMLcvQhuQ4UEWcmxU1Q&hl=en&ehbc=2E312F"
                 className="w-full h-full"
-                style={{ border: 0, width: '100%', height: '100%' }}
+                style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 ></iframe>
             </div>
-          </div>
+            </div>
           
 
           {/* Trip Overview Below Map */}
