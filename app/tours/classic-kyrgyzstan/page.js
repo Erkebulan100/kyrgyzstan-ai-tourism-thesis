@@ -420,7 +420,7 @@ export default function ClassicKyrgyzstanPage() {
                     <img 
                         src={hotel.image} 
                         alt={hotel.name}
-                        className="float-left w-64 h-auto rounded-lg mr-5 mb-3"
+                        className=" w-full md:float-left md:w-64 h-auto rounded-lg mb-4 md:mr-5 md:mb-3"
                     />
                     <p className="text-gray-600 leading-relaxed">{hotel.description}</p>
                     <div className="clear-both"></div>
