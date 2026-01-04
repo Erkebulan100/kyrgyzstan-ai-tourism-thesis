@@ -106,11 +106,11 @@ export default function NomadsTienShanPage() {
   // Journey points for the constellation map
   const journeyPoints = [
     { day: 1, name: "Bishkek", position: "left-[1%] top-[15%] md:left-[5%] md:top-[12%]" },
-    { day: 2, name: "Köl-Ükök", position: "left-[20%] top-[1%] md:left-[22%] md:top-[1%]" },
-    { day: 3, name: "Tez-Tör", position: "left-[45%] top-[1%] md:left-[42%] md:top-[1%]" },
-    { day: 4, name: "Naryn", position: "right-[5%] top-[12%] md:right-[8%] md:top-[10%]" },
-    { day: 5, name: "Kamandy", position: "right-[1%] top-[38%] md:right-[5%] md:top-[38%]" },
-    { day: 6, name: "Tash-Rabat", position: "right-[5%] bottom-[30%] md:right-[8%] md:bottom-[28%]" },
+    { day: 2, name: "Köl-Ükök", position: "left-[25%] top-[1%] md:left-[23%] md:top-[1%]" },
+    { day: 3, name: "Tez-Tör", position: "left-[55%] top-[1%] md:left-[42%] md:top-[0%]" },
+    { day: 4, name: "Naryn", position: "right-[5%] top-[15%] md:right-[28%] md:top-[1%]" },
+    { day: 5, name: "Kamandy", position: "right-[1%] top-[38%] md:right-[5%] md:top-[15%]" },
+    { day: 6, name: "Tash-Rabat", position: "right-[5%] bottom-[25%] md:right-[5%] md:bottom-[28%]" },
     { day: 7, name: "Koshoi-Korgon", position: "right-[25%] bottom-[5%] md:right-[30%] md:bottom-[3%]" },
     { day: 8, name: "Return", position: "left-[25%] bottom-[5%] md:left-[25%] md:bottom-[3%]" },
     { day: 9, name: "Departure", position: "left-[1%] bottom-[30%] md:left-[5%] md:bottom-[28%]" },
@@ -312,37 +312,38 @@ export default function NomadsTienShanPage() {
           </div>
 
           {/* Connecting Dots - simplified paths */}
-          <div className="absolute top-[12%] left-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[10%] left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[8%] left-[21%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          
-          <div className="absolute top-[5%] left-[32%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[5%] left-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[5%] left-[40%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          
-          <div className="absolute top-[8%] right-[25%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[10%] right-[20%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[12%] right-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          
-          <div className="absolute top-[25%] right-[10%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[30%] right-[8%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[35%] right-[7%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          
-          <div className="absolute top-[55%] right-[7%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[60%] right-[8%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[65%] right-[9%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          
-          <div className="absolute bottom-[20%] right-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[15%] right-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[10%] right-[26%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          
-          <div className="absolute bottom-[8%] left-[35%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[8%] left-[32%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[8%] left-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          
-          <div className="absolute bottom-[15%] left-[20%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[20%] left-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[25%] left-[10%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* 1 to 2 */}
+          <div className="absolute top-[13%] left-[15%] md:top-[12%] md:left-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[11%] left-[18%] md:top-[10%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[9%] left-[21%] md:top-[8%] md:left-[21%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* 2 to 3 */}
+          <div className="absolute top-[5%] left-[47%] md:top-[5%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[5%] left-[50%] md:top-[5%] md:left-[37%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[5%] left-[53%] md:top-[5%] md:left-[41%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* 3 to 4 */}
+          <div className="absolute top-[13%] right-[18%] md:top-[5%] md:right-[39%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[11%] right-[20%] md:top-[5%] md:right-[43%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[9%] right-[22%] md:top-[5%] md:right-[47%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* 4 to 5 */}
+          <div className="absolute top-[30%] right-[10.5%] md:top-[20%] md:right-[25%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[33%] right-[10%] md:top-[25%] md:right-[21%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[36%] right-[9.5%] md:top-[30%] md:right-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* 5 to 6 */}
+          <div className="absolute top-[53%] right-[9%] md:top-[55%] md:right-[7%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[56%] right-[10%] md:top-[60%] md:right-[8%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[59%] right-[11%] md:top-[65%] md:right-[9%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* 6 to 7 */}
+          <div className="absolute bottom-[23%] right-[20%] md:bottom-[20%] md:right-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[20%] right-[22%] md:bottom-[15%] md:right-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[17%] right-[24%] md:bottom-[10%] md:right-[26%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* 7 to 8 */}
+          <div className="absolute bottom-[7%] left-[53%] md:bottom-[8%] md:left-[35%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[7%] left-[49%] md:bottom-[8%] md:left-[32%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[7%] left-[45%] md:bottom-[8%] md:left-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          {/* 8 to 9 */}
+          <div className="absolute bottom-[17%] left-[23%] md:bottom-[15%] md:left-[20%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[22%] left-[18%] md:bottom-[20%] md:left-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[27%] left-[13%] md:bottom-[25%] md:left-[10%] w-1.5 h-1.5 rounded-full bg-white/30" />
         </div>
         
         <p className="text-center text-white/60 text-sm mt-4">Click on a day to see details below</p>
