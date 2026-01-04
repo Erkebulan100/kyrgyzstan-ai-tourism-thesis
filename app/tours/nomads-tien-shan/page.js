@@ -286,7 +286,7 @@ export default function NomadsTienShanPage() {
           ))}
 
           {/* Decorative Icons */}
-          <div className="absolute top-[15%] right-[40%] md:top-[15%] md:right-[55%] z-10">
+          <div className="absolute top-[15%] right-[40%] md:top-[20%] md:right-[57%] z-10">
             <img src="/images/eagle.svg" alt="Eagle" className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-60" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           
@@ -317,33 +317,33 @@ export default function NomadsTienShanPage() {
           <div className="absolute top-[11%] left-[18%] md:top-[10%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[9%] left-[21%] md:top-[8%] md:left-[21%] w-1.5 h-1.5 rounded-full bg-white/30" />
           {/* 2 to 3 */}
-          <div className="absolute top-[5%] left-[47%] md:top-[5%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[5%] left-[50%] md:top-[5%] md:left-[37%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[5%] left-[47%] md:top-[5%] md:left-[35%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[5%] left-[50%] md:top-[5%] md:left-[38%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[5%] left-[53%] md:top-[5%] md:left-[41%] w-1.5 h-1.5 rounded-full bg-white/30" />
           {/* 3 to 4 */}
-          <div className="absolute top-[13%] right-[18%] md:top-[5%] md:right-[39%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[13%] right-[18%] md:top-[5%] md:right-[40%] w-1.5 h-1.5 rounded-full bg-white/30" />
           <div className="absolute top-[11%] right-[20%] md:top-[5%] md:right-[43%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[9%] right-[22%] md:top-[5%] md:right-[47%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[9%] right-[22%] md:top-[5%] md:right-[46%] w-1.5 h-1.5 rounded-full bg-white/30" />
           {/* 4 to 5 */}
-          <div className="absolute top-[30%] right-[10.5%] md:top-[20%] md:right-[25%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[33%] right-[10%] md:top-[25%] md:right-[21%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[36%] right-[9.5%] md:top-[30%] md:right-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[30%] right-[10.5%] md:top-[17%] md:right-[26%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[33%] right-[10%] md:top-[20%] md:right-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[36%] right-[9.5%] md:top-[23%] md:right-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
           {/* 5 to 6 */}
-          <div className="absolute top-[53%] right-[9%] md:top-[55%] md:right-[7%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[56%] right-[10%] md:top-[60%] md:right-[8%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[59%] right-[11%] md:top-[65%] md:right-[9%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[53%] right-[9%] md:top-[41%] md:right-[9%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[56%] right-[10%] md:top-[43%] md:right-[9%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[59%] right-[11%] md:top-[45%] md:right-[9%] w-1.5 h-1.5 rounded-full bg-white/30" />
           {/* 6 to 7 */}
-          <div className="absolute bottom-[23%] right-[20%] md:bottom-[20%] md:right-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[20%] right-[22%] md:bottom-[15%] md:right-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[17%] right-[24%] md:bottom-[10%] md:right-[26%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[23%] right-[20%] md:bottom-[27%] md:right-[14%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[20%] right-[22%] md:bottom-[21%] md:right-[21%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[17%] right-[24%] md:bottom-[15%] md:right-[28%] w-1.5 h-1.5 rounded-full bg-white/30" />
           {/* 7 to 8 */}
-          <div className="absolute bottom-[7%] left-[53%] md:bottom-[8%] md:left-[35%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[7%] left-[49%] md:bottom-[8%] md:left-[32%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[7%] left-[45%] md:bottom-[8%] md:left-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[7%] left-[53%] md:bottom-[10%] md:left-[55%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[7%] left-[49%] md:bottom-[10%] md:left-[47%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[7%] left-[45%] md:bottom-[10%] md:left-[39%] w-1.5 h-1.5 rounded-full bg-white/30" />
           {/* 8 to 9 */}
-          <div className="absolute bottom-[17%] left-[23%] md:bottom-[15%] md:left-[20%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[22%] left-[18%] md:bottom-[20%] md:left-[15%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[27%] left-[13%] md:bottom-[25%] md:left-[10%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[17%] left-[23%] md:bottom-[15%] md:left-[23%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[22%] left-[18%] md:bottom-[20%] md:left-[18%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[27%] left-[13%] md:bottom-[25%] md:left-[13%] w-1.5 h-1.5 rounded-full bg-white/30" />
         </div>
         
         <p className="text-center text-white/60 text-sm mt-4">Click on a day to see details below</p>
