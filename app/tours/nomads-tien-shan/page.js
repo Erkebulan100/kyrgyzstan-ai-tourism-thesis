@@ -203,18 +203,18 @@ export default function NomadsTienShanPage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Itinerary on the Map</h2>
-          
-          <div className="rounded-xl overflow-hidden shadow-lg" style={{ height: '450px' }}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d750000!2d75.5!3d41.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389cb931fb501c8d%3A0x305f5f6686a72f4!2sNaryn%20Region%2C%20Kyrgyzstan!5e0!3m2!1sen!2skg!4v1700000000000!5m2!1sen!2skg"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div className="w-full rounded-xl overflow-hidden shadow-lg" style={{ height: '450px' }}>
+            <div style={{ marginTop: '-67px', height: 'calc(100% + 67px)' }}>
+                <iframe
+                src="https://www.google.com/maps/d/embed?mid=1cCQHzlHCOrmOUMLcvQhuQ4UEWcmxU1Q&hl=en&ehbc=2E312F"
+                className="w-full h-full"
+                style={{ border: 0, width: '100%', height: '100%' }}
+                allowFullScreen=""
+                loading="lazy"
+                ></iframe>
+            </div>
           </div>
+          
 
           {/* Trip Overview Below Map */}
           <div className="mt-6 bg-white p-6 rounded-xl shadow-md">
