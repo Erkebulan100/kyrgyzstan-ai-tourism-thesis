@@ -134,7 +134,7 @@ export default function ClassicKyrgyzstanPage() {
         style={{
           backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/images/tours/classic-kyrgyzstan-hero.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundPosition: 'center 57%'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-green-900/40"></div>

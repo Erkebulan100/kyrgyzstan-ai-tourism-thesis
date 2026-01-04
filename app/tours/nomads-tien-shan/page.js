@@ -123,9 +123,9 @@ export default function NomadsTienShanPage() {
       <section 
         className="relative h-[70vh] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/images/tours/nomads-tien-shan-hero.jpeg')",
+          backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/images/tours/nomads-tien-shan-hero.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundPosition: 'center 63%'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-green-900/40 to-blue-900/40"></div>
