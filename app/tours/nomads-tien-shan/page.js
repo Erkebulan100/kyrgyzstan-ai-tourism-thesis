@@ -123,13 +123,25 @@ export default function NomadsTienShanPage() {
       <section 
         className="relative h-[70vh] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/images/tours/nomads-tien-shan-hero.jpg')",
+          // linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)),
+          backgroundImage: " url('/images/tours/nomads-tien-shan-hero.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center 63%'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-green-900/40 to-blue-900/40"></div>
-        
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-green-900/40 to-blue-900/40"></div> */}
+
+        {/* Option 1: Neutral dark overlay (recommended) */}
+        {/* <div className="absolute inset-0 bg-black/20"></div> //makes pic darker*/}
+
+        {/* Option 2: Slightly stronger gradient overlay */}
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-black/20"></div> */}
+
+        {/* Option 3: Keep green theme but reduce intensity */}
+        <div className="absolute inset-0 bg-gradient-to-r from-green-900/20 to-blue-900/20"></div>
+
+        {/* Option 4: Remove entirely
+        Just delete the whole line if your hero image is dark enough for white text to be readable. */}
         <div className="relative z-10 text-center text-white px-4">
           <p className="text-green-200 text-lg mb-4 tracking-widest uppercase">8 Nights / 9 Days</p>
           <h1 className="text-6xl md:text-7xl font-bold mb-6">Nomads of Tien Shan</h1>

@@ -21,7 +21,8 @@ export default function DestinationsPage() {
     <main className="min-h-screen bg-white">
       
       {/* Hero Section with Slider */}
-        <section className="relative h-[100vh] max-h-[600px]">
+        <section className="relative">
+          {/* <section className="relative h-[100vh] max-h-[600px]">*/}
         <ImageSlider 
             images={[
             '/images/destinations/slider/slide-1.jpg',
@@ -32,7 +33,7 @@ export default function DestinationsPage() {
             '/images/destinations/slider/slide-6.jpg',
             '/images/destinations/slider/slide-7.jpg',
             ]}
-            
+            autoHeight={true}
         />
         {/* Overlay Text */}
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center z-5">
