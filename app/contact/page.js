@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-blue-900 to-green-900 flex items-center justify-center">
+      <section className="relative h-96 bg-gradient-to-r from-blue-600 to-green-600 flex items-center justify-center">
         <div className="text-center text-white px-4">
           <h1 className="text-5xl font-bold mb-4">Get in Touch</h1>
           <p className="text-xl text-blue-100">
