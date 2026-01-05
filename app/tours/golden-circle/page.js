@@ -123,11 +123,16 @@ export default function GoldenCirclePage() {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-yellow-900/40 to-orange-900/40"></div>
-        
+        {/* if you want to change colour back to green-blue radiant colour */}
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-green-900/40"></div> */}
         <div className="relative z-10 text-center text-white px-4">
           <p className="text-yellow-200 text-lg mb-4 tracking-widest uppercase">7 Nights / 8 Days</p>
+          {/* if you want to change colour back to green-blue colour */}
+          {/* <p className="text-blue-200 text-lg mb-4 tracking-widest uppercase"></p> */}
           <h1 className="text-6xl md:text-7xl font-bold mb-6">Golden Circle of Kyrgyzstan</h1>
           <p className="text-xl md:text-2xl text-yellow-100 max-w-2xl mx-auto">
+            {/* If you want to change the colour back to green-blue radiant */}
+            {/* <p className="text-xl md:text-2xl text-blue-100 max-w-2xl mx-auto"></p> */}
             The complete loop through nomadic highlands and alpine lakes
           </p>
         </div>
@@ -144,7 +149,10 @@ export default function GoldenCirclePage() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="flex items-center gap-4 justify-center md:justify-start">
               <div className="bg-yellow-100 p-3 rounded-full">
+                {/* Change colour */}
+                {/* <div className="bg-blue-100 p-3 rounded-full"> */}                
                 <Calendar className="w-6 h-6 text-yellow-600" />
+                {/* <Calendar className="w-6 h-6 text-blue-600" /> */}
               </div>
               <div>
                 <p className="text-sm text-gray-500">Duration</p>
@@ -154,7 +162,11 @@ export default function GoldenCirclePage() {
             
             <div className="flex items-center gap-4 justify-center">
               <div className="bg-orange-100 p-3 rounded-full">
+                {/* Change colour */}
+                {/* <div className="bg-green-100 p-3 rounded-full"> */}
+  
                 <Sun className="w-6 h-6 text-orange-600" />
+                {/* <Sun className="w-6 h-6 text-green-600" /> */}
               </div>
               <div>
                 <p className="text-sm text-gray-500">Season</p>
@@ -164,7 +176,10 @@ export default function GoldenCirclePage() {
             
             <div className="flex items-center gap-4 justify-center md:justify-end">
               <div className="bg-amber-100 p-3 rounded-full">
+                {/* Change colour */}
+                {/* <div className="bg-purple-100 p-3 rounded-full"> */}
                 <MapPin className="w-6 h-6 text-amber-600" />
+                {/* <MapPin className="w-6 h-6 text-purple-600" /> */}
               </div>
               <div>
                 <p className="text-sm text-gray-500">Route</p>
@@ -182,8 +197,8 @@ export default function GoldenCirclePage() {
           
           <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
             {highlights.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-yellow-50 transition-colors">
-                <div className="bg-gradient-to-br from-yellow-500 to-orange-500 p-2 rounded-lg">
+              <div key={idx} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-yellow-50   transition-colors">{/* change colour to: hover:bg-blue-50 */}
+                <div className="bg-gradient-to-br from-yellow-500 to-orange-500 p-2 rounded-lg">{/* change colour to: bg-gradient-to-br from-blue-500 to-green-500 */}
                   <item.icon className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700 font-medium">{item.text}</p>
@@ -241,7 +256,8 @@ export default function GoldenCirclePage() {
       </section>
 
       {/* Journey Map - Constellation Style */}
-      <section className="relative py-20 overflow-hidden bg-gradient-to-r from-yellow-900 to-orange-900 min-h-[700px]">
+    <section className="relative py-20 overflow-hidden bg-gradient-to-r from-yellow-900 to-orange-900 min-h-[700px]"> {/* Change colour to: bg-gradient-to-r from-blue-900 to-green-900*/}
+
         <div className="relative w-full max-w-[1400px] mx-auto h-[550px]">
           
           {/* Central Text */}
@@ -272,7 +288,7 @@ export default function GoldenCirclePage() {
               className={`absolute z-30 hover:scale-110 transition-all duration-300 ${point.position}`}
             >
               <div className={`bg-white/95 rounded-full w-20 h-20 md:w-28 md:h-28 flex flex-col items-center justify-center shadow-2xl border-2 ${expandedDay === point.day ? 'border-yellow-400 scale-110' : 'border-white/20'} p-2 text-center`}>
-                <span className="text-yellow-600 font-bold text-xs md:text-sm">Day {point.day}</span>
+                <span className="text-yellow-600 font-bold text-xs md:text-sm"> {/*Change the colour to: <span className="text-blue-600 font-bold text-xs md:text-sm">*/}Day {point.day}</span>
                 <h3 className="font-bold text-gray-800 text-[10px] md:text-xs mt-1">{point.name}</h3>
               </div>
             </button>
@@ -355,16 +371,18 @@ export default function GoldenCirclePage() {
                 key={day.day}
                 id={`day-${day.day}`}
                 className={`bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 ${expandedDay === day.day ? 'ring-2 ring-yellow-500' : ''}`}
-              >
+              > {/* Change colour to : ring-2 ring-blue-500*/}
                 <button
                   onClick={() => setExpandedDay(expandedDay === day.day ? null : day.day)}
                   className="w-full p-6 flex items-center gap-6 text-left hover:bg-gray-50 transition-colors"
                 >
+                    {/* Change the colour from:bg-gradient-to-br from-yellow-600 to-orange-600  to: bg-gradient-to-br from-blue-600 to-green-600 */}
                   <div className="bg-gradient-to-br from-yellow-600 to-orange-600 text-white w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold">{day.day}</span>
                   </div>
                   
                   <div className="flex-grow">
+                    {/* Change colour from: <p className="text-sm text-yellow-600 font-semibold mb-1"> to: <p className="text-sm text-blue-600 font-semibold mb-1"> */}
                     <p className="text-sm text-yellow-600 font-semibold mb-1">{day.route}</p>
                     <h3 className="text-xl font-bold text-gray-800">{day.title}</h3>
                   </div>
@@ -400,6 +418,7 @@ export default function GoldenCirclePage() {
                   className="w-full p-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
                 >
                   <div>
+                    {/* Change colour from: <p className="text-sm text-yellow-600 font-medium"> to <p className="text-sm text-blue-600 font-medium"> */}
                     <p className="text-sm text-yellow-600 font-medium">{hotel.location}</p>
                     <h3 className="text-lg font-bold text-gray-800">{hotel.name}</h3>
                   </div>
@@ -430,21 +449,29 @@ export default function GoldenCirclePage() {
       </section>
 
       {/* CTA Section */}
+      {/* Change the colour from: bg-gradient-to-r from-yellow-600 to-orange-600 to: bg-gradient-to-r from-blue-600 to-green-600 */}
       <section className="py-16 px-4 bg-gradient-to-r from-yellow-600 to-orange-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Experience the Golden Circle?
           </h2>
           <p className="text-xl text-yellow-100 mb-8">
+            {/* Change the colour text-yellow-100 mb-8 to text-blue-100 mb-8 */}
             Let us plan your perfect 8-day adventure through highland lakes and nomadic pastures
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" 
                   className="bg-white text-yellow-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all">
+                    {/* Change the colour of "text-yellow-600" above to text-blue-600*/}
               Book This Tour
             </Link>
             <Link href="/tours" 
                   className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-yellow-600 transition-all">
+                    {/* Change the colour of "hover:text-yellow-600" to hover:text-blue-600 */}
+                    {/* Quick find-replace approach:
+You can do a global find-replace in your code editor:
+FindReplace withyellow-blue-orange-green-amber-purple-
+This covers 90% of the changes. Just double-check the result looks correct. */}
               View All Tours
             </Link>
           </div>
