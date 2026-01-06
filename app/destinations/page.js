@@ -67,7 +67,7 @@ export default function DestinationsPage() {
 
           {/* Destination Circles */}
           {[
-            { name: "Issyk-Kul", subtitle: "The Hot Lake", href: "/destinations/issyk-kul", className: "left-[5%] top-[8%] md:left-[11%] md:top-[12%]" },
+            { name: "Issyk-Kul", subtitle: "The Hot Lake", href: "/destinations/issyk-kul-lake", className: "left-[5%] top-[8%] md:left-[11%] md:top-[12%]" },
             { name: "Bishkek", subtitle: "Capital City", href: "/destinations/bishkek", className: "left-[36%] top-[1%] md:left-[30%] md:top-[5%]" },
             { name: "Arslanbob", subtitle: "Walnut Forest", href: "/destinations/arslanbob", className: "right-[2%] top-[15%] md:right-[25%] md:top-[8%]" },
             { name: "Naryn", subtitle: "Mountain Heart", href: "/destinations/naryn", className: "right-[2%] top-[31%] md:right-[5%] md:top-[20%]" },
