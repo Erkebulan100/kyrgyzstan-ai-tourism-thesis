@@ -75,7 +75,7 @@ export default function DestinationsPage() {
             { name: "Chong-Kemin", subtitle: "Green Valley", href: "/destinations/chong-kemin", className: "right-[1%] top-[49%] md:right-[8%] md:top-[49%]" },
             { name: "Suusamyr", subtitle: "High Pastures", href: "/destinations/suusamyr", className: "left-[1%] bottom-[43%] md:left-[15%] md:bottom-[11%]" },
             { name: "At-Bashy", subtitle: "Wild Valley", href: "/destinations/at-bashy", className: "left-[15%] bottom-[27%] md:left-[37%] md:bottom-[3%]" },
-            { name: "Osh", subtitle: "Silk Road City", href: "/destinations/osh", className: "right-[25%] bottom-[25%] md:right-[22%] md:bottom-[5%]" },
+            { name: "Osh and Fergana Valley", subtitle: "Silk Road City", href: "/destinations/osh-fergana-valley", className: "right-[25%] bottom-[25%] md:right-[22%] md:bottom-[5%]" },
             ].map((dest, idx) => (
             <Link key={idx} href={dest.href} className={`absolute z-30 group ${dest.className}`}>
               <div className="bg-white/95 rounded-full w-24 h-24 md:w-40 md:h-40 flex flex-col items-center justify-center shadow-2xl border border-white/10 p-2 md:p-4 text-center hover:scale-105 transition-transform">
