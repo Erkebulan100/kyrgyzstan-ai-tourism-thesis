@@ -22,7 +22,7 @@ export default function DestinationsPage() {
       
       {/* Hero Section with Slider */}
         {/* <section className="relative"> */}
-        <section className="relative h-[100vh] max-h-[600px] flex items-center justify center">
+        <section className="relative h-[100vh] max-h-[600px] flex items-center justify-center">
         <ImageSlider 
             images={[
             '/images/destinations/slider/slide-1.jpg',

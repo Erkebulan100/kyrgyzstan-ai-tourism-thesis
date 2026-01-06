@@ -12,7 +12,7 @@ export default function ArslanbobPage() {
       
       {/* Hero Section with Slider */}
       {/* Hero Section with Slider */}
-        <section className="relative h-[100vh] max-h-[600px] flex items-center justify center">
+        <section className="relative h-[100vh] max-h-[600px] flex items-center justify-center">
         <ImageSlider 
             images={[
             '/images/destinations/arslanbob/slide-1.jpg',
