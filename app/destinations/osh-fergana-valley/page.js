@@ -28,7 +28,7 @@ function OshFerganaValleyContent() {
     <main className="min-h-screen bg-white">
       
       {/* Hero Section with Slider */}
-      <section className="relative">
+      <section className="relative h-[100vh] max-h-[600px] flex items-center justify center">
         <ImageSlider 
           images={[
             '/images/destinations/osh-fergana-valley/slide-1.jpg',
@@ -37,7 +37,7 @@ function OshFerganaValleyContent() {
             '/images/destinations/osh-fergana-valley/slide-4.jpg',
             '/images/destinations/osh-fergana-valley/slide-5.jpg',
           ]}
-          autoHeight={true}
+          //autoHeight={true}
         />
         {/* Overlay Text */}
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">

@@ -11,7 +11,7 @@ export default function BishkekPage() {
     <main className="min-h-screen bg-white">
       
       {/* Hero Section with Slider */}
-      <section className="relative">
+      <section className="relative h-[100vh] max-h-[600px] flex items-center justify center">
         <ImageSlider 
           images={[
             '/images/destinations/bishkek/slide-1.jpg',
@@ -19,7 +19,7 @@ export default function BishkekPage() {
             '/images/destinations/bishkek/slide-3.jpg',
             '/images/destinations/bishkek/slide-4.jpg',
           ]}
-          autoHeight={true}
+          // autoHeight={true}
         />
         {/* Overlay Text */}
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">

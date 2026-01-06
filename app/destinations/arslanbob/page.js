@@ -12,14 +12,14 @@ export default function ArslanbobPage() {
       
       {/* Hero Section with Slider */}
       {/* Hero Section with Slider */}
-        <section className="relative">
+        <section className="relative h-[100vh] max-h-[600px] flex items-center justify center">
         <ImageSlider 
             images={[
             '/images/destinations/arslanbob/slide-1.jpg',
             '/images/destinations/arslanbob/slide-2.jpg',
             '/images/destinations/arslanbob/slide-3.jpg',
             ]}
-            autoHeight={true}
+            // autoHeight={true}
         />
         {/* Overlay Text */}
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
