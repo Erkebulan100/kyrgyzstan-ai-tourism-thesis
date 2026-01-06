@@ -71,7 +71,7 @@ export default function DestinationsPage() {
             { name: "Bishkek", subtitle: "Capital City", href: "/destinations/bishkek", className: "left-[36%] top-[1%] md:left-[30%] md:top-[5%]" },
             { name: "Arslanbob", subtitle: "Walnut Forest", href: "/destinations/arslanbob", className: "right-[2%] top-[15%] md:right-[25%] md:top-[8%]" },
             { name: "Naryn", subtitle: "Mountain Heart", href: "/destinations/naryn", className: "right-[2%] top-[31%] md:right-[5%] md:top-[20%]" },
-            { name: "Song Kul", subtitle: "Alpine Lake", href: "/destinations/song-kul", className: "left-[1%] top-[25%] md:left-[5%] md:top-[39%]" },
+            { name: "Jalal-Abad", subtitle: "Alpine Lake", href: "/destinations/jalal-abad", className: "left-[1%] top-[25%] md:left-[5%] md:top-[39%]" },
             { name: "Chong-Kemin", subtitle: "Green Valley", href: "/destinations/chong-kemin", className: "right-[1%] top-[49%] md:right-[8%] md:top-[49%]" },
             { name: "Suusamyr", subtitle: "High Pastures", href: "/destinations/suusamyr", className: "left-[1%] bottom-[43%] md:left-[15%] md:bottom-[11%]" },
             { name: "At-Bashy", subtitle: "Wild Valley", href: "/destinations/at-bashy", className: "left-[15%] bottom-[27%] md:left-[37%] md:bottom-[3%]" },

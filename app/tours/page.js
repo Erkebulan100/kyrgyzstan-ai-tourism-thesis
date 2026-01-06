@@ -20,9 +20,9 @@ export default function ToursPage() {
       </section>
 
       {/* Introduction Section - TEXT FROM OLD WEBSITE */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-4xl mx-auto">
-          <div className="text-gray-600 space-y-4 text-lg leading-relaxed">
+          <div className="text-white space-y-4 text-lg leading-relaxed">
             <p>
               Tien Shan Journeys designs itineraries which would best satisfy your interests and passion. 
               Our suggested itineraries are created to provide you as many activities as possible so that 
