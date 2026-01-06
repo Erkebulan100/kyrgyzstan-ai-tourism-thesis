@@ -1,12 +1,12 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import ImageSlider from '@/components/ImageSlider';
 import { Mountain, Landmark, Store, Building2, Columns, Tent, MapPin, Calendar } from 'lucide-react';
 // import { Mountain, Landmark, Store, Building2, Monument, Tent, MapPin, Calendar } from 'lucide-react';
 
-export default function OshFerganaValleyPage() {
+function OshFerganaValleyContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [activeTab, setActiveTab] = useState('things-to-do');
@@ -306,5 +306,12 @@ export default function OshFerganaValleyPage() {
       </section>
 
     </main>
+  );
+}
+export default function OshFerganaValleyPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <OshFerganaValleyContent />
+    </Suspense>
   );
 }
