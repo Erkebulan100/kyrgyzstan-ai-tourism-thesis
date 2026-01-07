@@ -312,7 +312,7 @@ export default function ToursPage() {
         </div>
       </section>  
       {/* Tours Grid */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
             Our Featured Tours
@@ -321,7 +321,7 @@ export default function ToursPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Tour 1: Classic Kyrgyzstan */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-56 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+              <div className="h-56 bg-gradient-to-br from-green-300 to-green-700 flex items-center justify-center">
                 <Mountain className="w-20 h-20 text-white" />
               </div>
               <div className="p-6">
@@ -387,7 +387,7 @@ export default function ToursPage() {
 
             {/* Tour 3: Nomads of Tien Shan */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-56 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+              <div className="h-56 bg-gradient-to-br from-blue-300 to-blue-700 flex items-center justify-center">
                 <Users className="w-20 h-20 text-white" />
               </div>
               <div className="p-6">
@@ -497,7 +497,7 @@ export default function ToursPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-green-600">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Start Your Adventure?
