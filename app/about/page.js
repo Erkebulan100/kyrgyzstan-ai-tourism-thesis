@@ -11,7 +11,13 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-blue-900 to-green-900 flex items-center justify-center">
+      <section className="relative h-96 flex items-end justify-center pb-[23%]"
+       style={{
+          backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
+        //   if you want somewhat purplish picture add linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), in front of url('/images/tours/treasures-tien-shan-hero.jpg') 
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 99%'
+        }}>
         <div className="text-center text-white px-4">
           <h1 className="text-5xl font-bold mb-4">About Tienshan Journeys</h1>
           <p className="text-xl text-blue-100">Bespoke travel in Kyrgyzstan and Central Asia</p>
