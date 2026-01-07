@@ -91,9 +91,19 @@ function Header() {
       {/* Social Media & Language Bar - Constrained Container */}
       <div className="border-b border-gray-800 py-2">
         <div className="w-full px-4 md:px-10">
-          <div className="flex justify-between items-center">
+          
+          <div className="flex justify-end items-center">
+            <div className="flex items-center gap-2 text-sm">
+              <a href="#" className="cursor-pointer hover:text-blue-400 transition-colors flex items-center gap-1">
+                <span>English</span>
+              </a>
+              <span className="text-gray-600">|</span>
+              <a href="#" className="cursor-pointer hover:text-blue-400 transition-colors flex items-center gap-1">
+                <span>Русский</span>
+              </a>
+            </div>
             {/* Social Media Icons - Left Side */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ml-10">
               {/* Facebook */}
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
                  className="hover:opacity-80 transition-opacity">
@@ -119,15 +129,7 @@ function Header() {
             </div>
             
             {/* Language Selector - Right Side */}
-            <div className="flex items-center gap-2 text-sm">
-  <a href="#" className="cursor-pointer hover:text-blue-400 transition-colors flex items-center gap-1">
-    <span>English</span>
-  </a>
-  <span className="text-gray-600">|</span>
-  <a href="#" className="cursor-pointer hover:text-blue-400 transition-colors flex items-center gap-1">
-    <span>Русский</span>
-  </a>
-</div>
+            
           </div>
         </div>
       </div>
