@@ -46,7 +46,7 @@ export default function DestinationsPage() {
       
 
       {/* Destinations Constellation Section */}
-      <section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-900 to-green-900 min-h-[900px]">
+      <section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-500 to-green-500 min-h-[900px]">
         <div className="relative w-full max-w-[1400px] mx-auto h-[750px]">
 
           {/* Central Text */}
@@ -54,7 +54,7 @@ export default function DestinationsPage() {
             <img 
               src="/images/mountain.svg" 
               alt="Mountain" 
-              className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 object-contain opacity-80"
+              className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 object-contain opacity-90"
               style={{ filter: 'invert(1) brightness(1)' }}
             />
             <h2 className="text-2xl md:text-3xl font-serif text-white leading-tight">
@@ -87,27 +87,27 @@ export default function DestinationsPage() {
 
           {/* Decorative Icons */}
           <div className="absolute top-[5%] right-[15%] md:top-[8%] md:right-[43%] z-10">
-            <img src="/images/eagle.svg" alt="Eagle" className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+            <img src="/images/eagle.svg" alt="Eagle" className="w-14 h-14 md:w-18 md:h-18 object-contain opacity-90" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           
           <div className="absolute top-[35%] left-[25%] md:top-[39%] md:left-[25%] z-10">
-            <img src="/images/horse.svg" alt="Horse" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+            <img src="/images/horse.svg" alt="Horse" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-90" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
           {/* Camel 1 - the big one - Bottom right area */}
           <div className="absolute bottom-[67%] right-[29%] md:bottom-[49%] md:right-[31%] z-10">
             <img 
               src="/images/camel.svg" 
               alt="Camel" 
-              className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70"
+              className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-90"
               style={{ filter: 'invert(1) brightness(0.8)' }}
             />
           </div>
           <div className="absolute bottom-[59%] right-[27%] md:bottom-[31%] md:right-[27%] z-10">
-            <img src="/images/yurt.svg" alt="Yurt" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+            <img src="/images/yurt.svg" alt="Yurt" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-100" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
           <div className="absolute bottom-[41%] left-[45%] md:bottom-[25%] md:left-[35%] z-10">
-            <img src="/images/snow-leopard.svg" alt="Snow Leopard" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+            <img src="/images/snow-leopard.svg" alt="Snow Leopard" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-100" style={{ filter: 'invert(1) brightness(0.8)' }} />
           </div>
 
           {/* Decorative Dots */}
@@ -182,10 +182,10 @@ export default function DestinationsPage() {
       </section>
 
       {/* Info Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Discover Kyrgyzstan</h2>
-          <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          <h2 className="text-3xl font-bold text-white mb-6">Discover Kyrgyzstan</h2>
+          <p className="text-lg text-white leading-relaxed mb-8">
             Kyrgyzstan is a beautiful country with many sunny days and exceptionally friendly people. Kyrgyzstan is a small Central Asian state with population close to 6 million people and growing market economy. Kyrgyzstan is a mountainous country; 94% of its area is covered by mountain ranges of Tien Shan and Pamir. Rich highland pastures allowed Kyrgyz people to keep nomadic life for centuries; they became settled only in the last century. However, in Kyrgyzstan, some people still lead nomadic way of life in the summer due to the needs of animal husbandry. Their seasonal nomadic lifestyle is very similar to what was several centuries ago.
 
             Kyrgyz lands witnessed many historical events. The most famous invaders as Alexander the Great, Genghis Khan, and Tamerlane marched through Kyrgyzstan. Kyrgyzstan had an important segment of the Silk Road which connected Asia with Europe. In the XIX century when Russian and British Empires had fought for the Central Asia Kyrgyzstan joined Russia. The XX century was a turning point in Kyrgyz history as the country became part of the Soviet Union. Today Kyrgyzstan is an independent and democratic country.

@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-end justify-center pb-[23%]"
+      <section className="relative h-96 flex items-end justify-center pb-[45%] md:pb-[23%]"
        style={{
           backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
         //   if you want somewhat purplish picture add linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), in front of url('/images/tours/treasures-tien-shan-hero.jpg') 
@@ -25,10 +25,10 @@ export default function AboutPage() {
       </section>
 
       {/* Company Introduction - Original Text */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Welcome to Tienshan Journeys</h2>
-          <div className="text-gray-600 space-y-4 text-lg leading-relaxed">
+          <h2 className="text-3xl font-bold text-white mb-6">Welcome to Tienshan Journeys</h2>
+          <div className="text-white space-y-4 text-lg leading-relaxed">
             <p>
               Tien Shan Journeys offers you the opportunity to discover the amazing beauty of Kyrgyzstan. 
               We provide full-service travel in our country. Though we are a new company, we have sufficient 
@@ -43,9 +43,9 @@ export default function AboutPage() {
       </section>
 
       {/* 4 Value Propositions */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">
             What Makes Us Different
           </h2>
 
@@ -129,9 +129,9 @@ export default function AboutPage() {
       </section>
 
       {/* Founders Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">Our Founders</h2>
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">Our Founders</h2>
           
           <div className="grid md:grid-cols-2 gap-12">
             {/* Founder 1 - Adilet */}
@@ -180,7 +180,7 @@ export default function AboutPage() {
       </section>
 
       {/* Links to Sub-pages */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-green-600">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Learn More About Us</h2>
           
@@ -210,21 +210,21 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+          <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Explore Kyrgyzstan with Us?
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-white mb-8">
             Let us plan your perfect Central Asian adventure together
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/tours" 
-                  className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all">
+                  className="bg-white text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 hover:text-white transition-all">
               View Our Tours
             </Link>
             <Link href="/contact" 
-                  className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-600 hover:text-white transition-all">
+                  className="bg-white text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 hover:text-white transition-all">
               Contact Us
             </Link>
           </div>

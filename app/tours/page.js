@@ -10,7 +10,7 @@ export default function ToursPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-end justify-center pb-[23%]"
+      <section className="relative h-96 flex items-end justify-center pb-[45%] md:pb-[23%]"
       style={{
           backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
         //   if you want somewhat purplish picture add linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), in front of url('/images/tours/treasures-tien-shan-hero.jpg') 
@@ -26,7 +26,7 @@ export default function ToursPage() {
       </section>
 
       {/* Introduction Section - TEXT FROM OLD WEBSITE */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-700 to-green-700">
         <div className="max-w-4xl mx-auto">
           <div className="text-white space-y-4 text-lg leading-relaxed">
             <p>
@@ -54,7 +54,7 @@ export default function ToursPage() {
 
       {/* Tours Section */}
       <section 
-        className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-500 to-green-500 min-h-[900px]"
+        className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-700 to-green-700 min-h-[630px] md:min-h-[750px] max-h-[650px] md:max-h-[800px]"
         
       >
         <div className="relative w-full max-w-[1400px] mx-auto h-[700px]">
@@ -312,16 +312,16 @@ export default function ToursPage() {
         </div>
       </section>  
       {/* Tours Grid */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-700 to-green-700">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">
             Our Featured Tours
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Tour 1: Classic Kyrgyzstan */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-56 bg-gradient-to-br from-green-300 to-green-700 flex items-center justify-center">
+              <div className="h-56 bg-gradient-to-l from-green-100 to-green-700 flex items-center justify-center">
                 <Mountain className="w-20 h-20 text-white" />
               </div>
               <div className="p-6">
@@ -387,7 +387,7 @@ export default function ToursPage() {
 
             {/* Tour 3: Nomads of Tien Shan */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-56 bg-gradient-to-br from-blue-300 to-blue-700 flex items-center justify-center">
+              <div className="h-56 bg-gradient-to-r from-blue-100 to-blue-700 flex items-center justify-center">
                 <Users className="w-20 h-20 text-white" />
               </div>
               <div className="p-6">
@@ -418,7 +418,7 @@ export default function ToursPage() {
 
             {/* Tour 4: Treasures of Tien Shan */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-56 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+              <div className="h-56 bg-gradient-to-br from-purple-300 to-purple-600 flex items-center justify-center">
                 <Star className="w-20 h-20 text-white" />
               </div>
               <div className="p-6">
@@ -449,7 +449,7 @@ export default function ToursPage() {
 
             {/* Tour 5: Tien Shan meets Pamir */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-56 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+              <div className="h-56 bg-gradient-to-br from-red-300 to-red-600 flex items-center justify-center">
                 <Mountain className="w-20 h-20 text-white" />
               </div>
               <div className="p-6">
@@ -497,12 +497,12 @@ export default function ToursPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-700 to-green-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Start Your Adventure?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-white mb-8">
             Let us help you plan the perfect journey through Central Asia
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

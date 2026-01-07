@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-end justify-center pb-[23%]"
+      <section className="relative h-96 flex items-end justify-center pb-[45%] md:pb-[23%]"
         style={{
           backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
         //   if you want somewhat purplish picture add linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), in front of url('/images/tours/treasures-tien-shan-hero.jpg') 
@@ -25,7 +25,7 @@ export default function ContactPage() {
         </div>
       </section>
       {/* Contact Cards - Constellation Style */}
-<section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-500 to-green-500 min-h-[700px]">
+<section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-500 to-green-500 min-h-[300px] max-h-[500px] md:max-h-[500px]">
   <div className="relative w-full max-w-[1400px] mx-auto h-[550px]">
     
     {/* Email Circle */}
