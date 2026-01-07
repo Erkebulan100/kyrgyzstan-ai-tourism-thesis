@@ -24,7 +24,7 @@ export default function Home() {
   <img 
     src="/images/logo/logo_without_slogan.png" 
     alt="Tien Shan Journeys" 
-    className="w-32 md:w-56 h-auto opacity-90"
+    className="w-32 md:w-56 h-auto opacity-90 brightness-250"
   />
 </div>
   {/* Content - Tagline Only */}

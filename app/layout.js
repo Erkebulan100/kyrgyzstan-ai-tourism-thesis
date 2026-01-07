@@ -87,7 +87,7 @@ export const metadata = {
 // Header Component - Black background, white text (preserved from old site)
 function Header() {
   return (
-    <header className="bg-black text-white w-full">
+    <header className="bg-black text-white w-full fixed top-0 left-0 z-50">
       {/* Social Media & Language Bar - Constrained Container */}
       <div className="border-b border-gray-800 py-2">
         <div className="w-full px-4 md:px-10">
