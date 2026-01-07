@@ -29,7 +29,7 @@ export default function ContactPage() {
   <div className="relative w-full max-w-[1400px] mx-auto h-[550px]">
     
     {/* Email Circle */}
-    <div className="absolute left-[10%] top-[15%] md:left-[15%] md:top-[20%] z-30">
+    <div className="absolute left-[1%] top-[25%] md:left-[15%] md:top-[20%] z-30">
       <div className="bg-white/95 rounded-full w-36 h-36 md:w-48 md:h-48 flex flex-col items-center justify-center shadow-2xl border border-white/10 p-4 hover:scale-105 transition-transform">
         <div className="bg-blue-100 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-3">
           <Mail className="w-6 h-6 md:w-8 md:h-8 text-blue-600" />
@@ -67,7 +67,7 @@ export default function ContactPage() {
       href="https://www.google.com/maps/search/?api=1&query=7+Ak-Cholmok+St+Bishkek+Kyrgyzstan"
       target="_blank"
       rel="noopener noreferrer"
-      className="absolute right-[10%] top-[15%] md:right-[15%] md:top-[20%] z-30"
+      className="absolute right-[1%] top-[25%] md:right-[15%] md:top-[20%] z-30"
     >
       <div className="bg-white/95 rounded-full w-36 h-36 md:w-48 md:h-48 flex flex-col items-center justify-center shadow-2xl border border-white/10 p-4 hover:scale-105 transition-transform">
         <div className="bg-purple-100 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-3">
@@ -84,32 +84,32 @@ export default function ContactPage() {
     </a>
 
     {/* Decorative Animals */}
-    <div className="absolute top-[40%] left-[20%] md:top-[15%] md:left-[33%] z-10">
-      <img src="/images/horse.svg" alt="Horse" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+    <div className="absolute top-[15%] left-[20%] md:top-[15%] md:left-[33%] z-10">
+      <img src="/images/horse.svg" alt="Horse" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-90" style={{ filter: 'invert(1) brightness(0.8)' }} />
     </div>
     
-    <div className="absolute bottom-[35%] right-[20%] md:bottom-[85%] md:right-[33%] z-10">
-      <img src="/images/eagle.svg" alt="Eagle" className="w-12 h-12 md:w-14 md:h-14 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+    <div className="absolute bottom-[85%] right-[20%] md:bottom-[85%] md:right-[33%] z-10">
+      <img src="/images/eagle.svg" alt="Eagle" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-90" style={{ filter: 'invert(1) brightness(0.8)' }} />
     </div>
 
-    <div className="absolute bottom-[25%] left-[35%] md:bottom-[91%] md:left-[45%] z-10">
-      <img src="/images/yurt.svg" alt="Yurt" className="w-8 h-8 md:w-10 md:h-10 object-contain opacity-70" style={{ filter: 'invert(1) brightness(0.8)' }} />
+    <div className="absolute bottom-[95%] left-[45%] md:bottom-[91%] md:left-[47%] z-10">
+      <img src="/images/yurt.svg" alt="Yurt" className="w-10 h-10 md:w-12 md:h-12 object-contain opacity-100" style={{ filter: 'invert(1) brightness(0.8)' }} />
     </div>
 
     {/* Decorative Dots - connecting circles */}
     {/* Email to Phone */}
-    <div className="absolute top-[22%] left-[25%] md:top-[28%] md:left-[30%] w-1.5 h-1.5 rounded-full bg-white/30" />
-    <div className="absolute top-[21%] left-[28%] md:top-[26%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
-    <div className="absolute top-[19%] left-[31%] md:top-[24%] md:left-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
-    <div className="absolute top-[17%] left-[34%] md:top-[22%] md:left-[39%] w-1.5 h-1.5 rounded-full bg-white/30" />
-    <div className="absolute top-[15%] left-[37%] md:top-[20%] md:left-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[25%] left-[25%] md:top-[33%] md:left-[30%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[23%] left-[28%] md:top-[31%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[21%] left-[31%] md:top-[29%] md:left-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[19%] left-[34%] md:top-[27%] md:left-[39%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[17%] left-[37%] md:top-[25%] md:left-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
     {/* Phone to Office */}
-    <div className="absolute top-[15%] right-[37%] md:top-[20%] md:right-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
-    <div className="absolute top-[17%] right-[34%] md:top-[22%] md:right-[39%] w-1.5 h-1.5 rounded-full bg-white/30" />
-    <div className="absolute top-[19%] right-[31%] md:top-[24%] md:right-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
-    <div className="absolute top-[21%] right-[28%] md:top-[26%] md:right-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
-    <div className="absolute top-[22%] right-[25%] md:top-[28%] md:right-[30%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[17%] right-[37%] md:top-[25%] md:right-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[19%] right-[34%] md:top-[27%] md:right-[39%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[21%] right-[31%] md:top-[29%] md:right-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[23%] right-[28%] md:top-[31%] md:right-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
+    <div className="absolute top-[25%] right-[25%] md:top-[33%] md:right-[30%] w-1.5 h-1.5 rounded-full bg-white/30" />
   </div>
 </section>
       {/* Contact Cards */}
