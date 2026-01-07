@@ -218,13 +218,13 @@ export default function AboutPage() {
           <p className="text-xl text-white mb-8">
             Let us plan your perfect Central Asian adventure together
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <Link href="/tours" 
-                  className="bg-white text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 hover:text-white transition-all">
+                  className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-100 transition-all">
               View Our Tours
             </Link>
             <Link href="/contact" 
-                  className="bg-white text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 hover:text-white transition-all">
+                  className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all">
               Contact Us
             </Link>
           </div>
