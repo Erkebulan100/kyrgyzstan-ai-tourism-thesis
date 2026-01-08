@@ -128,56 +128,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Founders Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Our Founders</h2>
-          
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Founder 1 - Adilet */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="h-80 relative">
-                <Image 
-                  src="/images/team/adilet-amalkanov.jpg"
-                  alt="Adilet Amalkanov - Co-Founder of Tienshan Journeys"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Adilet Amalkanov</h3>
-                <p className="text-blue-600 font-semibold mb-4">Co-Founder & COO</p>
-                <p className="text-gray-600 leading-relaxed">
-                  Adilet Amalkanov is a young entrepreneur. Shortly after receiving his diploma, he decided 
-                  to found a company with Erkebulan. Having traveled extensively to the United States and 
-                  earned a degree in Economics from American University, Adilet knows how to work with 
-                  Western clients. Adilet loves history and geography, which is why he finds tourism very 
-                  interesting and fulfilling for his passions.
-                </p>
-              </div>
-            </div>
+      
 
-            {/* Founder 2 - Erkebulan */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="h-80 bg-gradient-to-br from-blue-300 to-green-200">
-                <div className="w-full h-full flex items-center justify-center text-gray-400">
-                  [Erkebulan Photo]
-                </div>
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Erkebulan Duishenaliev</h3>
-                <p className="text-green-600 font-semibold mb-4">Co-Founder & COO</p>
-                <p className="text-gray-600 leading-relaxed">
-                  Erkebulan studied tourism and hotel management at Kyrgyz-Turkish Manas University in Bishkek. 
-                  From 2013 to 2014, he studied International Tourism and Innovation at Telemark University 
-                  in Norway. Erkebulan has extensive experience in tourism, having worked in various tourism 
-                  companies.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            
 
       {/* Links to Sub-pages */}
       <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
