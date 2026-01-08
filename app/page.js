@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* Tours Section */}
       <section 
-        className="relative pt-7 pb-7 overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 min-h-[630px] md:min-h-[730px] max-h-[630px] md:max-h-[730px]"
+        className="relative pt-7 pb-7 overflow-hidden bg-gradient-to-r from-blue-950 to-green-950 min-h-[630px] md:min-h-[730px] max-h-[630px] md:max-h-[730px]"
         
       >
         <div className="relative w-full max-w-[1400px] mx-auto h-[700px]">
