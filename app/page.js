@@ -7,34 +7,31 @@ export default function Home() {
       
       {/* Hero Section */}
 {/* Hero Section */}
-<section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 90px)', marginTop: '0' }}>
-  {/* Background Image */}
-  <div 
-    className="absolute inset-0 bg-cover bg-no-repeat bg-bottom"
-    style={{ 
-      backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
-      // backgroundPosition: 'center bottom'
-    }}
-  ></div>
-  
-  {/* Dark Overlay */}
-  {/* <div className="absolute inset-0 bg-black opacity-30"></div> */}
+<section 
+  className="relative h-96 flex items-end justify-center pb-[45%] md:pb-[23%]"
+  style={{
+    backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center 99%'
+  }}
+>
   {/* Logo - Top Left */}
-<div className="absolute top-2 left-4 md:top-5 md:left-8 z-10">
-  <img 
-    src="/images/logo/logo_without_slogan.png" 
-    alt="Tien Shan Journeys" 
-    className="w-32 md:w-56 h-auto opacity-90 brightness-250"
-  />
-</div>
-  {/* Content - Tagline Only */}
-<div className="absolute top-16 right-4 md:top-8 md:right-8 z-10 text-white">
-  <div className="px-3 py-1 md:px-3 md:py-1 rounded text-center" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
-    <p className="text-xs md:text-base font-light tracking-wider uppercase">
-      Bespoke Travel in Kyrgyzstan and Central Asia
-    </p>
+  <div className="absolute top-2 left-4 md:top-5 md:left-8 z-10">
+    <img 
+      src="/images/logo/logo_without_slogan.png" 
+      alt="Tien Shan Journeys" 
+      className="w-32 md:w-56 h-auto opacity-90 brightness-250"
+    />
   </div>
-</div>
+  
+  {/* Content - Tagline Only */}
+  <div className="absolute top-16 right-4 md:top-8 md:right-8 z-10 text-white">
+    <div className="px-3 py-1 md:px-3 md:py-1 rounded text-center" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
+      <p className="text-xs md:text-base font-light tracking-wider uppercase">
+        Bespoke Travel in Kyrgyzstan and Central Asia
+      </p>
+    </div>
+  </div>
 </section>
       
 
