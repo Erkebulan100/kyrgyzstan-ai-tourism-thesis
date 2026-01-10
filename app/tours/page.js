@@ -26,7 +26,7 @@ export default function ToursPage() {
       </section>
 
       {/* Introduction Section - TEXT FROM OLD WEBSITE */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-700 to-green-700">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
         <div className="max-w-4xl mx-auto">
           <div className="text-white space-y-4 text-lg leading-relaxed">
             <p>
@@ -54,7 +54,7 @@ export default function ToursPage() {
 
       {/* Tours Section */}
       <section 
-        className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-700 to-green-700 min-h-[630px] md:min-h-[750px] max-h-[650px] md:max-h-[800px]"
+        className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-900 to-green-900 min-h-[630px] md:min-h-[750px] max-h-[650px] md:max-h-[800px]"
         
       >
         <div className="relative w-full max-w-[1400px] mx-auto h-[700px]">
@@ -312,7 +312,7 @@ export default function ToursPage() {
         </div>
       </section>  
       {/* Tours Grid */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-700 to-green-700">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-800 to-green-800">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">
             Our Featured Tours

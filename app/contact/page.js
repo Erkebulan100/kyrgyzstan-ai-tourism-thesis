@@ -25,7 +25,7 @@ export default function ContactPage() {
         </div>
       </section>
       {/* Contact Cards - Constellation Style */}
-<section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-500 to-green-500 min-h-[300px] max-h-[500px] md:max-h-[500px]">
+<section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-900 to-green-900 min-h-[300px] max-h-[450px] md:max-h-[500px]">
   <div className="relative w-full max-w-[1400px] mx-auto h-[550px]">
     
     {/* Email Circle */}
@@ -113,7 +113,7 @@ export default function ContactPage() {
   </div>
 </section>
       {/* Contact Cards */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Email Card */}
@@ -172,7 +172,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Send Us a Message</h2>
@@ -266,7 +266,7 @@ export default function ContactPage() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-300 flex items-center justify-center"
+              className="w-full bg-gradient-to-r from-blue-900 to-green-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-950 hover:to-green-950 transition-all duration-300 flex items-center justify-center"
             >
               <Send className="w-5 h-5 mr-2" />
               Send Message
@@ -280,7 +280,7 @@ export default function ContactPage() {
       </section>
 
       {/* Google Map */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Find Our Office</h2>
           <div className="rounded-xl overflow-hidden shadow-lg" style={{ height: '450px' }}>
@@ -298,7 +298,7 @@ export default function ContactPage() {
       </section>
 
       {/* Why Contact Us */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">
             Why Contact Tienshan Journeys?
@@ -339,7 +339,7 @@ export default function ContactPage() {
       </section>
 
       {/* Alternative Contact Methods */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Prefer Another Way to Connect?</h2>
           

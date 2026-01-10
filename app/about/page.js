@@ -25,7 +25,7 @@ export default function AboutPage() {
       </section>
 
       {/* Company Introduction - Original Text */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-6">Welcome to Tienshan Journeys</h2>
           <div className="text-white space-y-4 text-lg leading-relaxed">
@@ -43,7 +43,7 @@ export default function AboutPage() {
       </section>
 
       {/* 4 Value Propositions */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">
             What Makes Us Different
@@ -133,7 +133,7 @@ export default function AboutPage() {
             
 
       {/* Links to Sub-pages */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-800 to-green-800">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Learn More About Us</h2>
           
@@ -163,7 +163,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-700 to-green-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Explore Kyrgyzstan with Us?
@@ -173,7 +173,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <Link href="/tours" 
-                  className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-100 transition-all">
+                  className="bg-white text-blue-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-100 transition-all">
               View Our Tours
             </Link>
             <Link href="/contact" 
