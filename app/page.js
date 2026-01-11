@@ -5,28 +5,27 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       
-      {/* Hero Section */}
-{/* Hero Section */}
-<section 
-  className="relative h-96 flex items-end justify-center pb-[45%] md:pb-[23%]"
+      <section 
+  className="relative min-h-screen flex items-end justify-center pb-[20%] md:pb-[15%]"
   style={{
     backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
     backgroundSize: 'cover',
-    backgroundPosition: 'center 99%'
+    backgroundPosition: 'center bottom'
   }}
 >
   {/* Logo - Top Left */}
-  <div className="absolute top-2 left-4 md:top-5 md:left-8 z-10">
+  <div className="absolute top-20 left-4 md:top-24 md:left-8 z-10">
     <img 
       src="/images/logo/logo_without_slogan.png" 
       alt="Tien Shan Journeys" 
-      className="w-32 md:w-56 h-auto opacity-90 brightness-250"
+      className="w-32 md:w-56 h-auto"
+      style={{ filter: 'brightness(2.5)' }}
     />
   </div>
   
-  {/* Content - Tagline Only */}
-  <div className="absolute top-16 right-4 md:top-8 md:right-8 z-10 text-white">
-    <div className="px-3 py-1 md:px-3 md:py-1 rounded text-center" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
+  {/* Tagline - Top Right */}
+  <div className="absolute top-20 right-4 md:top-24 md:right-8 z-10 text-white">
+    <div className="px-3 py-1 rounded text-center" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
       <p className="text-xs md:text-base font-light tracking-wider uppercase">
         Bespoke Travel in Kyrgyzstan and Central Asia
       </p>

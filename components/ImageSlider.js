@@ -74,7 +74,7 @@ export default function ImageSlider({ images, interval = 7000, autoHeight = fals
           <img 
           src={img} 
           alt={`Slide ${idx + 1}`} 
-          className={`w-full h-full object-cover object-bottom ${
+          className={`w-full h-full object-cover object-center ${
             idx === 6 ? 'object-right md:object-center' : ''
           }`}
         />
