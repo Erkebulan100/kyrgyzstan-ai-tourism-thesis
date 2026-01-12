@@ -293,6 +293,363 @@ export default function Home() {
           
         </div>
       </section>
+      {/* Quick Links Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">Explore</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Itineraries Card */}
+            <Link href="/tours" className="group">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
+                <div 
+                  className="h-48 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                  style={{ backgroundImage: "url('/images/home/itineraries-placeholder.jpg')" }}
+                />
+                <div className="p-5">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                    Itineraries
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Expertly crafted tours through Kyrgyzstan and Central Asia.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Destinations Card */}
+            <Link href="/destinations" className="group">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
+                <div 
+                  className="h-48 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                  style={{ backgroundImage: "url('/images/home/destinations-placeholder.jpg')" }}
+                />
+                <div className="p-5">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                    Destinations
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Discover the wonders of Kyrgyzstan's nine regions.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* About Us Card */}
+            <Link href="/about" className="group">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
+                <div 
+                  className="h-48 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                  style={{ backgroundImage: "url('/images/home/about-placeholder.jpg')" }}
+                />
+                <div className="p-5">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                    About Us
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Meet the team behind Tien Shan Journeys.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Contact Us Card */}
+            <Link href="/contact" className="group">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
+                <div 
+                  className="h-48 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                  style={{ backgroundImage: "url('/images/home/contact-placeholder.jpg')" }}
+                />
+                <div className="p-5">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                    Contact Us
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Start planning your unforgettable journey today.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+      {/* Reviews Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">What Our Travelers Say</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Review 1 */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/images/home/reviews/reviewer-1-placeholder.jpg" 
+                  alt="Reviewer" 
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-bold text-gray-800">[Reviewer Name]</h4>
+                  <p className="text-gray-500 text-sm">[Country]</p>
+                </div>
+              </div>
+              <p className="text-gray-600 italic">
+                "[Placeholder for review text. The owner will provide actual testimonials from past travelers.]"
+              </p>
+              <div className="mt-4 text-yellow-500">★★★★★</div>
+            </div>
+
+            {/* Review 2 */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/images/home/reviews/reviewer-2-placeholder.jpg" 
+                  alt="Reviewer" 
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-bold text-gray-800">[Reviewer Name]</h4>
+                  <p className="text-gray-500 text-sm">[Country]</p>
+                </div>
+              </div>
+              <p className="text-gray-600 italic">
+                "[Placeholder for review text. The owner will provide actual testimonials from past travelers.]"
+              </p>
+              <div className="mt-4 text-yellow-500">★★★★★</div>
+            </div>
+
+            {/* Review 3 */}
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/images/home/reviews/reviewer-3-placeholder.jpg" 
+                  alt="Reviewer" 
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-bold text-gray-800">[Reviewer Name]</h4>
+                  <p className="text-gray-500 text-sm">[Country]</p>
+                </div>
+              </div>
+              <p className="text-gray-600 italic">
+                "[Placeholder for review text. The owner will provide actual testimonials from past travelers.]"
+              </p>
+              <div className="mt-4 text-yellow-500">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Best Souvenirs Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Best Souvenirs to Buy</h2>
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+            [Placeholder: Owner will provide intro text about Kyrgyz crafts and souvenirs]
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { name: '[Souvenir 1]', image: '/images/home/souvenirs/souvenir-1-placeholder.jpg', description: '[Description placeholder]' },
+              { name: '[Souvenir 2]', image: '/images/home/souvenirs/souvenir-2-placeholder.jpg', description: '[Description placeholder]' },
+              { name: '[Souvenir 3]', image: '/images/home/souvenirs/souvenir-3-placeholder.jpg', description: '[Description placeholder]' },
+              { name: '[Souvenir 4]', image: '/images/home/souvenirs/souvenir-4-placeholder.jpg', description: '[Description placeholder]' },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
+                <img 
+                  src={item.image} 
+                  alt={item.name} 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="font-bold text-gray-800 mb-2">{item.name}</h3>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Top 10 Places Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-4 text-center">Top 10 Places to See</h2>
+          <p className="text-blue-100 text-center mb-10 max-w-2xl mx-auto">
+            [Placeholder: Owner will provide intro text about must-visit places in Kyrgyzstan]
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { rank: 1, name: '[Place Name]', image: '/images/home/top10/place-1-placeholder.jpg', description: '[Description placeholder]' },
+              { rank: 2, name: '[Place Name]', image: '/images/home/top10/place-2-placeholder.jpg', description: '[Description placeholder]' },
+              { rank: 3, name: '[Place Name]', image: '/images/home/top10/place-3-placeholder.jpg', description: '[Description placeholder]' },
+              { rank: 4, name: '[Place Name]', image: '/images/home/top10/place-4-placeholder.jpg', description: '[Description placeholder]' },
+              { rank: 5, name: '[Place Name]', image: '/images/home/top10/place-5-placeholder.jpg', description: '[Description placeholder]' },
+              { rank: 6, name: '[Place Name]', image: '/images/home/top10/place-6-placeholder.jpg', description: '[Description placeholder]' },
+              { rank: 7, name: '[Place Name]', image: '/images/home/top10/place-7-placeholder.jpg', description: '[Description placeholder]' },
+              { rank: 8, name: '[Place Name]', image: '/images/home/top10/place-8-placeholder.jpg', description: '[Description placeholder]' },
+              { rank: 9, name: '[Place Name]', image: '/images/home/top10/place-9-placeholder.jpg', description: '[Description placeholder]' },
+              { rank: 10, name: '[Place Name]', image: '/images/home/top10/place-10-placeholder.jpg', description: '[Description placeholder]' },
+            ].map((place, idx) => (
+              <div key={idx} className="bg-white/10 backdrop-blur rounded-lg overflow-hidden flex hover:bg-white/20 transition-colors">
+                <div className="w-32 h-32 flex-shrink-0">
+                  <img 
+                    src={place.image} 
+                    alt={place.name} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-4 flex-1">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="bg-white text-blue-900 font-bold rounded-full w-8 h-8 flex items-center justify-center text-sm">
+                      {place.rank}
+                    </span>
+                    <h3 className="font-bold text-white">{place.name}</h3>
+                  </div>
+                  <p className="text-blue-100 text-sm">{place.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Kyrgyz Foods Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Kyrgyz Foods</h2>
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+            [Placeholder: Owner will provide intro text about traditional Kyrgyz cuisine]
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { name: '[Food Name 1]', image: '/images/home/foods/food-1-placeholder.jpg', description: '[Description placeholder - what it is, ingredients, when it\'s served]' },
+              { name: '[Food Name 2]', image: '/images/home/foods/food-2-placeholder.jpg', description: '[Description placeholder]' },
+              { name: '[Food Name 3]', image: '/images/home/foods/food-3-placeholder.jpg', description: '[Description placeholder]' },
+              { name: '[Food Name 4]', image: '/images/home/foods/food-4-placeholder.jpg', description: '[Description placeholder]' },
+              { name: '[Food Name 5]', image: '/images/home/foods/food-5-placeholder.jpg', description: '[Description placeholder]' },
+              { name: '[Food Name 6]', image: '/images/home/foods/food-6-placeholder.jpg', description: '[Description placeholder]' },
+            ].map((food, idx) => (
+              <div key={idx} className="bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
+                <img 
+                  src={food.image} 
+                  alt={food.name} 
+                  className="w-full h-56 object-cover"
+                />
+                <div className="p-5">
+                  <h3 className="font-bold text-gray-800 text-lg mb-2">{food.name}</h3>
+                  <p className="text-gray-600 text-sm">{food.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Best Time to Travel Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Best Time to Travel</h2>
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+            [Placeholder: Owner will provide intro text about seasons and weather in Kyrgyzstan]
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              { 
+                destination: 'Issyk-Kul Lake', 
+                image: '/images/home/best-time/issyk-kul-placeholder.jpg', 
+                bestTime: '[e.g., June - August]', 
+                description: '[Placeholder: Why this is the best time, what to expect]' 
+              },
+              { 
+                destination: 'Son-Kul Lake', 
+                image: '/images/home/best-time/son-kul-placeholder.jpg', 
+                bestTime: '[e.g., June - September]', 
+                description: '[Placeholder]' 
+              },
+              { 
+                destination: 'Arslanbob', 
+                image: '/images/home/best-time/arslanbob-placeholder.jpg', 
+                bestTime: '[e.g., September - October]', 
+                description: '[Placeholder: Walnut harvest season, etc.]' 
+              },
+              { 
+                destination: 'Bishkek', 
+                image: '/images/home/best-time/bishkek-placeholder.jpg', 
+                bestTime: '[e.g., April - October]', 
+                description: '[Placeholder]' 
+              },
+              { 
+                destination: '[Destination 5]', 
+                image: '/images/home/best-time/destination-5-placeholder.jpg', 
+                bestTime: '[Best months]', 
+                description: '[Placeholder]' 
+              },
+              { 
+                destination: '[Destination 6]', 
+                image: '/images/home/best-time/destination-6-placeholder.jpg', 
+                bestTime: '[Best months]', 
+                description: '[Placeholder]' 
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row">
+                <img 
+                  src={item.image} 
+                  alt={item.destination} 
+                  className="w-full md:w-48 h-48 object-cover"
+                />
+                <div className="p-5 flex-1">
+                  <h3 className="font-bold text-gray-800 text-lg mb-1">{item.destination}</h3>
+                  <p className="text-blue-600 font-semibold text-sm mb-2">Best time: {item.bestTime}</p>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Recommended Kyrgyz Books Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Recommended Kyrgyz Books</h2>
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+            [Placeholder: Owner will provide intro text about Kyrgyz literature and recommended reads]
+          </p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {[
+              { title: '[Book Title 1]', author: '[Author]', image: '/images/home/books/book-1-placeholder.jpg' },
+              { title: '[Book Title 2]', author: '[Author]', image: '/images/home/books/book-2-placeholder.jpg' },
+              { title: '[Book Title 3]', author: '[Author]', image: '/images/home/books/book-3-placeholder.jpg' },
+              { title: '[Book Title 4]', author: '[Author]', image: '/images/home/books/book-4-placeholder.jpg' },
+              { title: '[Book Title 5]', author: '[Author]', image: '/images/home/books/book-5-placeholder.jpg' },
+            ].map((book, idx) => (
+              <div key={idx} className="text-center">
+                <img 
+                  src={book.image} 
+                  alt={book.title} 
+                  className="w-full h-64 object-cover rounded-lg shadow-lg mb-3"
+                />
+                <h3 className="font-bold text-gray-800 text-sm mb-1">{book.title}</h3>
+                <p className="text-gray-500 text-xs">{book.author}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Contact CTA Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-700 to-green-700">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-white mb-6">Ready to Start Your Adventure?</h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Let us help you plan the perfect journey through Kyrgyzstan and Central Asia
+          </p>
+          <Link 
+            href="/contact" 
+            className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-all"
+          >
+            Contact Us Today
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }

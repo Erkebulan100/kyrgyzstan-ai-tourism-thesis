@@ -1,5 +1,6 @@
 import { Mountain, Calendar, Users, Star, CheckCircle, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import ImageSlider from '@/components/ImageSlider';
 
 export const metadata = {
   title: "Tours & Itineraries | Tienshan Journeys | Kyrgyzstan Travel Packages",
@@ -10,19 +11,50 @@ export default function ToursPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-end justify-center pb-[45%] md:pb-[23%]"
-      style={{
-          backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
-        //   if you want somewhat purplish picture add linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), in front of url('/images/tours/treasures-tien-shan-hero.jpg') 
-          backgroundSize: 'cover',
-          backgroundPosition: 'center 99%'
-        }}>
-        <div className="text-center text-white px-4">
-          <h1 className="text-5xl font-bold mb-4">Our Tours & Itineraries</h1>
-          <p className="text-xl text-blue-100">
-            Discover Kyrgyzstan and Central Asia with our expertly crafted journeys
-          </p>
-        </div>
+      {/* Hero Section with Slider */}
+      <section className="relative w-full">
+        <ImageSlider 
+          slides={[
+            { 
+              image: '/images/tours/classic-kyrgyzstan/slide-1.jpg', 
+              title: 'Classic Kyrgyzstan', 
+              subtitle: 'The essential Kyrgyzstan experience', 
+              link: '/tours/classic-kyrgyzstan' 
+            },
+            { 
+              image: '/images/tours/golden-circle/slide-1.jpg', 
+              title: 'Golden Circle of Kyrgyzstan', 
+              subtitle: 'Must-see destinations in one journey', 
+              link: '/tours/golden-circle' 
+            },
+            { 
+              image: '/images/tours/nomads-tien-shan/slide-1.jpg', 
+              title: 'Nomads of Tien Shan', 
+              subtitle: 'Live with nomadic families', 
+              link: '/tours/nomads-tien-shan' 
+            },
+            { 
+              image: '/images/tours/treasures-tien-shan/slide-1.jpg', 
+              title: 'Treasures of Tien Shan', 
+              subtitle: 'Hidden gems and mountain landscapes', 
+              link: '/tours/treasures-tien-shan' 
+            },
+            { 
+              image: '/images/tours/tien-shan-meets-pamir/slide-1.jpg', 
+              title: 'Where Tien Shan Meets Pamir', 
+              subtitle: 'Journey between two legendary ranges', 
+              link: '/tours/tien-shan-meets-pamir' 
+            },
+          ]}
+          positions={[
+            'center center',  // Classic Kyrgyzstan
+            'center center',  // Golden Circle
+            'center center',  // Nomads
+            'center center',  // Treasures
+            'center center',  // Tien Shan meets Pamir
+          ]}
+          defaultPosition="center center"
+        />
       </section>
 
       {/* Introduction Section - TEXT FROM OLD WEBSITE */}

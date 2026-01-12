@@ -20,37 +20,78 @@ export default function DestinationsPage() {
   return (
     <main className="min-h-screen bg-white">
       
-      {/* Hero Section with Slider */}
+{/* Hero Section with Slider */}
 <section className="relative w-full">
   <ImageSlider 
-    images={[
-      '/images/destinations/slider/slide-1.jpg',
-      '/images/destinations/slider/slide-2.jpg',
-      '/images/destinations/slider/slide-3.jpg',
-      '/images/destinations/slider/slide-4.jpg',
-      '/images/destinations/slider/slide-5.jpg',
-      '/images/destinations/slider/slide-6.jpg',
-      '/images/destinations/slider/slide-7.jpg',
+    slides={[
+      { 
+        image: '/images/destinations/bishkek/slide-1.jpg', 
+        title: 'Bishkek', 
+        subtitle: 'The Capital City of Kyrgyzstan', 
+        link: '/destinations/bishkek' 
+      },
+      { 
+        image: '/images/destinations/issyk-kul-lake/slide-1.jpg', 
+        title: 'Issyk-Kul Lake', 
+        subtitle: 'The Pearl of Tien Shan', 
+        link: '/destinations/issyk-kul-lake' 
+      },
+      { 
+        image: '/images/destinations/chong-kemin/slide-1.jpg', 
+        title: 'Chong-Kemin', 
+        subtitle: 'The Green Valley of Kyrgyzstan', 
+        link: '/destinations/chong-kemin' 
+      },
+      { 
+        image: '/images/destinations/suusamyr/slide-1.jpg', 
+        title: 'Suusamyr', 
+        subtitle: 'The High Pastures of Northwestern Tien Shan', 
+        link: '/destinations/suusamyr' 
+      },
+      { 
+        image: '/images/destinations/naryn/slide-1.jpg', 
+        title: 'Naryn', 
+        subtitle: 'The Mountain Heart of Kyrgyzstan', 
+        link: '/destinations/naryn' 
+      },
+      { 
+        image: '/images/destinations/at-bashy/slide-1.jpg', 
+        title: 'At-Bashy Valley', 
+        subtitle: 'The Wild Valley Near the Chinese Border', 
+        link: '/destinations/at-bashy' 
+      },
+      { 
+        image: '/images/destinations/jalal-abad/slide-1.jpg', 
+        title: 'Jalal-Abad', 
+        subtitle: 'The Most Beautiful Province of Kyrgyzstan', 
+        link: '/destinations/jalal-abad' 
+      },
+      { 
+        image: '/images/destinations/arslanbob/slide-1.jpg', 
+        title: 'Arslanbob', 
+        subtitle: "The World's Largest Walnut Forest", 
+        link: '/destinations/arslanbob' 
+      },
+      { 
+        image: '/images/destinations/osh-fergana-valley/slide-1.jpg', 
+        title: 'Osh & Fergana Valley', 
+        subtitle: 'The Ancient Silk Road City', 
+        link: '/destinations/osh-fergana-valley' 
+      },
     ]}
     positions={[
-      'center center',  // slide-1
-      'center center',  // slide-2
-      'center center',  // slide-3
-      'center center',  // slide-4
-      'center center',  // slide-5
-      'center center',  // slide-6
-      'center center',  // slide-7
+      'center center',  // Bishkek
+      'center center',  // Issyk-Kul
+      'center center',  // Chong-Kemin
+      'center center',  // Suusamyr
+      'center center',  // Naryn
+      'center center',  // At-Bashy
+      'center center',  // Jalal-Abad
+      'center center',  // Arslanbob
+      'center center',  // Osh
     ]}
     defaultPosition="center center"
   />
-  
-  {/* Overlay Text */}
-  <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-    <div className="text-center text-white px-4 pointer-events-auto">
-      <h1 className="text-5xl font-bold mb-4">Destinations</h1>
-      <p className="text-xl text-blue-100">Explore the wonders of Kyrgyzstan</p>
-    </div>
-  </div>
 </section>
       
 
@@ -189,7 +230,88 @@ export default function DestinationsPage() {
           <div className="hidden md:block absolute top-[68.25%] left-[39%] md:top-[90%] md:left-[51%] w-1.5 h-1.5 rounded-full bg-white/30" />
         </div>
       </section>
-
+      {/* Destination Cards Section */}
+<section className="py-16 px-4 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">Explore Our Destinations</h2>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          name: 'Bishkek',
+          image: '/images/destinations/bishkek/slide-1.jpg',
+          description: 'The modern capital city with Soviet heritage, vibrant bazaars, and gateway to mountain adventures.',
+          link: '/destinations/bishkek'
+        },
+        {
+          name: 'Issyk-Kul Lake',
+          image: '/images/destinations/issyk-kul-lake/slide-1.jpg',
+          description: 'The world\'s second-largest alpine lake, surrounded by snow-capped peaks and sandy beaches.',
+          link: '/destinations/issyk-kul-lake'
+        },
+        {
+          name: 'Chong-Kemin',
+          image: '/images/destinations/chong-kemin/slide-1.jpg',
+          description: 'A pristine green valley perfect for hiking, horse riding, and experiencing traditional Kyrgyz culture.',
+          link: '/destinations/chong-kemin'
+        },
+        {
+          name: 'Suusamyr',
+          image: '/images/destinations/suusamyr/slide-1.jpg',
+          description: 'High-altitude pastures where nomadic herders spend summers with their livestock.',
+          link: '/destinations/suusamyr'
+        },
+        {
+          name: 'Naryn',
+          image: '/images/destinations/naryn/slide-1.jpg',
+          description: 'The mountain heart of Kyrgyzstan, home to Tash Rabat caravanserai and Son-Kul Lake.',
+          link: '/destinations/naryn'
+        },
+        {
+          name: 'At-Bashy Valley',
+          image: '/images/destinations/at-bashy/slide-1.jpg',
+          description: 'A wild, remote valley near the Chinese border with dramatic landscapes and ancient history.',
+          link: '/destinations/at-bashy'
+        },
+        {
+          name: 'Jalal-Abad',
+          image: '/images/destinations/jalal-abad/slide-1.jpg',
+          description: 'The most beautiful province featuring national parks, waterfalls, and rich biodiversity.',
+          link: '/destinations/jalal-abad'
+        },
+        {
+          name: 'Arslanbob',
+          image: '/images/destinations/arslanbob/slide-1.jpg',
+          description: 'The world\'s largest walnut forest, with stunning waterfalls and welcoming Uzbek villages.',
+          link: '/destinations/arslanbob'
+        },
+        {
+          name: 'Osh & Fergana Valley',
+          image: '/images/destinations/osh-fergana-valley/slide-1.jpg',
+          description: 'Ancient Silk Road city with 3,000 years of history, sacred Sulaiman-Too mountain, and vibrant bazaars.',
+          link: '/destinations/osh-fergana-valley'
+        },
+      ].map((dest, idx) => (
+        <Link key={idx} href={dest.link} className="group">
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div 
+              className="h-48 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+              style={{ backgroundImage: `url('${dest.image}')` }}
+            />
+            <div className="p-5">
+              <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                {dest.name}
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {dest.description}
+              </p>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+  </div>
+</section>
       {/* Info Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500">
         <div className="max-w-4xl mx-auto text-center">
