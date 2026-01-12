@@ -170,7 +170,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {/* Spacer - matches header height, black background */}
-        <div className="h-[60px] md:h-[90px] bg-black" />
+        <div className="h-[73px] md:h-[91px] bg-black" />
         {children}
         <Footer />
         <ScrollToTop />

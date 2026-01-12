@@ -155,7 +155,7 @@ useEffect(() => {
     //       ? "bg-transparent" 
     //       : "bg-black shadow-lg"
     //   } ${ */}
-    {/* //     isVisible 
+    {/* //     isVisible  
     //       ? "translate-y-0" 
     //       : "-translate-y-full"
     //   }`}
