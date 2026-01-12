@@ -12,28 +12,53 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
+//   useEffect(() => {
+//   const handleScroll = () => {
+//     const currentScrollY = window.scrollY;
+//     // Detects scroll UP
+//     if (currentScrollY < lastScrollY) {
+//       // Scrolling UP → show header AND make it solid black
+//       setIsVisible(true);
+//       setIsScrolled(false);  // ← This makes it black
+//     }
+//     // Detects scroll DOWN
+//     else if (currentScrollY > lastScrollY) {
+//       // Scrolling DOWN
+//       if (currentScrollY > 10) {
+//         setIsScrolled(true);  // Make transparent
+//       }
+//       if (currentScrollY > 5) {
+//         setIsVisible(false);  // Hide header
+//       }
+//     }
+    
+//     // At very top, always black
+//     if (currentScrollY < 5) {
+//       setIsScrolled(false);
+//     }
+    
+//     setLastScrollY(currentScrollY);
+//   };
+  
+//   window.addEventListener("scroll", handleScroll, { passive: true });
+//   return () => window.removeEventListener("scroll", handleScroll);
+// }, [lastScrollY]);
+useEffect(() => {
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-    // Detects scroll UP
+    
     if (currentScrollY < lastScrollY) {
-      // Scrolling UP → show header AND make it solid black
-      setIsVisible(true);
-      setIsScrolled(false);  // ← This makes it black
-    }
-    // Detects scroll DOWN
-    else if (currentScrollY > lastScrollY) {
+      // Scrolling UP → show header
+      setIsScrolled(false);
+    } else if (currentScrollY > lastScrollY) {
       // Scrolling DOWN
-      if (currentScrollY > 10) {
-        setIsScrolled(true);  // Make transparent
-      }
-      if (currentScrollY > 50) {
-        setIsVisible(false);  // Hide header
+      if (currentScrollY > 5) {
+        setIsScrolled(true);  // Fade out
       }
     }
     
-    // At very top, always black
-    if (currentScrollY < 10) {
+    // At very top, always visible
+    if (currentScrollY < 5) {
       setIsScrolled(false);
     }
     
@@ -43,7 +68,6 @@ export default function Header() {
   window.addEventListener("scroll", handleScroll, { passive: true });
   return () => window.removeEventListener("scroll", handleScroll);
 }, [lastScrollY]);
-
   // Dropdown data
   const destinations = [
     { name: "Bishkek", href: "/destinations/bishkek" },
@@ -119,16 +143,23 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? "bg-transparent" 
-          : "bg-black shadow-lg"
-      } ${
-        isVisible 
-          ? "translate-y-0" 
-          : "-translate-y-full"
-      }`}
-    >
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+    isScrolled 
+      ? "bg-transparent opacity-0 pointer-events-none" 
+      : "bg-black shadow-lg opacity-100 pointer-events-auto"
+  }`}
+>
+    {/* // <header */}
+    {/* //   className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${ */}
+    {/* //     isScrolled 
+    //       ? "bg-transparent" 
+    //       : "bg-black shadow-lg"
+    //   } ${ */}
+    {/* //     isVisible 
+    //       ? "translate-y-0" 
+    //       : "-translate-y-full"
+    //   }`}
+    // > */}
       {/* Top Bar */}
       <div className={`block md:block border-b transition-colors duration-300 ${
         isScrolled ? "border-transparent" : "border-gray-800"
