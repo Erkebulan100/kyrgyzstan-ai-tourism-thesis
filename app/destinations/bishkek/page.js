@@ -26,14 +26,15 @@ export default function BishkekPage() {
       '/images/destinations/bishkek/slide-3.jpg',
       '/images/destinations/bishkek/slide-4.jpg',
     ]}
-    height="h-[60vh] md:h-[145vh]"
+    height="h-[60vh] md:h-[105vh]"
     positions={[
-      'center 40%',   // slide-1: show more top
-      'center center', // slide-2: centered
-      'center 60%',   // slide-3: show more bottom
-      'center center'  // slide-4: centered
+      '20% 40%',   // slide-1: show more top
+      'center 10%', // slide-2: centered
+      '15% 10%',   // slide-3: show more bottom
+      '80% 40%'  // slide-4: centered
     ]}
     defaultPosition="center center"
+    autoHeight={true}
   />
   
   {/* Overlay Text - positioned on top */}
@@ -44,10 +45,6 @@ export default function BishkekPage() {
     </div>
   </div>
 </section>
-```
-
----
-
 {/* ## How It Works
 
 | Device | Screen | Image Behavior |
