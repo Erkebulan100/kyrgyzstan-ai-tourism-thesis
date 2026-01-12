@@ -6,24 +6,46 @@ export default function ImageSlider({
   images, 
   interval = 7000, 
   height = "h-[60vh] md:h-[85vh]",
-  positions = [],  // Array of background positions for each image
-  defaultPosition = "center center"
+  positions = [],
+  defaultPosition = "center center",
+  objectFit = "cover"
 }) {
   const [current, setCurrent] = useState(0);
+  const [resetTimer, setResetTimer] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);  // ← Add this
 
-  // Auto-slide
+  // Auto-slide - resets when resetTimer changes, pauses on hover
   useEffect(() => {
+    if (isPaused) return;  // ← Don't run timer if paused
+    
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
     }, interval);
     return () => clearInterval(timer);
-  }, [images.length, interval]);
+  }, [images.length, interval, resetTimer, isPaused]);  // ← Add isPaused dependency
 
-  const goLeft = () => setCurrent((prev) => (prev - 1 + images.length) % images.length);
-  const goRight = () => setCurrent((prev) => (prev + 1) % images.length);
+  // Navigation functions that reset timer  
+  const goLeft = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+    setResetTimer((prev) => prev + 1);
+  };
+
+  const goRight = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
+    setResetTimer((prev) => prev + 1);
+  };
+
+  const goToSlide = (idx) => {
+    setCurrent(idx);
+    setResetTimer((prev) => prev + 1);
+  };
 
   return (
-    <div className={`relative w-full ${height} overflow-hidden`}>
+    <div 
+      className={`relative w-full ${height} overflow-hidden`}
+      onMouseEnter={() => setIsPaused(true)}   // ← Pause on hover
+      onMouseLeave={() => setIsPaused(false)}  // ← Resume on leave
+    >
       {/* Images as backgrounds */}
       {images.map((img, idx) => (
         <div
@@ -33,7 +55,7 @@ export default function ImageSlider({
           }`}
           style={{
             backgroundImage: `url('${img}')`,
-            backgroundSize: 'cover',
+            backgroundSize: objectFit,
             backgroundPosition: positions[idx] || defaultPosition,
             backgroundRepeat: 'no-repeat'
           }}
@@ -64,7 +86,7 @@ export default function ImageSlider({
         {images.map((_, idx) => (
           <button
             key={idx}
-            onClick={() => setCurrent(idx)}
+            onClick={() => goToSlide(idx)}  // ← Fixed: was setCurrent, now uses goToSlide for timer reset
             className={`w-3 h-3 rounded-full transition-colors ${
               idx === current ? 'bg-white' : 'bg-white/50'
             }`}

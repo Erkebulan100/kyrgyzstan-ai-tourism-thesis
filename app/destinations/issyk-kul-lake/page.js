@@ -40,7 +40,9 @@ function IssykKulContent() {
       '/images/destinations/issyk-kul-lake/slide-7.jpg',
       // '/images/destinations/issyk-kul-lake/slide-8.jpg',
     ]}
+    // autoHeight={true}
     height="h-[60vh] md:h-[105vh]"
+    // objectFit="contain" // ← Shows full image
     positions={[
       'center center',  // slide-1
       'center center',  // slide-2
