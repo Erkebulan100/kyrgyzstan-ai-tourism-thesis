@@ -21,28 +21,37 @@ export default function DestinationsPage() {
     <main className="min-h-screen bg-white">
       
       {/* Hero Section with Slider */}
-        {/* <section className="relative"> */}
-        <section className="relative h-[100vh] max-h-[600px] flex items-center justify-center">
-        <ImageSlider 
-            images={[
-            '/images/destinations/slider/slide-1.jpg',
-            '/images/destinations/slider/slide-2.jpg',
-            '/images/destinations/slider/slide-3.jpg',
-            '/images/destinations/slider/slide-4.jpg',
-            '/images/destinations/slider/slide-5.jpg',
-            '/images/destinations/slider/slide-6.jpg',
-            '/images/destinations/slider/slide-7.jpg',
-            ]}
-            // autoHeight={true}
-        />
-        {/* Overlay Text */}
-        <div className="absolute inset-0 bg-black/30 flex items-center justify-center z-5">
-            <div className="text-center text-white px-4">
-            <h1 className="text-5xl font-bold mb-4">Destinations</h1>
-            <p className="text-xl text-blue-100">Explore the wonders of Kyrgyzstan</p>
-            </div>
-        </div>
-        </section>
+<section className="relative w-full">
+  <ImageSlider 
+    images={[
+      '/images/destinations/slider/slide-1.jpg',
+      '/images/destinations/slider/slide-2.jpg',
+      '/images/destinations/slider/slide-3.jpg',
+      '/images/destinations/slider/slide-4.jpg',
+      '/images/destinations/slider/slide-5.jpg',
+      '/images/destinations/slider/slide-6.jpg',
+      '/images/destinations/slider/slide-7.jpg',
+    ]}
+    positions={[
+      'center center',  // slide-1
+      'center center',  // slide-2
+      'center center',  // slide-3
+      'center center',  // slide-4
+      'center center',  // slide-5
+      'center center',  // slide-6
+      'center center',  // slide-7
+    ]}
+    defaultPosition="center center"
+  />
+  
+  {/* Overlay Text */}
+  <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+    <div className="text-center text-white px-4 pointer-events-auto">
+      <h1 className="text-5xl font-bold mb-4">Destinations</h1>
+      <p className="text-xl text-blue-100">Explore the wonders of Kyrgyzstan</p>
+    </div>
+  </div>
+</section>
       
 
       {/* Destinations Constellation Section */}

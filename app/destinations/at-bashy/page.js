@@ -28,29 +28,41 @@ function AtBashyValleyContent() {
     <main className="min-h-screen bg-white">
       
       {/* Hero Section with Slider */}
-      <section className="relative h-[100vh] max-h-[600px] flex items-center justify-center">
-        <ImageSlider 
-          images={[
-            '/images/destinations/at-bashy/slide-1.jpg',
-            '/images/destinations/at-bashy/slide-2.jpg',
-            '/images/destinations/at-bashy/slide-3.jpg',
-            '/images/destinations/at-bashy/slide-4.jpg',
-            '/images/destinations/at-bashy/slide-5.jpg',
-            '/images/destinations/at-bashy/slide-6.jpg',
-            '/images/destinations/at-bashy/slide-7.jpg',
-            '/images/destinations/at-bashy/slide-8.jpg',
-            '/images/destinations/at-bashy/slide-9.jpg',
-          ]}
-        //   autoHeight={true}
-        />
-        {/* Overlay Text */}
-        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-          <div className="text-center text-white px-4">
-            <h1 className="text-5xl font-bold mb-4">At-Bashy Valley</h1>
-            <p className="text-xl text-blue-100">The Wild Valley Near the Chinese Border</p>
-          </div>
-        </div>
-      </section>
+<section className="relative w-full">
+  <ImageSlider 
+    images={[
+      '/images/destinations/at-bashy/slide-1.jpg',
+      '/images/destinations/at-bashy/slide-2.jpg',
+      '/images/destinations/at-bashy/slide-3.jpg',
+      '/images/destinations/at-bashy/slide-4.jpg',
+      '/images/destinations/at-bashy/slide-5.jpg',
+      '/images/destinations/at-bashy/slide-6.jpg',
+      '/images/destinations/at-bashy/slide-7.jpg',
+      '/images/destinations/at-bashy/slide-8.jpg',
+      '/images/destinations/at-bashy/slide-9.jpg',
+    ]}
+    positions={[
+      '10% center',  // slide-1
+      'center center',  // slide-2
+      'center center',  // slide-3
+      'center center',  // slide-4
+      'center center',  // slide-5
+      'center center',  // slide-6
+      'center center',  // slide-7
+      'center center',  // slide-8
+      'center center',  // slide-9
+    ]}
+    defaultPosition="center center"
+  />
+  
+  {/* Overlay Text */}
+  <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+    <div className="text-center text-white px-4 pointer-events-auto">
+      <h1 className="text-5xl font-bold mb-4">At-Bashy Valley</h1>
+      <p className="text-xl text-blue-100">The Wild Valley Near the Chinese Border</p>
+    </div>
+  </div>
+</section>
 
       {/* Description Section */}
       <section className="py-16 px-4">
