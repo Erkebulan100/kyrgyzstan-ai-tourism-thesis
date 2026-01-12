@@ -393,7 +393,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "[Placeholder for review text. The owner will provide actual testimonials from past travelers.]"
+                [Placeholder for review text. The owner will provide actual testimonials from past travelers.]
               </p>
               <div className="mt-4 text-yellow-500">★★★★★</div>
             </div>
@@ -412,7 +412,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "[Placeholder for review text. The owner will provide actual testimonials from past travelers.]"
+                [Placeholder for review text. The owner will provide actual testimonials from past travelers.]
               </p>
               <div className="mt-4 text-yellow-500">★★★★★</div>
             </div>
@@ -431,7 +431,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "[Placeholder for review text. The owner will provide actual testimonials from past travelers.]"
+                [Placeholder for review text. The owner will provide actual testimonials from past travelers.]
               </p>
               <div className="mt-4 text-yellow-500">★★★★★</div>
             </div>
@@ -521,7 +521,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: '[Food Name 1]', image: '/images/home/foods/food-1-placeholder.jpg', description: '[Description placeholder - what it is, ingredients, when it\'s served]' },
+              { name: '[Food Name 1]', image: '/images/home/foods/food-1-placeholder.jpg', description: '[Description placeholder - what it is, ingredients, when it is served]' },
               { name: '[Food Name 2]', image: '/images/home/foods/food-2-placeholder.jpg', description: '[Description placeholder]' },
               { name: '[Food Name 3]', image: '/images/home/foods/food-3-placeholder.jpg', description: '[Description placeholder]' },
               { name: '[Food Name 4]', image: '/images/home/foods/food-4-placeholder.jpg', description: '[Description placeholder]' },

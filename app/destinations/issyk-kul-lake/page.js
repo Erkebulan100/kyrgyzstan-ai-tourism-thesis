@@ -202,7 +202,7 @@ function IssykKulContent() {
                 {/* Petroglyphs */}
                 <div className="bg-white p-6 rounded-xl shadow-md">
                   <div className="bg-orange-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                    <Image className="w-6 h-6 text-orange-600" />
+                    <Image className="w-6 h-6 text-orange-600" alt="[description]" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 mb-3">Petroglyphs</h3>
                   <p className="text-gray-600">
