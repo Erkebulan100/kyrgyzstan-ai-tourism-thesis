@@ -14,32 +14,54 @@ export default function BishkekPage() {
       {/* 1. Updated section classes to match your example (h-96, pb values, etc.) */}
       
 {/* Hero Section with Slider */}
-<section className="relative h-[80vh] md:h-[200vh] flex items-center justify-center overflow-hidden -mt-[60px] md:-mt-[0px] pt-[60px] md:pt-[100px]">
+      {/* <section className="relative h-[80vh] md:h-[200vh] flex items-center justify-center overflow-hidden -mt-[0px] md:-mt-[0px] pt-[0px] md:pt-[0px]"> */}
       {/* <section className="relative h-[55vh] md:h-[150vh] flex items-center justify-center overflow-hidden"> */}
-        
-        {/* 2. Wrapped ImageSlider in a div to act as a background layer */}
-        <div className="absolute inset-0 -z-0 h-full w-full object-cover">
-          <ImageSlider 
-            images={[
-              '/images/destinations/bishkek/slide-1.jpg',
-              '/images/destinations/bishkek/slide-2.jpg',
-              '/images/destinations/bishkek/slide-3.jpg',
-              '/images/destinations/bishkek/slide-4.jpg',
-            ]}
-            // Note: 'backgroundPosition' works on CSS backgrounds. 
-            // For a slider, the images inside usually default to 'object-cover'. 
-            // If the slider supports class props, you might add 'object-[center_99%]' there.
-          />
-        </div>
+        {/* Hero Section with Slider */}
 
-        {/* Overlay Text */}
-        <div className="absolute inset-0 bg-black/30 flex items-center justify-center z-10 pointer-events-none">
-          <div className="text-center text-white px-4 pointer-events-auto">
-            <h1 className="text-5xl font-bold mb-4">Bishkek</h1>
-            <p className="text-xl text-blue-100">The Capital City of Kyrgyzstan</p>
-          </div>
-        </div>
-      </section>
+<section className="relative w-full">
+  <ImageSlider 
+    images={[
+      '/images/destinations/bishkek/slide-1.jpg',
+      '/images/destinations/bishkek/slide-2.jpg',
+      '/images/destinations/bishkek/slide-3.jpg',
+      '/images/destinations/bishkek/slide-4.jpg',
+    ]}
+    height="h-[60vh] md:h-[145vh]"
+    positions={[
+      'center 40%',   // slide-1: show more top
+      'center center', // slide-2: centered
+      'center 60%',   // slide-3: show more bottom
+      'center center'  // slide-4: centered
+    ]}
+    defaultPosition="center center"
+  />
+  
+  {/* Overlay Text - positioned on top */}
+  <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+    <div className="text-center text-white px-4 pointer-events-auto">
+      <h1 className="text-5xl font-bold mb-4">Bishkek</h1>
+      <p className="text-xl text-blue-100">The Capital City of Kyrgyzstan</p>
+    </div>
+  </div>
+</section>
+```
+
+---
+
+{/* ## How It Works
+
+| Device | Screen | Image Behavior |
+|--------|--------|----------------|
+| Mobile | Tall & narrow | Crops left/right sides, fills height |
+| Desktop | Wide | Shows more of image width |
+```
+Mobile (crops sides):          Desktop (shows more width):
+┌─────────┐                    ┌─────────────────────────────┐
+│ ┌─────┐ │                    │                             │
+│ │crop │ │                    │     Full width visible      │
+│ │ped  │ │                    │                             │
+│ └─────┘ │                    └─────────────────────────────┘
+└─────────┘ */}
       {/* Description Section */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">

@@ -88,6 +88,7 @@ export const metadata = {
 
 // Header Component - Black background, white text (preserved from old site)
 
+// I thought I would add here
 
 // Footer Component - Exact match from old website (Image 2)
 function Footer() {
@@ -168,6 +169,8 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning={true}
       >
         <Header />
+        {/* Spacer - matches header height, black background */}
+        <div className="h-[60px] md:h-[90px] bg-black" />
         {children}
         <Footer />
         <ScrollToTop />
