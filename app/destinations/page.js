@@ -80,7 +80,7 @@ export default function DestinationsPage() {
       },
     ]}
     positions={[
-      'center center',  // Bishkek
+      'center 40%',  // Bishkek
       'center center',  // Issyk-Kul
       'center center',  // Chong-Kemin
       'center center',  // Suusamyr

@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-
+import ImageSlider from '@/components/ImageSlider';
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
@@ -293,6 +293,81 @@ export default function Home() {
           
         </div>
       </section>
+      {/* Hero Section with Slider from destinations */}
+      <section className="relative w-full">
+        <ImageSlider 
+          slides={[
+            { 
+              image: '/images/destinations/bishkek/slide-1.jpg', 
+              title: 'Bishkek', 
+              subtitle: 'The Capital City of Kyrgyzstan', 
+              link: '/destinations/bishkek' 
+            },
+            { 
+              image: '/images/destinations/issyk-kul-lake/slide-1.jpg', 
+              title: 'Issyk-Kul Lake', 
+              subtitle: 'The Pearl of Tien Shan', 
+              link: '/destinations/issyk-kul-lake' 
+            },
+            { 
+              image: '/images/destinations/chong-kemin/slide-1.jpg', 
+              title: 'Chong-Kemin', 
+              subtitle: 'The Green Valley of Kyrgyzstan', 
+              link: '/destinations/chong-kemin' 
+            },
+            { 
+              image: '/images/destinations/suusamyr/slide-1.jpg', 
+              title: 'Suusamyr', 
+              subtitle: 'The High Pastures of Northwestern Tien Shan', 
+              link: '/destinations/suusamyr' 
+            },
+            { 
+              image: '/images/destinations/naryn/slide-1.jpg', 
+              title: 'Naryn', 
+              subtitle: 'The Mountain Heart of Kyrgyzstan', 
+              link: '/destinations/naryn' 
+            },
+            { 
+              image: '/images/destinations/at-bashy/slide-1.jpg', 
+              title: 'At-Bashy Valley', 
+              subtitle: 'The Wild Valley Near the Chinese Border', 
+              link: '/destinations/at-bashy' 
+            },
+            { 
+              image: '/images/destinations/jalal-abad/slide-1.jpg', 
+              title: 'Jalal-Abad', 
+              subtitle: 'The Most Beautiful Province of Kyrgyzstan', 
+              link: '/destinations/jalal-abad' 
+            },
+            { 
+              image: '/images/destinations/arslanbob/slide-1.jpg', 
+              title: 'Arslanbob', 
+              subtitle: "The World's Largest Walnut Forest", 
+              link: '/destinations/arslanbob' 
+            },
+            { 
+              image: '/images/destinations/osh-fergana-valley/slide-1.jpg', 
+              title: 'Osh & Fergana Valley', 
+              subtitle: 'The Ancient Silk Road City', 
+              link: '/destinations/osh-fergana-valley' 
+            },
+          ]}
+          positions={[
+            'center 40%',  // Bishkek
+            'center center',  // Issyk-Kul
+            'center center',  // Chong-Kemin
+            'center center',  // Suusamyr
+            'center center',  // Naryn
+            'center center',  // At-Bashy
+            'center center',  // Jalal-Abad
+            'center center',  // Arslanbob
+            'center center',  // Osh
+          ]}
+          defaultPosition="center center"
+        />
+      </section>
+            
+
       {/* Quick Links Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
