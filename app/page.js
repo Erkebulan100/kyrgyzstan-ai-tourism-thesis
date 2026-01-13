@@ -329,7 +329,7 @@ export default function Home() {
                     Destinations
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Discover the wonders of Kyrgyzstan's nine regions.
+                    Discover the wonders of Kyrgyzstan&apos;s nine regions.
                   </p>
                 </div>
               </div>
