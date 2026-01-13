@@ -121,12 +121,12 @@ export default function NomadsTienShanPage() {
       
       {/* Hero Section */}
       <section 
-        className="relative h-[70vh] flex items-center justify-center overflow-hidden"
+        className="relative h-[70vh] md:h-[100vh] flex items-center justify-center overflow-hidden"
         style={{
           // linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)),
-          backgroundImage: " url('/images/tours/nomads-tien-shan-hero.jpg')",
+          backgroundImage: " url('/images/tours/nomads-tien-shan/slide-1.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center 63%'
+          backgroundPosition: 'center 50%'
         }}
       >
         {/* <div className="absolute inset-0 bg-gradient-to-r from-green-900/40 to-blue-900/40"></div> */}

@@ -114,11 +114,11 @@ export default function TienShanMeetsPamirPage() {
       
       {/* Hero Section */}
       <section 
-        className="relative h-[70vh] flex items-center justify-center overflow-hidden"
+        className="relative h-[70vh] md:h-[100vh] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/images/tours/tien-shan-meets-pamir-hero.jpg')",
+          backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/images/tours/tien-shan-meets-pamir/slide-1.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center 63%'
+          backgroundPosition: 'center center'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-green-900/40"></div>

@@ -121,12 +121,12 @@ export default function TreasuresTienShanPage() {
       
       {/* Hero Section */}
       <section 
-        className="relative h-[70vh] flex items-center justify-center overflow-hidden"
+        className="relative h-[70vh] md:h-[100vh] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: "url('/images/tours/treasures-tien-shan-hero.jpg')",
+          backgroundImage: "url('/images/tours/treasures-tien-shan/slide-1.jpg')",
         //   if you want somewhat purplish picture add linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), in front of url('/images/tours/treasures-tien-shan-hero.jpg') 
           backgroundSize: 'cover',
-          backgroundPosition: 'center 63%'
+          backgroundPosition: 'center center%'
         }}
       >
         {/* This option 1 will give purplish colour to the picture <div className="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-violet-900/40"></div> */}

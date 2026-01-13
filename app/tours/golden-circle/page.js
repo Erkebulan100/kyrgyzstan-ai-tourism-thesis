@@ -115,11 +115,11 @@ export default function GoldenCirclePage() {
       
       {/* Hero Section */}
       <section 
-        className="relative h-[70vh] flex items-center justify-center overflow-hidden"
+        className="relative h-[70vh] md:h-[100vh] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/images/tours/golden-circle-hero.jpg')",
+          backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('/images/tours/golden-circle/slide-1.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center 77%'
+          backgroundPosition: 'center center'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-yellow-900/40 to-orange-900/40"></div>
