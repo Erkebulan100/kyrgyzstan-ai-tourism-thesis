@@ -545,24 +545,23 @@ export default function Home() {
         </div>
       </section>
       {/* Top 10 Places Section */}
-      {/* Top 10 Places Section */}
 <PolaroidCarousel
   title="Top 10 Places to See"
   subtitle="Discover the most breathtaking destinations in Kyrgyzstan"
   seeAllLink="/top-10-places"
   seeAllText="See All 10 Places"
   places={[
-    { rank: 1, name: 'Issyk-Kul Lake', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/destinations/issyk-kul-lake' },
-    { rank: 2, name: 'Song-Kul Lake', region: 'Naryn Region', image: '/images/destinations/naryn/slide-1.jpg', link: '/destinations/naryn' },
-    { rank: 3, name: 'Ala Archa National Park', region: 'Near Bishkek', image: '/images/destinations/bishkek/slide-1.jpg', link: '/destinations/bishkek' },
-    { rank: 4, name: 'Tash Rabat', region: 'Naryn Region', image: '/images/destinations/naryn/slide-1.jpg', link: '/destinations/naryn' },
-    { rank: 5, name: 'Burana Tower', region: 'Chuy Region', image: '/images/destinations/chong-kemin/slide-1.jpg', link: '/destinations/chong-kemin' },
-    { rank: 6, name: 'Arslanbob Waterfalls', region: 'Jalal-Abad Region', image: '/images/destinations/arslanbob/slide-1.jpg', link: '/destinations/arslanbob' },
-    { rank: 7, name: 'Skazka Canyon', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/destinations/issyk-kul-lake' },
-    { rank: 8, name: 'Jeti-Oguz Rocks', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/destinations/issyk-kul-lake' },
-    { rank: 9, name: 'Sulaiman-Too Mountain', region: 'Osh City', image: '/images/destinations/osh-fergana-valley/slide-1.jpg', link: '/destinations/osh-fergana-valley' },
-    { rank: 10, name: 'Kel-Suu Lake', region: 'At-Bashy Valley', image: '/images/destinations/at-bashy/slide-1.jpg', link: '/destinations/at-bashy' },
-  ]}
+  { rank: 1, name: 'Issyk-Kul Lake', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/top-10-places/issyk-kul-lake' },
+  { rank: 2, name: 'Song-Kul Lake', region: 'Naryn Region', image: '/images/destinations/naryn/slide-1.jpg', link: '/top-10-places/song-kul-lake' },
+  { rank: 3, name: 'Ala Archa National Park', region: 'Near Bishkek', image: '/images/destinations/bishkek/slide-1.jpg', link: '/top-10-places/ala-archa' },
+  { rank: 4, name: 'Tash Rabat', region: 'Naryn Region', image: '/images/destinations/naryn/slide-1.jpg', link: '/top-10-places/tash-rabat' },
+  { rank: 5, name: 'Burana Tower', region: 'Chuy Region', image: '/images/destinations/chong-kemin/slide-1.jpg', link: '/top-10-places/burana-tower' },
+  { rank: 6, name: 'Arslanbob Waterfalls', region: 'Jalal-Abad Region', image: '/images/destinations/arslanbob/slide-1.jpg', link: '/top-10-places/arslanbob-waterfalls' },
+  { rank: 7, name: 'Skazka Canyon', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/top-10-places/skazka-canyon' },
+  { rank: 8, name: 'Jeti-Oguz Rocks', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/top-10-places/jeti-oguz' },
+  { rank: 9, name: 'Sulaiman-Too Mountain', region: 'Osh City', image: '/images/destinations/osh-fergana-valley/slide-1.jpg', link: '/top-10-places/sulaiman-too' },
+  { rank: 10, name: 'Kel-Suu Lake', region: 'At-Bashy Valley', image: '/images/destinations/at-bashy/slide-1.jpg', link: '/top-10-places/kel-suu-lake' },
+]}
 />
       {/* Kyrgyz Foods Section */}
       <section className="py-16 px-4 bg-white">

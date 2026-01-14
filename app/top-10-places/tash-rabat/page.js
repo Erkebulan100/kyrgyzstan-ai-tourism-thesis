@@ -1,0 +1,440 @@
+import Link from 'next/link';
+import { MapPin, Clock, Calendar, Car, Mountain, Sun, ChevronLeft, ChevronRight } from 'lucide-react';
+
+export const metadata = {
+  title: "Tash Rabat - Ancient Silk Road Caravanserai | Top 10 Places | Tien Shan Journeys",
+  description: "Discover Tash Rabat, a remarkably preserved 15th-century stone caravanserai in the mountains of Kyrgyzstan. Plan your visit to this Silk Road treasure.",
+};
+
+// ============================================
+// PLACE DATA - Edit this section for each place
+// ============================================
+const placeData = {
+  rank: 4,
+  name: 'Tash Rabat',
+  tagline: 'Ancient Silk Road Caravanserai',
+  region: 'Naryn Region',
+  regionLink: '/destinations/naryn',
+  
+  // Hero image
+  heroImage: '/images/top-10/tash-rabat.jpg',
+  
+  // Quick facts
+  quickFacts: {
+    location: 'At-Bashy District, Naryn Region',
+    altitude: '3,200 meters',
+    bestTime: 'June - September',
+    duration: '3-4 hours visit',
+    fromBishkek: '~6 hours by car',
+    fromNaryn: '~2 hours by car',
+  },
+  
+  // Main description paragraphs
+  description: [
+    '[Placeholder: Tash Rabat is one of the most remarkable and well-preserved Silk Road monuments in Central Asia. This 15th-century stone caravanserai sits in a remote mountain valley at 3,200 meters altitude, offering travelers a glimpse into the ancient trade routes that once connected East and West.]',
+    '[Placeholder: The name "Tash Rabat" means "Stone Fortress" in Kyrgyz. Built from local stone, the structure features over 30 rooms arranged around a central domed hall. Historians believe it served as a shelter for merchants and their caravans traveling along the Silk Road, though some theories suggest it may have originally been a monastery.]',
+    '[Placeholder: Today, visitors can explore the atmospheric interior with its maze of interconnected chambers, some still showing traces of ancient fires. The surrounding valley is equally stunning, with green pastures dotted with yurts in summer and snow-capped peaks framing the horizon.]',
+  ],
+  
+  // Gallery images (placeholders)
+  gallery: [
+    { src: '/images/top-10/tash-rabat/gallery-1.jpg', alt: 'Tash Rabat exterior view' },
+    { src: '/images/top-10/tash-rabat/gallery-2.jpg', alt: 'Interior dome of Tash Rabat' },
+    { src: '/images/top-10/tash-rabat/gallery-3.jpg', alt: 'Surrounding valley and yurts' },
+    { src: '/images/top-10/tash-rabat/gallery-4.jpg', alt: 'Mountain backdrop' },
+    { src: '/images/top-10/tash-rabat/gallery-5.jpg', alt: 'Stone corridors inside' },
+    { src: '/images/top-10/tash-rabat/gallery-6.jpg', alt: 'Sunset at Tash Rabat' },
+  ],
+  
+  // What to do
+  activities: [
+    {
+      title: 'Explore the Caravanserai',
+      description: '[Placeholder: Wander through the mysterious stone chambers and imagine life on the ancient Silk Road.]',
+    },
+    {
+      title: 'Photograph at Golden Hour',
+      description: '[Placeholder: The warm light of sunrise or sunset transforms the stone structure into pure gold.]',
+    },
+    {
+      title: 'Stay in a Yurt',
+      description: '[Placeholder: Nearby yurt camps offer authentic accommodation with stunning valley views.]',
+    },
+    {
+      title: 'Hike to the Pass',
+      description: '[Placeholder: Trek to the nearby pass for panoramic views of the Tien Shan mountains.]',
+    },
+  ],
+  
+  // Related tours - set to empty array if no tours feature this place
+  relatedTours: [
+    {
+      name: 'Nomads of Tien Shan',
+      slug: 'nomads-tien-shan',
+      duration: '9 days',
+      description: 'This tour includes an overnight stay near Tash Rabat with time to fully explore the caravanserai.',
+    },
+    {
+      name: 'Classic Kyrgyzstan',
+      slug: 'classic-kyrgyzstan',
+      duration: '12 days',
+      description: 'Visit Tash Rabat as part of a comprehensive journey through Kyrgyzstan\'s highlights.',
+    },
+  ],
+  
+  // Navigation to previous/next places
+  prevPlace: { name: 'Ala Archa', slug: 'ala-archa', rank: 3 },
+  nextPlace: { name: 'Burana Tower', slug: 'burana-tower', rank: 5 },
+};
+// ============================================
+// END PLACE DATA
+// ============================================
+
+export default function TashRabatPage() {
+  const place = placeData;
+  const hasTours = place.relatedTours && place.relatedTours.length > 0;
+
+  return (
+    <main className="min-h-screen bg-stone-50">
+      
+      {/* Hero Section */}
+      <section className="relative h-[60vh] md:h-[70vh] overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ 
+            backgroundImage: `url('${place.heroImage}')`,
+            backgroundColor: '#8B7355' // Fallback color
+          }}
+        />
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+        
+        {/* Content */}
+        <div className="absolute inset-0 flex items-end">
+          <div className="max-w-7xl mx-auto px-4 pb-12 w-full">
+            {/* Rank Badge */}
+            <div className="inline-flex items-center gap-2 bg-amber-500 text-white px-4 py-2 rounded-full mb-4">
+              <span className="font-bold text-lg">#{place.rank}</span>
+              <span className="text-amber-100">in Top 10</span>
+            </div>
+            
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-3">
+              {place.name}
+            </h1>
+            <p className="text-xl md:text-2xl text-amber-200 mb-4">
+              {place.tagline}
+            </p>
+            <div className="flex items-center gap-2 text-white/80">
+              <MapPin className="w-5 h-5" />
+              <span>{place.region}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid lg:grid-cols-3 gap-12">
+          
+          {/* Left Column - Main Content */}
+          <div className="lg:col-span-2 space-y-12">
+            
+            {/* Description */}
+            <div>
+              <h2 className="text-2xl font-bold text-stone-800 mb-6 flex items-center gap-3">
+                <span className="w-10 h-1 bg-amber-500"></span>
+                About {place.name}
+              </h2>
+              <div className="prose prose-lg prose-stone max-w-none">
+                {place.description.map((paragraph, idx) => (
+                  <p key={idx} className="text-stone-600 leading-relaxed mb-4">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            {/* Photo Gallery */}
+            <div>
+              <h2 className="text-2xl font-bold text-stone-800 mb-6 flex items-center gap-3">
+                <span className="w-10 h-1 bg-amber-500"></span>
+                Photo Gallery
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {place.gallery.map((photo, idx) => (
+                  <div 
+                    key={idx} 
+                    className="aspect-square rounded-lg overflow-hidden bg-stone-200 hover:opacity-90 transition-opacity cursor-pointer"
+                  >
+                    <div 
+                      className="w-full h-full bg-cover bg-center"
+                      style={{ 
+                        backgroundImage: `url('${photo.src}')`,
+                        backgroundColor: '#d4c4b0'
+                      }}
+                      title={photo.alt}
+                    />
+                  </div>
+                ))}
+              </div>
+              <p className="text-stone-400 text-sm mt-3 italic">
+                [Placeholder: Owner will provide actual photos]
+              </p>
+            </div>
+
+            {/* Things to Do */}
+            <div>
+              <h2 className="text-2xl font-bold text-stone-800 mb-6 flex items-center gap-3">
+                <span className="w-10 h-1 bg-amber-500"></span>
+                What to Do
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {place.activities.map((activity, idx) => (
+                  <div 
+                    key={idx}
+                    className="bg-white rounded-xl p-5 shadow-sm border border-stone-100 hover:shadow-md transition-shadow"
+                  >
+                    <h3 className="font-bold text-stone-800 mb-2">{activity.title}</h3>
+                    <p className="text-stone-600 text-sm">{activity.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+
+          {/* Right Column - Sidebar */}
+          <div className="space-y-6">
+            
+            {/* Quick Facts Card */}
+            <div className="bg-white rounded-2xl shadow-lg p-6 sticky top-24">
+              <h3 className="text-lg font-bold text-stone-800 mb-4 pb-3 border-b border-stone-100">
+                Quick Facts
+              </h3>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="bg-amber-100 p-2 rounded-lg">
+                    <MapPin className="w-5 h-5 text-amber-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-stone-400 uppercase tracking-wide">Location</p>
+                    <p className="text-stone-700 font-medium">{place.quickFacts.location}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="bg-blue-100 p-2 rounded-lg">
+                    <Mountain className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-stone-400 uppercase tracking-wide">Altitude</p>
+                    <p className="text-stone-700 font-medium">{place.quickFacts.altitude}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="bg-green-100 p-2 rounded-lg">
+                    <Sun className="w-5 h-5 text-green-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-stone-400 uppercase tracking-wide">Best Time to Visit</p>
+                    <p className="text-stone-700 font-medium">{place.quickFacts.bestTime}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="bg-purple-100 p-2 rounded-lg">
+                    <Clock className="w-5 h-5 text-purple-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-stone-400 uppercase tracking-wide">Time Needed</p>
+                    <p className="text-stone-700 font-medium">{place.quickFacts.duration}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="bg-orange-100 p-2 rounded-lg">
+                    <Car className="w-5 h-5 text-orange-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-stone-400 uppercase tracking-wide">Getting There</p>
+                    <p className="text-stone-700 text-sm">From Bishkek: {place.quickFacts.fromBishkek}</p>
+                    <p className="text-stone-700 text-sm">From Naryn: {place.quickFacts.fromNaryn}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="mt-6 pt-4 border-t border-stone-100">
+                <Link 
+                  href="/contact"
+                  className="block w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white text-center font-semibold py-3 rounded-xl hover:from-amber-600 hover:to-orange-600 transition-all"
+                >
+                  Plan Your Visit
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Related Tours Section */}
+      <section className="bg-stone-800 py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          
+          {hasTours ? (
+            <>
+              <h2 className="text-2xl font-bold text-white mb-2">
+                Tours Featuring {place.name}
+              </h2>
+              <p className="text-stone-400 mb-8">
+                Experience {place.name} as part of a guided journey through Kyrgyzstan
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                {place.relatedTours.map((tour, idx) => (
+                  <Link 
+                    key={idx}
+                    href={`/tours/${tour.slug}`}
+                    className="group bg-stone-700/50 rounded-xl p-6 hover:bg-stone-700 transition-colors"
+                  >
+                    <div className="flex justify-between items-start mb-3">
+                      <h3 className="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">
+                        {tour.name}
+                      </h3>
+                      <span className="bg-amber-500/20 text-amber-400 text-sm px-3 py-1 rounded-full">
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <p className="text-stone-300 text-sm leading-relaxed">
+                      {tour.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link 
+                  href="/tours"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-stone-800 font-semibold px-6 py-3 rounded-full hover:bg-stone-100 transition-colors"
+                >
+                  View All Tours
+                </Link>
+                <Link 
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 border border-white/30 text-white font-semibold px-6 py-3 rounded-full hover:bg-white/10 transition-colors"
+                >
+                  Request Custom Itinerary
+                </Link>
+              </div>
+            </>
+          ) : (
+            /* No Tours - Show Custom Request */
+            <div className="text-center max-w-2xl mx-auto">
+              <h2 className="text-2xl font-bold text-white mb-4">
+                Visit {place.name}
+              </h2>
+              <p className="text-stone-300 mb-8 leading-relaxed">
+                This destination is perfect for a day trip or can be included in a custom itinerary. 
+                Tell us about your travel plans and we&apos;ll help you experience {place.name} 
+                in the best way possible.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link 
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold px-8 py-3 rounded-full hover:from-amber-600 hover:to-orange-600 transition-all"
+                >
+                  Request a Custom Tour
+                </Link>
+                <Link 
+                  href="/tours"
+                  className="inline-flex items-center justify-center gap-2 border border-white/30 text-white font-semibold px-8 py-3 rounded-full hover:bg-white/10 transition-colors"
+                >
+                  Browse Existing Tours
+                </Link>
+              </div>
+            </div>
+          )}
+
+        </div>
+      </section>
+
+      {/* Explore Region Section */}
+      <section className="bg-gradient-to-r from-stone-100 to-stone-200 py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <p className="text-stone-500 text-sm uppercase tracking-wide mb-1">Explore the Region</p>
+              <h3 className="text-2xl font-bold text-stone-800">
+                {place.name} is located in {place.region}
+              </h3>
+              <p className="text-stone-600 mt-2">
+                Discover more attractions, activities, and travel information for this region.
+              </p>
+            </div>
+            <Link 
+              href={place.regionLink}
+              className="inline-flex items-center gap-2 bg-stone-800 text-white font-semibold px-6 py-3 rounded-full hover:bg-stone-700 transition-colors whitespace-nowrap"
+            >
+              Discover {place.region}
+              <ChevronRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Previous/Next Navigation */}
+      <section className="bg-white border-t border-stone-200 py-8">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-between items-center">
+            
+            {/* Previous */}
+            {place.prevPlace ? (
+              <Link 
+                href={`/top-10-places/${place.prevPlace.slug}`}
+                className="group flex items-center gap-3 text-stone-600 hover:text-amber-600 transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+                <div className="text-left">
+                  <p className="text-xs text-stone-400 uppercase tracking-wide">Previous</p>
+                  <p className="font-semibold">#{place.prevPlace.rank} {place.prevPlace.name}</p>
+                </div>
+              </Link>
+            ) : (
+              <div />
+            )}
+
+            {/* Back to List */}
+            <Link 
+              href="/top-10-places"
+              className="hidden md:flex items-center gap-2 text-stone-500 hover:text-stone-700 transition-colors"
+            >
+              <span className="text-sm">View All 10 Places</span>
+            </Link>
+
+            {/* Next */}
+            {place.nextPlace ? (
+              <Link 
+                href={`/top-10-places/${place.nextPlace.slug}`}
+                className="group flex items-center gap-3 text-stone-600 hover:text-amber-600 transition-colors"
+              >
+                <div className="text-right">
+                  <p className="text-xs text-stone-400 uppercase tracking-wide">Next</p>
+                  <p className="font-semibold">#{place.nextPlace.rank} {place.nextPlace.name}</p>
+                </div>
+                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            ) : (
+              <div />
+            )}
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+  );
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Search, Instagram, ChevronDown, Menu, X } from "lucide-react";
@@ -11,6 +11,7 @@ export default function Header() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const closeTimeoutRef = useRef(null);
 
 //   useEffect(() => {
 //   const handleScroll = () => {
@@ -88,6 +89,19 @@ useEffect(() => {
     { name: "Golden Circle", href: "/tours/golden-circle" },
     { name: "Where Tien Shan Meets Pamir", href: "/tours/tien-shan-meets-pamir" },
   ];
+  
+  const top10Places = [
+    { name: "Issyk-Kul Lake", href: "/top-10-places/issyk-kul-lake" },
+    { name: "Song-Kul Lake", href: "/top-10-places/song-kul-lake" },
+    { name: "Ala Archa National Park", href: "/top-10-places/ala-archa" },
+    { name: "Tash Rabat", href: "/top-10-places/tash-rabat" },
+    { name: "Burana Tower", href: "/top-10-places/burana-tower" },
+    { name: "Arslanbob Waterfalls", href: "/top-10-places/arslanbob-waterfalls" },
+    { name: "Skazka Canyon", href: "/top-10-places/skazka-canyon" },
+    { name: "Jeti-Oguz Rocks", href: "/top-10-places/jeti-oguz" },
+    { name: "Sulaiman-Too Mountain", href: "/top-10-places/sulaiman-too" },
+    { name: "Kel-Suu Lake", href: "/top-10-places/kel-suu-lake" },
+  ];
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -96,39 +110,58 @@ useEffect(() => {
     { name: "About us", href: "/about" },
     { name: "Reviews", href: "/reviews" },
     { name: "Souvenirs", href: "/souvenirs" },
-    { name: "Top 10 Places", href: "/top-places" },
-    { name: "Kyrgyz Foods", href: "/foods" },
+    { name: "Top 10 Places", href: "/top-10-places", dropdown: top10Places },
+    { name: "Kyrgyz Foods", href: "/kyrgyz-foods" },
     { name: "Best Time", href: "/best-time" },
     { name: "Books", href: "/books" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const handleMouseEnter = (name) => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
+    setOpenDropdown(name);
+  };
+
+  const handleMouseLeave = () => {
+    closeTimeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 150);
+  };
 
   const NavItem = ({ item }) => {
     if (item.dropdown) {
       return (
         <div
           className="relative"
-          onMouseEnter={() => setOpenDropdown(item.name)}
-          onMouseLeave={() => setOpenDropdown(null)}
+          onMouseEnter={() => handleMouseEnter(item.name)}
+          onMouseLeave={handleMouseLeave}
         >
           <Link
             href={item.href}
-            className="flex items-center gap-1 hover:text-blue-400 transition-colors whitespace-nowrap"
+            className="flex items-center gap-1 hover:text-blue-400 transition-colors whitespace-nowrap py-2"
           >
             {item.name}
             <ChevronDown className="w-3 h-3" />
           </Link>
           {openDropdown === item.name && (
-            <div className="absolute top-full left-0 mt-1 bg-black/95 border border-gray-700 rounded-md shadow-xl min-w-[200px] py-2 z-50">
-              {item.dropdown.map((subItem) => (
-                <Link
-                  key={subItem.href}
-                  href={subItem.href}
-                  className="block px-4 py-2 text-sm hover:bg-gray-800 hover:text-blue-400 transition-colors"
-                >
-                  {subItem.name}
-                </Link>
-              ))}
+            <div 
+              className="absolute top-full left-0 pt-1 z-50"
+              onMouseEnter={() => handleMouseEnter(item.name)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="bg-black/95 border border-gray-700 rounded-md shadow-xl min-w-[200px] py-2">
+                {item.dropdown.map((subItem) => (
+                  <Link
+                    key={subItem.href}
+                    href={subItem.href}
+                    className="block px-4 py-2 text-sm hover:bg-gray-800 hover:text-blue-400 transition-colors"
+                  >
+                    {subItem.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           )}
         </div>
