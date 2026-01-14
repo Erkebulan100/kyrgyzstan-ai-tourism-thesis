@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import ImageSlider from '@/components/ImageSlider';
+import PolaroidCarousel from '@/components/PolaroidCarousel';
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
@@ -544,48 +545,25 @@ export default function Home() {
         </div>
       </section>
       {/* Top 10 Places Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-green-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-4 text-center">Top 10 Places to See</h2>
-          <p className="text-blue-100 text-center mb-10 max-w-2xl mx-auto">
-            [Placeholder: Owner will provide intro text about must-visit places in Kyrgyzstan]
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { rank: 1, name: '[Place Name]', image: '/images/home/top10/place-1-placeholder.jpg', description: '[Description placeholder]' },
-              { rank: 2, name: '[Place Name]', image: '/images/home/top10/place-2-placeholder.jpg', description: '[Description placeholder]' },
-              { rank: 3, name: '[Place Name]', image: '/images/home/top10/place-3-placeholder.jpg', description: '[Description placeholder]' },
-              { rank: 4, name: '[Place Name]', image: '/images/home/top10/place-4-placeholder.jpg', description: '[Description placeholder]' },
-              { rank: 5, name: '[Place Name]', image: '/images/home/top10/place-5-placeholder.jpg', description: '[Description placeholder]' },
-              { rank: 6, name: '[Place Name]', image: '/images/home/top10/place-6-placeholder.jpg', description: '[Description placeholder]' },
-              { rank: 7, name: '[Place Name]', image: '/images/home/top10/place-7-placeholder.jpg', description: '[Description placeholder]' },
-              { rank: 8, name: '[Place Name]', image: '/images/home/top10/place-8-placeholder.jpg', description: '[Description placeholder]' },
-              { rank: 9, name: '[Place Name]', image: '/images/home/top10/place-9-placeholder.jpg', description: '[Description placeholder]' },
-              { rank: 10, name: '[Place Name]', image: '/images/home/top10/place-10-placeholder.jpg', description: '[Description placeholder]' },
-            ].map((place, idx) => (
-              <div key={idx} className="bg-white/10 backdrop-blur rounded-lg overflow-hidden flex hover:bg-white/20 transition-colors">
-                <div className="w-32 h-32 flex-shrink-0">
-                  <img 
-                    src={place.image} 
-                    alt={place.name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-4 flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="bg-white text-blue-900 font-bold rounded-full w-8 h-8 flex items-center justify-center text-sm">
-                      {place.rank}
-                    </span>
-                    <h3 className="font-bold text-white">{place.name}</h3>
-                  </div>
-                  <p className="text-blue-100 text-sm">{place.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Top 10 Places Section */}
+<PolaroidCarousel
+  title="Top 10 Places to See"
+  subtitle="Discover the most breathtaking destinations in Kyrgyzstan"
+  seeAllLink="/top-10-places"
+  seeAllText="See All 10 Places"
+  places={[
+    { rank: 1, name: 'Issyk-Kul Lake', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/destinations/issyk-kul-lake' },
+    { rank: 2, name: 'Song-Kul Lake', region: 'Naryn Region', image: '/images/destinations/naryn/slide-1.jpg', link: '/destinations/naryn' },
+    { rank: 3, name: 'Ala Archa National Park', region: 'Near Bishkek', image: '/images/destinations/bishkek/slide-1.jpg', link: '/destinations/bishkek' },
+    { rank: 4, name: 'Tash Rabat', region: 'Naryn Region', image: '/images/destinations/naryn/slide-1.jpg', link: '/destinations/naryn' },
+    { rank: 5, name: 'Burana Tower', region: 'Chuy Region', image: '/images/destinations/chong-kemin/slide-1.jpg', link: '/destinations/chong-kemin' },
+    { rank: 6, name: 'Arslanbob Waterfalls', region: 'Jalal-Abad Region', image: '/images/destinations/arslanbob/slide-1.jpg', link: '/destinations/arslanbob' },
+    { rank: 7, name: 'Skazka Canyon', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/destinations/issyk-kul-lake' },
+    { rank: 8, name: 'Jeti-Oguz Rocks', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/destinations/issyk-kul-lake' },
+    { rank: 9, name: 'Sulaiman-Too Mountain', region: 'Osh City', image: '/images/destinations/osh-fergana-valley/slide-1.jpg', link: '/destinations/osh-fergana-valley' },
+    { rank: 10, name: 'Kel-Suu Lake', region: 'At-Bashy Valley', image: '/images/destinations/at-bashy/slide-1.jpg', link: '/destinations/at-bashy' },
+  ]}
+/>
       {/* Kyrgyz Foods Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
