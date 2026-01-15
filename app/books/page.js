@@ -206,7 +206,7 @@ export default function BooksPage() {
               </div>
               <div>
                 <p className="text-stone-300 leading-relaxed mb-4">
-                  Kyrgyzstan most celebrated writer, Aitmatov wrote in both Kyrgyz and Russian, 
+                  Kyrgyzstan&apos;s most celebrated writer, Aitmatov wrote in both Kyrgyz and Russian, 
                   bringing Central Asian stories to the world. His works explore the tension between 
                   tradition and modernity, the bond between humans and nature, and the universal 
                   themes of love, loss, and identity.

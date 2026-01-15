@@ -351,81 +351,194 @@ export default function Home() {
             
 
       {/* Quick Links Section - Immersive Overlay Design */}
-<section className="py-20 px-4 bg-gray-50">
-  <div className="max-w-7xl mx-auto">
+{/* Quick Links Section - Silk Road Explorer Design */}
+<section className="relative py-24 px-4 overflow-hidden">
+  {/* Rich gradient background */}
+  <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900" />
+  
+  {/* Decorative pattern overlay */}
+  <div className="absolute inset-0 opacity-[0.03]">
+    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <pattern id="silk-pattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+        <circle cx="15" cy="15" r="10" fill="none" stroke="white" strokeWidth="0.5"/>
+        <path d="M15 5 L25 15 L15 25 L5 15 Z" fill="none" stroke="white" strokeWidth="0.5"/>
+        <circle cx="15" cy="15" r="3" fill="white" fillOpacity="0.3"/>
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#silk-pattern)"/>
+    </svg>
+  </div>
+  
+  {/* Ambient glow effects */}
+  <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl" />
+  <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
+  
+  <div className="relative max-w-7xl mx-auto">
     {/* Section Header */}
-    <div className="text-center mb-12">
-      <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight">Explore</h2>
-      <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-        Begin your adventure through the mountains and culture of Central Asia.
+    <div className="text-center mb-16">
+      <div className="flex items-center justify-center gap-4 mb-4">
+        <span className="w-12 h-px bg-gradient-to-r from-transparent via-amber-400/60 to-transparent" />
+        <span className="text-amber-400/80 text-sm uppercase tracking-[0.3em] font-medium">Navigate</span>
+        <span className="w-12 h-px bg-gradient-to-r from-transparent via-amber-400/60 to-transparent" />
+      </div>
+      <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">
+        Explore Kyrgyzstan
+      </h2>
+      <p className="text-slate-400 max-w-xl mx-auto text-lg">
+        Your gateway to the heart of Central Asia
       </p>
     </div>
 
-    {/* Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {/* Cards Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 
       {/* Itineraries */}
-      <Link href="/tours" className="group relative h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 isolate">
+      <Link href="/tours" className="group relative h-[420px] rounded-3xl overflow-hidden">
+        {/* Background Image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110"
           style={{ backgroundImage: "url('/images/tours/classic-kyrgyzstan/slide-1.jpg')" }}
         />
-        {/* Gradient Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
         
-        <div className="absolute bottom-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-          <h3 className="text-2xl font-bold text-white mb-2">Itineraries</h3>
-          <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
+        {/* Multi-layer gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-70" />
+        <div className="absolute inset-0 bg-emerald-900/20 mix-blend-multiply" />
+        
+        {/* Glassmorphism border effect */}
+        <div className="absolute inset-0 rounded-3xl border border-white/10 group-hover:border-amber-400/30 transition-colors duration-500" />
+        
+        {/* Corner accent */}
+        <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-amber-400/40 rounded-tr-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-amber-400/40 rounded-bl-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-end p-6">
+          {/* Icon badge */}
+          <div className="mb-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-amber-500/20 group-hover:border-amber-400/40 transition-all duration-300">
+              <span className="text-2xl">🗺️</span>
+            </div>
+          </div>
+          
+          <h3 className="text-2xl font-bold text-white mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            Itineraries
+          </h3>
+          <p className="text-slate-300 text-sm leading-relaxed transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75">
             Expertly crafted tours through Kyrgyzstan and Central Asia.
           </p>
+          
+          {/* Arrow indicator */}
+          <div className="mt-4 flex items-center gap-2 text-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
+            <span className="text-sm font-medium">Explore</span>
+            <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
         </div>
       </Link>
 
       {/* Destinations */}
-      <Link href="/destinations" className="group relative h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 isolate">
+      <Link href="/destinations" className="group relative h-[420px] rounded-3xl overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110"
           style={{ backgroundImage: "url('/images/destinations/jalal-abad/slide-1.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
         
-        <div className="absolute bottom-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-          <h3 className="text-2xl font-bold text-white mb-2">Destinations</h3>
-          <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-70" />
+        <div className="absolute inset-0 bg-blue-900/20 mix-blend-multiply" />
+        
+        <div className="absolute inset-0 rounded-3xl border border-white/10 group-hover:border-amber-400/30 transition-colors duration-500" />
+        
+        <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-amber-400/40 rounded-tr-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-amber-400/40 rounded-bl-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        
+        <div className="absolute inset-0 flex flex-col justify-end p-6">
+          <div className="mb-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-amber-500/20 group-hover:border-amber-400/40 transition-all duration-300">
+              <span className="text-2xl">🏔️</span>
+            </div>
+          </div>
+          
+          <h3 className="text-2xl font-bold text-white mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            Destinations
+          </h3>
+          <p className="text-slate-300 text-sm leading-relaxed transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75">
             Discover the wonders of Kyrgyzstan&apos;s nine regions.
           </p>
+          
+          <div className="mt-4 flex items-center gap-2 text-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
+            <span className="text-sm font-medium">Discover</span>
+            <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
         </div>
       </Link>
 
       {/* About Us */}
-      <Link href="/about" className="group relative h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 isolate">
+      <Link href="/about" className="group relative h-[420px] rounded-3xl overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110"
           style={{ backgroundImage: "url('/images/logo/logo.png')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
         
-        <div className="absolute bottom-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-          <h3 className="text-2xl font-bold text-white mb-2">About Us</h3>
-          <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-70" />
+        <div className="absolute inset-0 bg-amber-900/20 mix-blend-multiply" />
+        
+        <div className="absolute inset-0 rounded-3xl border border-white/10 group-hover:border-amber-400/30 transition-colors duration-500" />
+        
+        <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-amber-400/40 rounded-tr-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-amber-400/40 rounded-bl-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        
+        <div className="absolute inset-0 flex flex-col justify-end p-6">
+          <div className="mb-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-amber-500/20 group-hover:border-amber-400/40 transition-all duration-300">
+              <span className="text-2xl">👥</span>
+            </div>
+          </div>
+          
+          <h3 className="text-2xl font-bold text-white mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            About Us
+          </h3>
+          <p className="text-slate-300 text-sm leading-relaxed transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75">
             Meet the team behind Tien Shan Journeys.
           </p>
+          
+          <div className="mt-4 flex items-center gap-2 text-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
+            <span className="text-sm font-medium">Learn More</span>
+            <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
         </div>
       </Link>
 
       {/* Contact Us */}
-      <Link href="/contact" className="group relative h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 isolate">
+      <Link href="/contact" className="group relative h-[420px] rounded-3xl overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110"
           style={{ backgroundImage: "url('/images/logo/logo.png')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
         
-        <div className="absolute bottom-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-          <h3 className="text-2xl font-bold text-white mb-2">Contact Us</h3>
-          <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-70" />
+        <div className="absolute inset-0 bg-rose-900/20 mix-blend-multiply" />
+        
+        <div className="absolute inset-0 rounded-3xl border border-white/10 group-hover:border-amber-400/30 transition-colors duration-500" />
+        
+        <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-amber-400/40 rounded-tr-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-amber-400/40 rounded-bl-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        
+        <div className="absolute inset-0 flex flex-col justify-end p-6">
+          <div className="mb-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-amber-500/20 group-hover:border-amber-400/40 transition-all duration-300">
+              <span className="text-2xl">✉️</span>
+            </div>
+          </div>
+          
+          <h3 className="text-2xl font-bold text-white mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            Contact Us
+          </h3>
+          <p className="text-slate-300 text-sm leading-relaxed transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75">
             Start planning your unforgettable journey today.
           </p>
+          
+          <div className="mt-4 flex items-center gap-2 text-amber-400 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
+            <span className="text-sm font-medium">Get in Touch</span>
+            <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
         </div>
       </Link>
 
@@ -807,7 +920,7 @@ export default function Home() {
         <div>
           <p className="text-stone-800 font-semibold">Chingiz Aitmatov</p>
           <p className="text-stone-500 text-sm">
-            Kyrgyzstan most celebrated author — his works brought Central Asian stories to the world stage
+            Kyrgyzstan&apos;s most celebrated author — his works brought Central Asian stories to the world stage
           </p>
         </div>
         <Link 
