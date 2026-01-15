@@ -392,7 +392,7 @@ export default function Home() {
         <div className="absolute bottom-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
           <h3 className="text-2xl font-bold text-white mb-2">Destinations</h3>
           <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
-            Discover the wonders of Kyrgyzstan's nine regions.
+            Discover the wonders of Kyrgyzstan&apos;s nine regions.
           </p>
         </div>
       </Link>
