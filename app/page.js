@@ -495,36 +495,92 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Best Souvenirs Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Best Souvenirs to Buy</h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
-            [Placeholder: Owner will provide intro text about Kyrgyz crafts and souvenirs]
-          </p>
+      {/* Souvenirs Section - Artisan Craft Style */}
+<section className="py-16 px-4 bg-gradient-to-br from-red-900 via-red-800 to-amber-900 relative overflow-hidden">
+  {/* Kyrgyz pattern overlay */}
+  <div className="absolute inset-0 opacity-5">
+    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <pattern id="kyrgyz-pattern-home" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M10 0 L20 10 L10 20 L0 10 Z" fill="none" stroke="white" strokeWidth="0.5"/>
+        <circle cx="10" cy="10" r="3" fill="none" stroke="white" strokeWidth="0.5"/>
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#kyrgyz-pattern-home)"/>
+    </svg>
+  </div>
+  
+  {/* Stitched border effect */}
+  <div className="absolute top-4 left-4 right-4 bottom-4 border-2 border-dashed border-white/10 rounded-xl pointer-events-none" />
+  
+  <div className="relative max-w-6xl mx-auto">
+    {/* Header */}
+    <div className="text-center mb-12">
+      <p className="text-amber-300 uppercase tracking-[0.3em] text-sm mb-3 flex items-center justify-center gap-3">
+        <span className="w-8 h-px bg-amber-300/50"></span>
+        Handcrafted Treasures
+        <span className="w-8 h-px bg-amber-300/50"></span>
+      </p>
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        Souvenirs to Bring Home
+      </h2>
+      <p className="text-red-200 max-w-xl mx-auto">
+        Each piece tells a story of nomadic heritage and generations of craftsmanship
+      </p>
+    </div>
+    
+    {/* 3 Craft Tag Cards */}
+    <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-10">
+      {[
+        { name: 'Shyrdak', subtitle: 'Felt Carpet', icon: '🧶', desc: 'Handmade felt rugs with bold geometric patterns' },
+        { name: 'Ak-Kalpak', subtitle: 'White Felt Hat', icon: '🎩', desc: 'The iconic Kyrgyz hat — symbol of national identity' },
+        { name: 'Silver Jewelry', subtitle: 'Traditional Ornaments', icon: '💎', desc: 'Ancient motifs crafted in silver and stone' },
+      ].map((item, idx) => (
+        <Link 
+          key={idx} 
+          href="/souvenirs"
+          className="group relative"
+        >
+          {/* Stitched border */}
+          <div className="absolute -inset-1 border-2 border-dashed border-amber-300/20 rounded-xl group-hover:border-amber-300/40 transition-colors" />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { name: '[Souvenir 1]', image: '/images/home/souvenirs/souvenir-1-placeholder.jpg', description: '[Description placeholder]' },
-              { name: '[Souvenir 2]', image: '/images/home/souvenirs/souvenir-2-placeholder.jpg', description: '[Description placeholder]' },
-              { name: '[Souvenir 3]', image: '/images/home/souvenirs/souvenir-3-placeholder.jpg', description: '[Description placeholder]' },
-              { name: '[Souvenir 4]', image: '/images/home/souvenirs/souvenir-4-placeholder.jpg', description: '[Description placeholder]' },
-            ].map((item, idx) => (
-              <div key={idx} className="bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
-                <img 
-                  src={item.image} 
-                  alt={item.name} 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="font-bold text-gray-800 mb-2">{item.name}</h3>
-                  <p className="text-gray-600 text-sm">{item.description}</p>
-                </div>
-              </div>
-            ))}
+          {/* Card */}
+          <div className="relative bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
+            {/* Icon */}
+            <div className="w-16 h-16 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full flex items-center justify-center text-3xl mb-4 mx-auto shadow-lg group-hover:scale-110 transition-transform">
+              {item.icon}
+            </div>
+            
+            {/* Content */}
+            <div className="text-center">
+              <p className="text-amber-300 text-xs uppercase tracking-widest mb-1">{item.subtitle}</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-amber-200 transition-colors">
+                {item.name}
+              </h3>
+              <p className="text-red-200 text-sm">
+                {item.desc}
+              </p>
+            </div>
+            
+            {/* Hover tag */}
+            <div className="absolute -top-2 -right-2 bg-amber-500 text-white text-xs px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+              View →
+            </div>
           </div>
-        </div>
-      </section>
+        </Link>
+      ))}
+    </div>
+    
+    {/* CTA */}
+    <div className="text-center">
+      <Link 
+        href="/souvenirs"
+        className="inline-flex items-center gap-2 bg-white text-red-800 px-8 py-3 rounded-full font-semibold hover:bg-amber-100 transition-colors shadow-lg"
+      >
+        Explore All Souvenirs
+        <span className="text-lg">→</span>
+      </Link>
+    </div>
+  </div>
+</section>
       {/* Top 10 Places Section */}
 <PolaroidCarousel
   title="Top 10 Places to See"
