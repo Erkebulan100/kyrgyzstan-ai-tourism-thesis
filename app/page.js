@@ -544,38 +544,88 @@ export default function Home() {
   { rank: 10, name: 'Kel-Suu Lake', region: 'At-Bashy Valley', image: '/images/destinations/at-bashy/slide-1.jpg', link: '/top-10-places/kel-suu-lake' },
 ]}
 />
-      {/* Kyrgyz Foods Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Kyrgyz Foods</h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
-            [Placeholder: Owner will provide intro text about traditional Kyrgyz cuisine]
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { name: '[Food Name 1]', image: '/images/home/foods/food-1-placeholder.jpg', description: '[Description placeholder - what it is, ingredients, when it is served]' },
-              { name: '[Food Name 2]', image: '/images/home/foods/food-2-placeholder.jpg', description: '[Description placeholder]' },
-              { name: '[Food Name 3]', image: '/images/home/foods/food-3-placeholder.jpg', description: '[Description placeholder]' },
-              { name: '[Food Name 4]', image: '/images/home/foods/food-4-placeholder.jpg', description: '[Description placeholder]' },
-              { name: '[Food Name 5]', image: '/images/home/foods/food-5-placeholder.jpg', description: '[Description placeholder]' },
-              { name: '[Food Name 6]', image: '/images/home/foods/food-6-placeholder.jpg', description: '[Description placeholder]' },
-            ].map((food, idx) => (
-              <div key={idx} className="bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
-                <img 
-                  src={food.image} 
-                  alt={food.name} 
-                  className="w-full h-56 object-cover"
-                />
-                <div className="p-5">
-                  <h3 className="font-bold text-gray-800 text-lg mb-2">{food.name}</h3>
-                  <p className="text-gray-600 text-sm">{food.description}</p>
-                </div>
-              </div>
-            ))}
+      {/* Kyrgyz Foods Section - Horizontal Scroll Preview */}
+<section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
+  <div className="max-w-6xl mx-auto">
+    {/* Header with link */}
+    <div className="flex items-end justify-between mb-10">
+      <div>
+        <p className="text-amber-600 uppercase tracking-widest text-sm font-medium mb-2">
+          Taste of the Silk Road
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-stone-800">
+          Kyrgyz Cuisine
+        </h2>
+      </div>
+      <Link 
+        href="/kyrgyz-foods"
+        className="hidden md:inline-flex items-center gap-2 text-amber-700 hover:text-amber-900 font-semibold transition-colors"
+      >
+        Explore All Dishes
+        <span className="text-xl">→</span>
+      </Link>
+    </div>
+    
+    {/* Horizontal Cards - 4 Preview Items */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8">
+      {[
+        { name: 'Beshbarmak', subtitle: 'National Dish', desc: 'Boiled meat over flat noodles, eaten by hand' },
+        { name: 'Plov', subtitle: 'Celebration Rice', desc: 'Layered rice with meat, cooked in a kazan' },
+        { name: 'Lagman', subtitle: 'Hand-Pulled Noodles', desc: 'Thick noodles in savory broth' },
+        { name: 'Kumys', subtitle: 'Nomad Drink', desc: 'Fermented mare\'s milk, 5000 years old' },
+      ].map((food, idx) => (
+        <Link 
+          key={idx} 
+          href="/kyrgyz-foods"
+          className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+        >
+          {/* Image placeholder */}
+          <div className="h-32 md:h-40 bg-gradient-to-br from-amber-200 to-orange-300 flex items-center justify-center">
+            <span className="text-4xl">🍽️</span>
+            {/* Replace with actual image:
+            <img src={`/images/foods/${food.name.toLowerCase()}.jpg`} alt={food.name} className="w-full h-full object-cover" />
+            */}
           </div>
-        </div>
-      </section>
+          
+          {/* Content */}
+          <div className="p-4">
+            <p className="text-amber-600 text-xs uppercase tracking-wide mb-1">{food.subtitle}</p>
+            <h3 className="font-bold text-stone-800 text-lg mb-1 group-hover:text-amber-700 transition-colors">
+              {food.name}
+            </h3>
+            <p className="text-stone-500 text-sm line-clamp-2">{food.desc}</p>
+          </div>
+          
+          {/* Hover arrow */}
+          <div className="absolute top-3 right-3 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <span className="text-amber-600">→</span>
+          </div>
+        </Link>
+      ))}
+    </div>
+    
+    {/* Mobile "See All" button */}
+    <div className="md:hidden text-center">
+      <Link 
+        href="/kyrgyz-foods"
+        className="inline-flex items-center gap-2 bg-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-amber-700 transition-colors"
+      >
+        Explore All 7 Dishes
+        <span>→</span>
+      </Link>
+    </div>
+    
+    {/* Desktop subtle CTA */}
+    <div className="hidden md:block text-center">
+      <p className="text-stone-500">
+        Discover all 7 traditional dishes including Manti, Samsa, and Kuurdak
+        <Link href="/kyrgyz-foods" className="text-amber-600 hover:text-amber-700 font-medium ml-2">
+          View full guide →
+        </Link>
+      </p>
+    </div>
+  </div>
+</section>
       {/* Best Time to Travel Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
