@@ -350,86 +350,88 @@ export default function Home() {
       </section>
             
 
-      {/* Quick Links Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">Explore</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Itineraries Card */}
-            <Link href="/tours" className="group">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
-                <div 
-                  className="h-48 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
-                  style={{ backgroundImage: "url('/images/home/itineraries-placeholder.jpg')" }}
-                />
-                <div className="p-5">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
-                    Itineraries
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Expertly crafted tours through Kyrgyzstan and Central Asia.
-                  </p>
-                </div>
-              </div>
-            </Link>
+      {/* Quick Links Section - Immersive Overlay Design */}
+<section className="py-20 px-4 bg-gray-50">
+  <div className="max-w-7xl mx-auto">
+    {/* Section Header */}
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight">Explore</h2>
+      <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Begin your adventure through the mountains and culture of Central Asia.
+      </p>
+    </div>
 
-            {/* Destinations Card */}
-            <Link href="/destinations" className="group">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
-                <div 
-                  className="h-48 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
-                  style={{ backgroundImage: "url('/images/home/destinations-placeholder.jpg')" }}
-                />
-                <div className="p-5">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
-                    Destinations
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Discover the wonders of Kyrgyzstan&apos;s nine regions.
-                  </p>
-                </div>
-              </div>
-            </Link>
+    {/* Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            {/* About Us Card */}
-            <Link href="/about" className="group">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
-                <div 
-                  className="h-48 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
-                  style={{ backgroundImage: "url('/images/home/about-placeholder.jpg')" }}
-                />
-                <div className="p-5">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
-                    About Us
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Meet the team behind Tien Shan Journeys.
-                  </p>
-                </div>
-              </div>
-            </Link>
-
-            {/* Contact Us Card */}
-            <Link href="/contact" className="group">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full">
-                <div 
-                  className="h-48 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
-                  style={{ backgroundImage: "url('/images/home/contact-placeholder.jpg')" }}
-                />
-                <div className="p-5">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
-                    Contact Us
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Start planning your unforgettable journey today.
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </div>
+      {/* Itineraries */}
+      <Link href="/tours" className="group relative h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 isolate">
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          style={{ backgroundImage: "url('/images/tours/classic-kyrgyzstan/slide-1.jpg')" }}
+        />
+        {/* Gradient Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+        
+        <div className="absolute bottom-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          <h3 className="text-2xl font-bold text-white mb-2">Itineraries</h3>
+          <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
+            Expertly crafted tours through Kyrgyzstan and Central Asia.
+          </p>
         </div>
-      </section>
+      </Link>
+
+      {/* Destinations */}
+      <Link href="/destinations" className="group relative h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 isolate">
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          style={{ backgroundImage: "url('/images/destinations/jalal-abad/slide-1.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+        
+        <div className="absolute bottom-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          <h3 className="text-2xl font-bold text-white mb-2">Destinations</h3>
+          <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
+            Discover the wonders of Kyrgyzstan's nine regions.
+          </p>
+        </div>
+      </Link>
+
+      {/* About Us */}
+      <Link href="/about" className="group relative h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 isolate">
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          style={{ backgroundImage: "url('/images/logo/logo.png')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+        
+        <div className="absolute bottom-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          <h3 className="text-2xl font-bold text-white mb-2">About Us</h3>
+          <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
+            Meet the team behind Tien Shan Journeys.
+          </p>
+        </div>
+      </Link>
+
+      {/* Contact Us */}
+      <Link href="/contact" className="group relative h-96 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 isolate">
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          style={{ backgroundImage: "url('/images/logo/logo.png')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+        
+        <div className="absolute bottom-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          <h3 className="text-2xl font-bold text-white mb-2">Contact Us</h3>
+          <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
+            Start planning your unforgettable journey today.
+          </p>
+        </div>
+      </Link>
+
+    </div>
+  </div>
+</section>
       
       {/* Souvenirs Section - Artisan Craft Style */}
 <section className="py-16 px-4 bg-gradient-to-br from-red-900 via-red-800 to-amber-900 relative overflow-hidden">

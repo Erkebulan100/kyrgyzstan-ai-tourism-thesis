@@ -108,7 +108,7 @@ useEffect(() => {
     { name: "Itineraries", href: "/tours", dropdown: itineraries },
     { name: "Destinations", href: "/destinations", dropdown: destinations },
     { name: "About us", href: "/about" },
-    { name: "Reviews", href: "/reviews" },
+    // { name: "Reviews", href: "/reviews" },
     { name: "Souvenirs", href: "/souvenirs" },
     { name: "Top 10 Places", href: "/top-10-places", dropdown: top10Places },
     { name: "Kyrgyz Foods", href: "/kyrgyz-foods" },
