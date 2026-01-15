@@ -430,71 +430,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Reviews Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">What Our Travelers Say</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Review 1 */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center mb-4">
-                <img 
-                  src="/images/home/reviews/reviewer-1-placeholder.jpg" 
-                  alt="Reviewer" 
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-gray-800">[Reviewer Name]</h4>
-                  <p className="text-gray-500 text-sm">[Country]</p>
-                </div>
-              </div>
-              <p className="text-gray-600 italic">
-                [Placeholder for review text. The owner will provide actual testimonials from past travelers.]
-              </p>
-              <div className="mt-4 text-yellow-500">★★★★★</div>
-            </div>
-
-            {/* Review 2 */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center mb-4">
-                <img 
-                  src="/images/home/reviews/reviewer-2-placeholder.jpg" 
-                  alt="Reviewer" 
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-gray-800">[Reviewer Name]</h4>
-                  <p className="text-gray-500 text-sm">[Country]</p>
-                </div>
-              </div>
-              <p className="text-gray-600 italic">
-                [Placeholder for review text. The owner will provide actual testimonials from past travelers.]
-              </p>
-              <div className="mt-4 text-yellow-500">★★★★★</div>
-            </div>
-
-            {/* Review 3 */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center mb-4">
-                <img 
-                  src="/images/home/reviews/reviewer-3-placeholder.jpg" 
-                  alt="Reviewer" 
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-gray-800">[Reviewer Name]</h4>
-                  <p className="text-gray-500 text-sm">[Country]</p>
-                </div>
-              </div>
-              <p className="text-gray-600 italic">
-                [Placeholder for review text. The owner will provide actual testimonials from past travelers.]
-              </p>
-              <div className="mt-4 text-yellow-500">★★★★★</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       {/* Souvenirs Section - Artisan Craft Style */}
 <section className="py-16 px-4 bg-gradient-to-br from-red-900 via-red-800 to-amber-900 relative overflow-hidden">
   {/* Kyrgyz pattern overlay */}
@@ -683,68 +619,102 @@ export default function Home() {
   </div>
 </section>
       {/* Best Time to Travel Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Best Time to Travel</h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
-            [Placeholder: Owner will provide intro text about seasons and weather in Kyrgyzstan]
-          </p>
+{/* Best Time to Travel Section - Cool Blue/Teal Theme */}
+<section className="py-16 px-4 bg-gradient-to-br from-sky-50 via-cyan-50 to-teal-50 relative overflow-hidden">
+  {/* Subtle weather decorations */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+    <div className="absolute top-10 left-[10%] text-6xl">☀️</div>
+    <div className="absolute top-20 right-[20%] text-4xl">🌤️</div>
+    <div className="absolute bottom-16 left-[25%] text-3xl">❄️</div>
+    <div className="absolute bottom-10 right-[15%] text-4xl">🍂</div>
+  </div>
+  
+  <div className="relative max-w-6xl mx-auto">
+    {/* Header */}
+    <div className="text-center mb-12">
+      <p className="text-cyan-600 uppercase tracking-[0.2em] text-sm font-medium mb-2 flex items-center justify-center gap-2">
+        <span>🌡️</span>
+        Plan Your Journey
+      </p>
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        Best Time to Visit
+      </h2>
+      <p className="text-gray-600 max-w-xl mx-auto">
+        Peak season runs <span className="text-cyan-600 font-semibold">June – September</span> with warm days and open mountain passes
+      </p>
+    </div>
+    
+    {/* 4 Season Mini Cards */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      {[
+        { season: 'Spring', months: 'Mar-May', icon: '🌸', temp: '8-20°C', highlight: 'Blooming valleys', gradient: 'from-emerald-400 to-teal-500', ring: 'ring-emerald-200' },
+        { season: 'Summer', months: 'Jun-Aug', icon: '☀️', temp: '18-32°C', highlight: 'Peak season', gradient: 'from-amber-400 to-orange-500', ring: 'ring-amber-200', best: true },
+        { season: 'Autumn', months: 'Sep-Nov', icon: '🍂', temp: '5-18°C', highlight: 'Golden colors', gradient: 'from-orange-400 to-red-500', ring: 'ring-orange-200' },
+        { season: 'Winter', months: 'Dec-Feb', icon: '❄️', temp: '-10-5°C', highlight: 'Skiing & snow', gradient: 'from-blue-400 to-indigo-500', ring: 'ring-blue-200' },
+      ].map((s, idx) => (
+        <Link 
+          key={idx} 
+          href="/best-time"
+          className={`group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${s.best ? `ring-2 ${s.ring}` : ''}`}
+        >
+          {/* Best badge */}
+          {s.best && (
+            <div className="absolute top-2 right-2 bg-amber-400 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">
+              BEST
+            </div>
+          )}
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              { 
-                destination: 'Issyk-Kul Lake', 
-                image: '/images/home/best-time/issyk-kul-placeholder.jpg', 
-                bestTime: '[e.g., June - August]', 
-                description: '[Placeholder: Why this is the best time, what to expect]' 
-              },
-              { 
-                destination: 'Son-Kul Lake', 
-                image: '/images/home/best-time/son-kul-placeholder.jpg', 
-                bestTime: '[e.g., June - September]', 
-                description: '[Placeholder]' 
-              },
-              { 
-                destination: 'Arslanbob', 
-                image: '/images/home/best-time/arslanbob-placeholder.jpg', 
-                bestTime: '[e.g., September - October]', 
-                description: '[Placeholder: Walnut harvest season, etc.]' 
-              },
-              { 
-                destination: 'Bishkek', 
-                image: '/images/home/best-time/bishkek-placeholder.jpg', 
-                bestTime: '[e.g., April - October]', 
-                description: '[Placeholder]' 
-              },
-              { 
-                destination: '[Destination 5]', 
-                image: '/images/home/best-time/destination-5-placeholder.jpg', 
-                bestTime: '[Best months]', 
-                description: '[Placeholder]' 
-              },
-              { 
-                destination: '[Destination 6]', 
-                image: '/images/home/best-time/destination-6-placeholder.jpg', 
-                bestTime: '[Best months]', 
-                description: '[Placeholder]' 
-              },
-            ].map((item, idx) => (
-              <div key={idx} className="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row">
-                <img 
-                  src={item.image} 
-                  alt={item.destination} 
-                  className="w-full md:w-48 h-48 object-cover"
-                />
-                <div className="p-5 flex-1">
-                  <h3 className="font-bold text-gray-800 text-lg mb-1">{item.destination}</h3>
-                  <p className="text-blue-600 font-semibold text-sm mb-2">Best time: {item.bestTime}</p>
-                  <p className="text-gray-600 text-sm">{item.description}</p>
-                </div>
-              </div>
-            ))}
+          {/* Gradient header */}
+          <div className={`bg-gradient-to-r ${s.gradient} p-4 text-white text-center`}>
+            <div className="text-3xl mb-1">{s.icon}</div>
+            <h3 className="font-bold text-lg">{s.season}</h3>
+            <p className="text-white/80 text-xs">{s.months}</p>
           </div>
+          
+          {/* Content */}
+          <div className="p-4 text-center">
+            <p className="text-gray-800 font-semibold text-sm mb-1">{s.temp}</p>
+            <p className="text-gray-500 text-xs">{s.highlight}</p>
+          </div>
+          
+          {/* Hover indicator */}
+          <div className="absolute bottom-2 right-2 w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <span className="text-gray-400 text-xs">→</span>
+          </div>
+        </Link>
+      ))}
+    </div>
+    
+    {/* Quick info strip */}
+    <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
+      <div className="grid md:grid-cols-3 gap-6 text-center">
+        <div>
+          <p className="text-cyan-600 font-bold text-2xl mb-1">☀️ 300+</p>
+          <p className="text-gray-600 text-sm">Sunny days per year</p>
         </div>
-      </section>
+        <div>
+          <p className="text-cyan-600 font-bold text-2xl mb-1">🏔️ Jun-Sep</p>
+          <p className="text-gray-600 text-sm">All mountain passes open</p>
+        </div>
+        <div>
+          <p className="text-cyan-600 font-bold text-2xl mb-1">🏖️ Jul-Aug</p>
+          <p className="text-gray-600 text-sm">Warm enough for lake swimming</p>
+        </div>
+      </div>
+    </div>
+    
+    {/* CTA */}
+    <div className="text-center">
+      <Link 
+        href="/best-time"
+        className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-8 py-3 rounded-full font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all shadow-lg"
+      >
+        View Full Seasonal Guide
+        <span className="text-lg">→</span>
+      </Link>
+    </div>
+  </div>
+</section>
       {/* Recommended Kyrgyz Books Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
