@@ -1,4 +1,4 @@
-
+import AnimatedHero from '@/components/AnimatedHero';
 import Link from 'next/link';
 import ImageSlider from '@/components/ImageSlider';
 import PolaroidCarousel from '@/components/PolaroidCarousel';
@@ -6,34 +6,15 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       
-      <section 
-  className="relative h-96 flex items-end justify-center pb-[45%] md:pb-[23%]"
-  style={{
-    backgroundImage: "url('/images/hero/hero-yurt-night.jpg')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center 99%'
-  }}
->
-  {/* Logo - Top Left */}
-  <div className="absolute top-5 left-4 md:top-7 md:left-7 z-10">
+     <AnimatedHero />
+      {/* <div className="absolute top-5 left-35 md:top-13 md:left-61 z-10">
     <img 
       src="/images/logo/logo_without_slogan.png" 
       alt="Tien Shan Journeys" 
-      className="w-32 md:w-63 h-auto"
+      className="w-32 md:w-42 h-auto"
       style={{ filter: 'brightness(3)' }}
     />
-  </div>
-  
-  {/* Tagline - Top Right */}
-  <div className="absolute top-20 right-4 md:top-14 md:right-8 z-10 text-white">
-    <div className="px-3 py-1 rounded text-center" style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))' }}>
-      <p className="text-xs md:text-base font-light tracking-wider uppercase">
-        Bespoke Travel in Kyrgyzstan and Central Asia
-      </p>
-    </div>
-  </div>
-</section>
-      
+  </div> */}
 
       {/* Tours Section */}
       <section 
