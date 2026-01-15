@@ -805,7 +805,7 @@ export default function Home() {
         <div>
           <p className="text-stone-800 font-semibold">Chingiz Aitmatov</p>
           <p className="text-stone-500 text-sm">
-            Kyrgyzstan's most celebrated author — his works brought Central Asian stories to the world stage
+            Kyrgyzstan most celebrated author — his works brought Central Asian stories to the world stage
           </p>
         </div>
         <Link 

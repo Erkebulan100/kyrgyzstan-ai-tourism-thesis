@@ -9,7 +9,7 @@ const books = [
     title: 'Jamilia',
     author: 'Chingiz Aitmatov',
     year: '1958',
-    description: 'A beautiful love story set in a Kyrgyz village during World War II. Called "the world\'s most beautiful love story" by Louis Aragon. A young woman defies tradition to follow her heart.',
+    description: 'A beautiful love story set in a Kyrgyz village during World War II. Called the most beautiful love story in the world by Louis Aragon. A young woman defies tradition to follow her heart.',
     whyRead: 'The most famous Kyrgyz novel — a must-read before visiting',
     pages: '120',
     genre: 'Fiction',
@@ -20,8 +20,8 @@ const books = [
     title: 'The Day Lasts More Than a Hundred Years',
     author: 'Chingiz Aitmatov',
     year: '1980',
-    description: 'An epic novel weaving together a railroad worker\'s journey to bury his friend with Kyrgyz legends and even a science fiction subplot about contact with aliens.',
-    whyRead: 'Aitmatov\'s masterpiece — deep insight into Central Asian soul',
+    description: 'An epic novel weaving together a railroad worker journey to bury his friend with Kyrgyz legends and even a science fiction subplot about contact with aliens.',
+    whyRead: 'Aitmatov masterpiece — deep insight into Central Asian soul',
     pages: '368',
     genre: 'Fiction',
     color: 'from-green-700 to-teal-700',
@@ -206,13 +206,13 @@ export default function BooksPage() {
               </div>
               <div>
                 <p className="text-stone-300 leading-relaxed mb-4">
-                  Kyrgyzstan's most celebrated writer, Aitmatov wrote in both Kyrgyz and Russian, 
+                  Kyrgyzstan most celebrated writer, Aitmatov wrote in both Kyrgyz and Russian, 
                   bringing Central Asian stories to the world. His works explore the tension between 
                   tradition and modernity, the bond between humans and nature, and the universal 
                   themes of love, loss, and identity.
                 </p>
-                <p className="text-emerald-400 font-medium">
-                  "He who fears his own memories is a slave to them."
+                <p className="text-emerald-400 font-medium italic">
+                  &ldquo;He who fears his own memories is a slave to them.&rdquo;
                 </p>
               </div>
             </div>
