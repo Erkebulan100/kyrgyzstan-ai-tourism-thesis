@@ -92,15 +92,15 @@ useEffect(() => {
   
   const top10Places = [
     { name: "Issyk-Kul Lake", href: "/top-10-places/issyk-kul-lake" },
+    { name: "Ala-Archa National Park", href: "/top-10-places/ala-archa" },
     { name: "Song-Kul Lake", href: "/top-10-places/song-kul-lake" },
-    { name: "Ala Archa National Park", href: "/top-10-places/ala-archa" },
-    { name: "Tash Rabat", href: "/top-10-places/tash-rabat" },
-    { name: "Burana Tower", href: "/top-10-places/burana-tower" },
-    { name: "Arslanbob Waterfalls", href: "/top-10-places/arslanbob-waterfalls" },
-    { name: "Skazka Canyon", href: "/top-10-places/skazka-canyon" },
-    { name: "Jeti-Oguz Rocks", href: "/top-10-places/jeti-oguz" },
-    { name: "Sulaiman-Too Mountain", href: "/top-10-places/sulaiman-too" },
     { name: "Kel-Suu Lake", href: "/top-10-places/kel-suu-lake" },
+    { name: "Sary-Chelek Lake", href: "/top-10-places/sary-chelek" },
+    { name: "Altyn-Arashan", href: "/top-10-places/altyn-arashan" },
+    { name: "Jeti-Oguz Rocks", href: "/top-10-places/jeti-oguz" },
+    { name: "Tash Rabat", href: "/top-10-places/tash-rabat" },
+    { name: "Arslanbob", href: "/top-10-places/arslanbob" },
+    { name: "Skazka Canyon", href: "/top-10-places/skazka-canyon" },
   ];
 
   const navItems = [
