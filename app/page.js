@@ -716,34 +716,119 @@ export default function Home() {
   </div>
 </section>
       {/* Recommended Kyrgyz Books Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Recommended Kyrgyz Books</h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
-            [Placeholder: Owner will provide intro text about Kyrgyz literature and recommended reads]
-          </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {[
-              { title: '[Book Title 1]', author: '[Author]', image: '/images/home/books/book-1-placeholder.jpg' },
-              { title: '[Book Title 2]', author: '[Author]', image: '/images/home/books/book-2-placeholder.jpg' },
-              { title: '[Book Title 3]', author: '[Author]', image: '/images/home/books/book-3-placeholder.jpg' },
-              { title: '[Book Title 4]', author: '[Author]', image: '/images/home/books/book-4-placeholder.jpg' },
-              { title: '[Book Title 5]', author: '[Author]', image: '/images/home/books/book-5-placeholder.jpg' },
-            ].map((book, idx) => (
-              <div key={idx} className="text-center">
-                <img 
-                  src={book.image} 
-                  alt={book.title} 
-                  className="w-full h-64 object-cover rounded-lg shadow-lg mb-3"
-                />
-                <h3 className="font-bold text-gray-800 text-sm mb-1">{book.title}</h3>
-                <p className="text-gray-500 text-xs">{book.author}</p>
+      {/* Recommended Books Section - Library/Literary Theme */}
+<section className="py-16 px-4 bg-gradient-to-br from-stone-100 to-emerald-50 relative overflow-hidden">
+  {/* Subtle bookshelf lines */}
+  <div className="absolute inset-0 opacity-5" style={{
+    backgroundImage: `repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 60px,
+      #065f46 60px,
+      #065f46 62px
+    )`
+  }} />
+  
+  <div className="relative max-w-6xl mx-auto">
+    {/* Header */}
+    <div className="text-center mb-12">
+      <p className="text-emerald-700 uppercase tracking-[0.2em] text-sm font-medium mb-2 flex items-center justify-center gap-2">
+        <span>📚</span>
+        Before You Go
+      </p>
+      <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mb-4 font-serif">
+        Recommended Reading
+      </h2>
+      <p className="text-stone-600 max-w-xl mx-auto">
+        Immerse yourself in Kyrgyz literature — these books will enrich your journey
+      </p>
+    </div>
+    
+    {/* Book Spines Display - Horizontal Stack */}
+    <div className="flex justify-center gap-4 md:gap-6 mb-10">
+      {[
+        { title: 'Jamilia', author: 'Chingiz Aitmatov', color: 'from-emerald-600 to-green-700', tag: 'Must Read' },
+        { title: 'Epic of Manas', author: 'Traditional', color: 'from-amber-600 to-yellow-700', tag: 'National Epic' },
+        { title: 'Farewell, Gulsary!', author: 'Chingiz Aitmatov', color: 'from-stone-600 to-stone-700', tag: 'Classic' },
+      ].map((book, idx) => (
+        <Link 
+          key={idx} 
+          href="/books"
+          className="group relative"
+        >
+          {/* Book cover */}
+          <div className={`relative w-28 md:w-36 h-44 md:h-56 bg-gradient-to-br ${book.color} rounded-lg shadow-lg transform transition-all duration-300 group-hover:-translate-y-3 group-hover:rotate-1 group-hover:shadow-2xl overflow-hidden`}>
+            {/* Spine effect */}
+            <div className="absolute left-0 top-0 bottom-0 w-2 bg-black/20" />
+            <div className="absolute left-2 top-0 bottom-0 w-px bg-white/20" />
+            
+            {/* Content */}
+            <div className="absolute inset-0 flex flex-col justify-between p-3 text-white">
+              {/* Tag */}
+              <div className="self-end">
+                <span className="bg-white/20 backdrop-blur-sm text-[10px] px-2 py-0.5 rounded-full">
+                  {book.tag}
+                </span>
               </div>
-            ))}
+              
+              {/* Title & Author */}
+              <div>
+                <h3 className="font-bold text-sm md:text-base leading-tight mb-1 font-serif">
+                  {book.title}
+                </h3>
+                <p className="text-white/70 text-[10px] md:text-xs">
+                  {book.author}
+                </p>
+              </div>
+            </div>
+            
+            {/* Hover overlay */}
+            <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors flex items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-2xl">
+                →
+              </span>
+            </div>
           </div>
+          
+          {/* Shadow under book */}
+          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-3/4 h-4 bg-black/10 rounded-full blur-md group-hover:w-full group-hover:bg-black/20 transition-all" />
+        </Link>
+      ))}
+    </div>
+    
+    {/* Author highlight strip */}
+    <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
+      <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+        <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+          <span className="text-2xl">✍️</span>
         </div>
-      </section>
+        <div>
+          <p className="text-stone-800 font-semibold">Chingiz Aitmatov</p>
+          <p className="text-stone-500 text-sm">
+            Kyrgyzstan's most celebrated author — his works brought Central Asian stories to the world stage
+          </p>
+        </div>
+        <Link 
+          href="/books"
+          className="md:ml-auto text-emerald-600 hover:text-emerald-700 font-medium text-sm whitespace-nowrap"
+        >
+          Read more →
+        </Link>
+      </div>
+    </div>
+    
+    {/* CTA */}
+    <div className="text-center">
+      <Link 
+        href="/books"
+        className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-3 rounded-full font-semibold hover:from-emerald-700 hover:to-green-700 transition-all shadow-lg"
+      >
+        View Full Reading List
+        <span className="text-lg">→</span>
+      </Link>
+    </div>
+  </div>
+</section>
       {/* Contact CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-blue-700 to-green-700">
         <div className="max-w-4xl mx-auto text-center">
