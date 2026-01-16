@@ -228,8 +228,8 @@ useEffect(() => {
       {/* Main Header */}
       <div className="py-0">
         <div className="w-full px-4 md:px-6">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center flex-shrink-0">
+          <div className="flex items-center justify-end">
+            {/* <Link href="/" className="flex items-center flex-shrink-0">
               <Image
                 src="/images/logo/logo_only.png"
                 alt="Tien Shan Journeys"
@@ -238,7 +238,7 @@ useEffect(() => {
                 className="md:w-[130px] md:h-[43px]"
                 priority
               />
-            </Link>
+            </Link> */}
 
             <nav className="hidden lg:flex items-center space-x-4 xl:space-x-5 text-[13px] text-white">
               {navItems.map((item) => (
