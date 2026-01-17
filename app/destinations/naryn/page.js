@@ -21,6 +21,13 @@ export default function NarynPage() {
       '/images/destinations/naryn/slide-5.jpg',
       '/images/destinations/naryn/slide-6.jpg',
       '/images/destinations/naryn/slide-7.jpg',
+      '/images/destinations/naryn/slide-8.jpg',
+      '/images/destinations/naryn/slide-9.jpg',
+      '/images/destinations/naryn/slide-10.jpg',
+      '/images/destinations/naryn/slide-11.jpg',
+      '/images/destinations/naryn/slide-12.jpg',
+      '/images/destinations/naryn/slide-13.jpg',
+      '/images/destinations/naryn/slide-14.jpg',
     ]}
     positions={[
       'center center',  // slide-1
@@ -29,7 +36,14 @@ export default function NarynPage() {
       'center center',  // slide-4
       'center center',  // slide-5
       'center center',  // slide-6
-      'center center',  // slide-7
+      'center 50%',  // slide-7
+      'center 95%',  // slide-8
+      'center 80%',  // slide-9
+      'center 75%',  // slide-10
+      'center 80%',  // slide-11
+      'center 59%',  // slide-12
+      'center bottom',  // slide-13
+      'center center',  // slide-14
     ]}
     defaultPosition="center center"
   />
