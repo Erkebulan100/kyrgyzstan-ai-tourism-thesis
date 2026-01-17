@@ -21,7 +21,7 @@ const placeData = {
   quickFacts: {
     location: 'Southern shore of Issyk-Kul Lake',
     altitude: '1,700 meters',
-    bestTime: 'Year-round (sunset is magical)',
+    bestTime: 'Year-round (sunset is stunning)',
     duration: '1-2 hours',
     fromKarakol: '~1.5 hours by car',
     fromBishkek: '~4-5 hours by car',

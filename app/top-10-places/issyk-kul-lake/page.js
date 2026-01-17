@@ -90,7 +90,7 @@ const placeData = {
   
   // Navigation to previous/next places
   prevPlace: null, // First place, no previous
-  nextPlace: { name: 'Song-Kul Lake', slug: 'song-kul-lake', rank: 2 },
+  nextPlace: { name: 'Ala-Archa National Park', slug: 'ala-archa', rank: 2 },
 };
 // ============================================
 // END PLACE DATA

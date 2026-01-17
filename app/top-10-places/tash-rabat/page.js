@@ -10,7 +10,7 @@ export const metadata = {
 // PLACE DATA - Edit this section for each place
 // ============================================
 const placeData = {
-  rank: 4,
+  rank: 8,
   name: 'Tash Rabat',
   tagline: 'Ancient Silk Road Caravanserai',
   region: 'Naryn Region',
@@ -83,8 +83,8 @@ const placeData = {
   ],
   
   // Navigation to previous/next places
-  prevPlace: { name: 'Ala Archa', slug: 'ala-archa', rank: 3 },
-  nextPlace: { name: 'Burana Tower', slug: 'burana-tower', rank: 5 },
+  prevPlace: { name: 'Jeti-Oguz Rocks', slug: 'jeti-oguz', rank: 7 },
+  nextPlace: { name: 'Arslanbob', slug: 'arslanbob', rank: 9 },
 };
 // ============================================
 // END PLACE DATA

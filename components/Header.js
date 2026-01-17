@@ -198,28 +198,43 @@ useEffect(() => {
         isScrolled ? "border-transparent" : "border-gray-800"
       } py-1`}>
         <div className="w-full px-4 md:px-10">
-          <div className="flex justify-end items-center">
-            <div className="flex items-center gap-2 text-sm text-white">
-              <a href="#" className="hover:text-blue-400 transition-colors">English</a>
-              <span className={isScrolled ? "text-white/50" : "text-gray-400"}>|</span>
-              <a href="#" className="hover:text-blue-400 transition-colors">Русский</a>
-            </div>
-            <div className="flex items-center gap-2 ml-10">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <div className="w-6 h-6 bg-[#3b5998] rounded flex items-center justify-center">
-                  <span className="text-white text-sm font-bold">f</span>
-                </div>
-              </a>
-              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <div className="w-6 h-6 bg-[#bd081c] rounded flex items-center justify-center">
-                  <span className="text-white text-sm font-bold">P</span>
-                </div>
-              </a>
-              <a href="https://www.instagram.com/tienshanjourneys/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <div className="w-6 h-6 rounded flex items-center justify-center" style={{ background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' }}>
-                  <Instagram className="w-3 h-3 text-white" />
-                </div>
-              </a>
+          
+          <div className="flex justify-between items-center">
+            <Link href="/" className="flex items-center justify-start flex-shrink-0">
+              <Image
+                src="/images/logo/logo_only.png"
+                alt="Tien Shan Journeys"
+                width={100}
+                height={33}
+                className="md:w-[130px] md:h-[43px]"
+                priority
+              />
+            </Link>
+            <div className="flex items-center gap-6">
+              <div className="flex items-start gap-2 text-sm text-white">
+                <a href="#" className="hover:text-blue-400 transition-colors">English</a>
+                <span className={isScrolled ? "text-white/50" : "text-gray-400"}>|</span>
+                <a href="#" className="hover:text-blue-400 transition-colors">Русский</a>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                  <div className="w-6 h-6 bg-[#3b5998] rounded flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">f</span>
+                  </div>
+                </a>
+                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                  <div className="w-6 h-6 bg-[#bd081c] rounded flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">P</span>
+                  </div>
+                </a>
+                <a href="https://www.instagram.com/tienshanjourneys/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                  <div className="w-6 h-6 rounded flex items-center justify-center" style={{ background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' }}>
+                    <Instagram className="w-3 h-3 text-white" />
+                  </div>
+                  
+                </a>
+              </div>
             </div>
           </div>
         </div>
