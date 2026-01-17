@@ -75,13 +75,24 @@ useEffect(() => {
   };
   
   // On non-homepage, always show logo
-  if (!isHomepage) {
-    setShowHeaderLogo(true);
-  }
+  // if (!isHomepage) {
+  //   setShowHeaderLogo(true);
+  // }
   
   window.addEventListener("scroll", handleScroll, { passive: true });
   return () => window.removeEventListener("scroll", handleScroll);
 }, [lastScrollY, isHomepage]);
+// Reset logo visibility when navigating to homepage
+useEffect(() => {
+  if (isHomepage) {
+    const currentScrollY = window.scrollY;
+    // Hide logo if at top of page (below threshold)
+    setShowHeaderLogo(currentScrollY > 185);
+  } else {
+    // Always show on other pages
+    setShowHeaderLogo(true);
+  }
+}, [pathname, isHomepage]);
   // Dropdown data
   const destinations = [
     { name: "Bishkek", href: "/destinations/bishkek" },
