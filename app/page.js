@@ -644,7 +644,7 @@ export default function Home() {
   { rank: 3, name: 'Song-Kul Lake', region: 'Naryn Region', image: '/images/destinations/naryn/slide-1.jpg', link: '/top-10-places/song-kul-lake' },
   { rank: 4, name: 'Kel-Suu Lake', region: 'At-Bashy Valley', image: '/images/destinations/at-bashy/slide-1.jpg', link: '/top-10-places/kel-suu-lake' },
   { rank: 5, name: 'Sary-Chelek Lake', region: 'Jalal-Abad Region', image: '/images/destinations/jalal-abad/slide-1.jpg', link: '/top-10-places/sary-chelek' },
-  { rank: 6, name: 'Altyn-Arashan', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/top-10-places/altyn-arashan' },
+  { rank: 6, name: 'Karakol and its surroundings', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/top-10-places/karakol-and-its-surroundings' },
   { rank: 7, name: 'Jeti-Oguz Rocks', region: 'Issyk-Kul Region', image: '/images/destinations/issyk-kul-lake/slide-1.jpg', link: '/top-10-places/jeti-oguz' },
   { rank: 8, name: 'Tash Rabat', region: 'Naryn Region', image: '/images/destinations/naryn/slide-1.jpg', link: '/top-10-places/tash-rabat' },
   { rank: 9, name: 'Arslanbob', region: 'Jalal-Abad Region', image: '/images/destinations/arslanbob/slide-1.jpg', link: '/top-10-places/arslanbob' },
