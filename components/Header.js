@@ -153,7 +153,7 @@ useEffect(() => {
         >
           <Link
             href={item.href}
-            className="flex items-center gap-1 hover:text-blue-400 transition-colors whitespace-nowrap py-2"
+            className="flex items-center gap-1 hover:text-blue-400 hover:underline underline-offset-4 transition-colors whitespace-nowrap py-2"
           >
             {item.name}
             <ChevronDown className="w-3 h-3" />
@@ -181,7 +181,7 @@ useEffect(() => {
       );
     }
     return (
-      <Link href={item.href} className="hover:text-blue-400 transition-colors whitespace-nowrap">
+      <Link href={item.href} className="hover:text-blue-400 hover:underline underline-offset-4 transition-colors whitespace-nowrap">
         {item.name}
       </Link>
     );
@@ -189,11 +189,10 @@ useEffect(() => {
 
   return (
     <header
-  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 hover:opacity-100 hover:bg-black ${
     isScrolled 
-      // ? "bg-transparent opacity-0 pointer-events-none" 
-      ? "bg-transparent opacity-50"
-      : "bg-black shadow-lg opacity-100 pointer-events-auto"
+      ? "bg-transparent opacity-50" 
+      : "bg-black shadow-lg opacity-100"
   }`}
 >
     {/* // <header */}
