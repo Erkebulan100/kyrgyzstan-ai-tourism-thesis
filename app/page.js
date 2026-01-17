@@ -69,7 +69,7 @@ export default function Home() {
           
 
           {/* Eagle SVG - Realistic Flying Eagle Silhouette */}
-          <div className="absolute top-[8%] right-[6%] md:top-[1%] md:right-[25%] z-10">
+          <div className="absolute top-[8%] right-[6%] md:top-[1%] md:right-[35%] z-10">
             <img 
               src="/images/eagle.svg" 
               alt="Eagle" 
@@ -78,7 +78,7 @@ export default function Home() {
             />
           </div>
           {/* Horse 1 - With a cap - Between Classic Kyrgyzstan and Golden Circle */}
-          <div className="absolute top-[31%] left-[1%] md:top-[55%] md:left-[15%] z-10">
+          <div className="absolute top-[31%] left-[1%] md:top-[55%] md:left-[19%] z-10">
             <img 
               src="/images/horse.svg" 
               alt="Horse" 
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
 
           {/* Horse 2 - standart-  */}
-          <div className="absolute top-[45%] left-[11%] z-10">
+          <div className="absolute top-[41%] left-[13%] z-10">
             <img 
               src="/images/horse1.svg" 
               alt="Horse" 
@@ -97,7 +97,7 @@ export default function Home() {
             />
           </div>
           {/* Camel 1 - the big one - Bottom right area */}
-          <div className="absolute bottom-[21%] right-[2%] md:bottom-[19%] md:right-[11%] z-10">
+          <div className="absolute bottom-[21%] right-[2%] md:bottom-[29%] md:right-[31%] z-10">
             <img 
               src="/images/camel.svg" 
               alt="Camel" 
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
 
           {/* Camel 2 -the slim one- Next to Camel 1 */}
-          <div className="absolute bottom-[23%] right-[53%] md:bottom-[5%] md:right-[25%] z-10">
+          <div className="absolute bottom-[23%] right-[53%] md:bottom-[15%] md:right-[55%] z-10">
             <img 
               src="/images/camel1.svg" 
               alt="Camel" 
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
 
           {/* Camel 3 with a rider- Third camel */}
-          <div className="absolute bottom-[19%] right-[29%] md:bottom-[7%] md:right-[15%] z-10">
+          <div className="absolute bottom-[19%] right-[29%] md:bottom-[17%] md:right-[41%] z-10">
             <img 
               src="/images/camels.svg" 
               alt="Camel" 
@@ -126,7 +126,7 @@ export default function Home() {
             />
           </div>
           {/* Snow Leopard - Right side of the page */}
-          <div className="absolute top-[45%] right-[8%] z-10">
+          <div className="absolute top-[35%] right-[21%] z-10">
             <img 
               src="/images/snow-leopard.svg" 
               alt="Snow Leopard" 
@@ -135,7 +135,7 @@ export default function Home() {
             />
           </div>
           {/* Yurt 1 - yurt frame - like Kyrgyz yurt frame" */}
-          <div className="absolute top-[5%] left-[19%] md:top-[1%] md:left-[21%] z-10">
+          <div className="absolute top-[5%] left-[19%] md:top-[5%] md:left-[21%] z-10">
             <img 
               src="/images/yurt.svg" 
               alt="Yurt" 
@@ -155,7 +155,7 @@ export default function Home() {
           </div>
 
           {/* Yurt 3 - Mongolian yurt */}
-          <div className="absolute top-[9%] left-[29%] md:top-[1%] md:left-[7%] z-10">
+          <div className="absolute top-[9%] left-[29%] md:top-[11%] md:left-[25%] z-10">
             <img 
               src="/images/yurt2.svg" 
               alt="Yurt" 
