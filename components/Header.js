@@ -1,5 +1,5 @@
 "use client";
-
+import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +12,9 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const closeTimeoutRef = useRef(null);
-
+  const pathname = usePathname();
+  const isHomepage = pathname === "/";
+  const [showHeaderLogo, setShowHeaderLogo] = useState(false);
 //   useEffect(() => {
 //   const handleScroll = () => {
 //     const currentScrollY = window.scrollY;
@@ -54,21 +56,32 @@ useEffect(() => {
     } else if (currentScrollY > lastScrollY) {
       // Scrolling DOWN
       if (currentScrollY > 5) {
-        setIsScrolled(true);  // Fade out
+        setIsScrolled(true);  // Fade to 50%
       }
     }
     
-    // At very top, always visible
+    // At very top, always fully visible
     if (currentScrollY < 5) {
       setIsScrolled(false);
+    }
+    
+    // Logo visibility (homepage only): show after scrolling 120px
+    // Adjustable range: 80-200px works well depending on hero logo position
+    if (isHomepage) {
+      setShowHeaderLogo(currentScrollY > 185);
     }
     
     setLastScrollY(currentScrollY);
   };
   
+  // On non-homepage, always show logo
+  if (!isHomepage) {
+    setShowHeaderLogo(true);
+  }
+  
   window.addEventListener("scroll", handleScroll, { passive: true });
   return () => window.removeEventListener("scroll", handleScroll);
-}, [lastScrollY]);
+}, [lastScrollY, isHomepage]);
   // Dropdown data
   const destinations = [
     { name: "Bishkek", href: "/destinations/bishkek" },
@@ -178,7 +191,8 @@ useEffect(() => {
     <header
   className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
     isScrolled 
-      ? "bg-transparent opacity-0 pointer-events-none" 
+      // ? "bg-transparent opacity-0 pointer-events-none" 
+      ? "bg-transparent opacity-50"
       : "bg-black shadow-lg opacity-100 pointer-events-auto"
   }`}
 >
@@ -200,16 +214,21 @@ useEffect(() => {
         <div className="w-full px-4 md:px-10">
           
           <div className="flex justify-between items-center">
-            <Link href="/" className="flex items-center justify-start flex-shrink-0">
-              <Image
-                src="/images/logo/logo_only.png"
-                alt="Tien Shan Journeys"
-                width={100}
-                height={33}
-                className="md:w-[130px] md:h-[43px]"
-                priority
-              />
-            </Link>
+            <Link 
+  href="/" 
+  className={`flex items-center justify-start flex-shrink-0 transition-opacity duration-300 ${
+    showHeaderLogo ? "opacity-100" : "opacity-0 pointer-events-none"
+  }`}
+>
+  <Image
+    src="/images/logo/logo_only.png"
+    alt="Tien Shan Journeys"
+    width={100}
+    height={33}
+    className="md:w-[130px] md:h-[43px]"
+    priority
+  />
+</Link>
             <div className="flex items-center gap-6">
               <div className="flex items-start gap-2 text-sm text-white">
                 <a href="#" className="hover:text-blue-400 transition-colors">English</a>
