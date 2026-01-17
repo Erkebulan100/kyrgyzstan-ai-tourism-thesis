@@ -52,11 +52,11 @@ export default function Home() {
 
           {/* Tour Circles */}
          {[
-  { name: "Classic\nKyrgyzstan", href: "/tours/classic-kyrgyzstan", className: "left-[8%] top-[15%] md:left-[10%] md:top-[12%]" },
-  { name: "Nomads of\nTien Shan", href: "/tours/nomads-tien-shan", className: "left-[46%] top-[8%] md:left-[33%] md:top-[3%]" },
-  { name: "Treasures of\nTien Shan", href: "/tours/treasures-tien-shan", className: "right-[8%] top-[22%] md:right-[9%] md:top-[12%]" },
-  { name: "Golden circle of\nKyrgyzstan", href: "/tours/golden-circle", className: "left-[9%] bottom-[30%] md:left-[22%] md:bottom-[10%]" },
-  { name: "Where Tien Shan\nmeets Pamir", href: "/tours/tien-shan-meets-pamir", className: "right-[15%] bottom-[28%] md:right-[29%] md:bottom-[45%]" },
+  { name: "Classic\nKyrgyzstan", href: "/tours/classic-kyrgyzstan", className: "left-[1%] top-[19%] md:left-[10%] md:top-[12%]" },
+  { name: "Nomads of\nTien Shan", href: "/tours/nomads-tien-shan", className: "left-[36%] top-[15%] md:left-[33%] md:top-[3%]" },
+  { name: "Treasures of\nTien Shan", href: "/tours/treasures-tien-shan", className: "right-[3%] top-[18%] md:right-[9%] md:top-[12%]" },
+  { name: "Golden circle of\nKyrgyzstan", href: "/tours/golden-circle", className: "left-[12%] bottom-[34%] md:left-[22%] md:bottom-[10%]" },
+  { name: "Where Tien Shan\nmeets Pamir", href: "/tours/tien-shan-meets-pamir", className: "right-[13%] bottom-[45%] md:right-[29%] md:bottom-[45%]" },
 ].map((tour, idx) => (
   <Link key={idx} href={tour.href} className={`absolute z-30 hover:scale-105 transition-transform ${tour.className}`}>
     <div className="bg-white/95 rounded-full w-20 h-20 md:w-36 md:h-36 flex items-center justify-center shadow-2xl border border-white/10 p-2 md:p-4 text-center">
@@ -69,7 +69,7 @@ export default function Home() {
           
 
           {/* Eagle SVG - Realistic Flying Eagle Silhouette */}
-          <div className="absolute top-[8%] right-[6%] md:top-[1%] md:right-[35%] z-10">
+          <div className="absolute top-[9%] right-[19%] md:top-[1%] md:right-[35%] z-10">
             <img 
               src="/images/eagle.svg" 
               alt="Eagle" 
@@ -78,7 +78,7 @@ export default function Home() {
             />
           </div>
           {/* Horse 1 - With a cap - Between Classic Kyrgyzstan and Golden Circle */}
-          <div className="absolute top-[31%] left-[1%] md:top-[55%] md:left-[19%] z-10">
+          <div className="absolute top-[45%] left-[19%] md:top-[55%] md:left-[19%] z-10">
             <img 
               src="/images/horse.svg" 
               alt="Horse" 
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
 
           {/* Horse 2 - standart-  */}
-          <div className="absolute top-[41%] left-[13%] z-10">
+          <div className="absolute top-[31%] left-[17%] md:top-[41%] md:left-[13%] z-10">
             <img 
               src="/images/horse1.svg" 
               alt="Horse" 
@@ -97,7 +97,7 @@ export default function Home() {
             />
           </div>
           {/* Camel 1 - the big one - Bottom right area */}
-          <div className="absolute bottom-[21%] right-[2%] md:bottom-[29%] md:right-[31%] z-10">
+          <div className="absolute bottom-[39%] right-[2%] md:bottom-[29%] md:right-[31%] z-10">
             <img 
               src="/images/camel.svg" 
               alt="Camel" 
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
 
           {/* Camel 2 -the slim one- Next to Camel 1 */}
-          <div className="absolute bottom-[23%] right-[53%] md:bottom-[15%] md:right-[55%] z-10">
+          <div className="absolute bottom-[33%] right-[51%] md:bottom-[15%] md:right-[55%] z-10">
             <img 
               src="/images/camel1.svg" 
               alt="Camel" 
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
 
           {/* Camel 3 with a rider- Third camel */}
-          <div className="absolute bottom-[19%] right-[29%] md:bottom-[17%] md:right-[41%] z-10">
+          <div className="absolute bottom-[35%] right-[29%] md:bottom-[17%] md:right-[41%] z-10">
             <img 
               src="/images/camels.svg" 
               alt="Camel" 
@@ -126,7 +126,7 @@ export default function Home() {
             />
           </div>
           {/* Snow Leopard - Right side of the page */}
-          <div className="absolute top-[35%] right-[21%] z-10">
+          <div className="absolute top-[35%] right-[19%] z-10">
             <img 
               src="/images/snow-leopard.svg" 
               alt="Snow Leopard" 
@@ -135,7 +135,7 @@ export default function Home() {
             />
           </div>
           {/* Yurt 1 - yurt frame - like Kyrgyz yurt frame" */}
-          <div className="absolute top-[5%] left-[19%] md:top-[5%] md:left-[21%] z-10">
+          <div className="absolute top-[13%] left-[11%] md:top-[5%] md:left-[21%] z-10">
             <img 
               src="/images/yurt.svg" 
               alt="Yurt" 
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
 
           {/* Yurt 2 - filled icon */}
-          <div className="absolute top-[1%] left-[33%] md:top-[1%] md:left-[28%] z-10">
+          <div className="absolute top-[9%] left-[27%] md:top-[1%] md:left-[28%] z-10">
             <img 
               src="/images/yurt1.svg" 
               alt="Yurt" 
@@ -155,7 +155,7 @@ export default function Home() {
           </div>
 
           {/* Yurt 3 - Mongolian yurt */}
-          <div className="absolute top-[9%] left-[29%] md:top-[11%] md:left-[25%] z-10">
+          <div className="absolute top-[21%] left-[23%] md:top-[11%] md:left-[25%] z-10">
             <img 
               src="/images/yurt2.svg" 
               alt="Yurt" 
@@ -168,62 +168,61 @@ export default function Home() {
           {/* Path from Classic Kyrgyzstan down to Golden Circle (left side) */}
   
           
-          <div className="absolute top-[44%] left-[14%] md:top-[40%] md:left-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[47%] left-[15%] md:top-[46%] md:left-[19%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[50%] left-[16%] md:top-[50%] md:left-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[53%] left-[17%] md:top-[53%] md:left-[26%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[56%] left-[18%] md:top-[56%] md:left-[30%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[59%] left-[19%] md:top-[59%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute top-[62%] left-[20%] md:top-[62%] md:left-[30%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[32%] left-[11%] md:top-[40%] md:left-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[35.5%] left-[12%] md:top-[46%] md:left-[19%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[39%] left-[13%] md:top-[50%] md:left-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[42.5%] left-[14%] md:top-[53%] md:left-[26%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[46%] left-[15%] md:top-[56%] md:left-[30%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[49.5%] left-[16%] md:top-[59%] md:left-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[53%] left-[17%] md:top-[62%] md:left-[30%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
           {/* Path from Golden Circle curving right toward Where Tien Shan meets Pamir */}
          
-          <div className="absolute bottom-[36%] left-[36%] md:bottom-[20%] md:left-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[35.5%] left-[39%] md:bottom-[24.5%] md:left-[39%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[35%] left-[42%] md:bottom-[29%] md:left-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[34.5%] left-[45%] md:bottom-[33%] md:left-[46%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[34%] left-[48%] md:bottom-[35%] md:left-[50%] w-1.5 h-1.5 rounded-full bg-white/30" />
-         
-          <div className="absolute bottom-[33.7%] left-[54%] md:bottom-[33%] md:left-[54%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[33.9%] left-[57%] md:bottom-[32%] md:left-[58%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[33.5%] left-[60%] md:bottom-[37%] md:left-[61%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[33%] left-[63%] md:bottom-[42%] md:left-[63%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[41%] left-[34%] md:bottom-[20%] md:left-[36%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[42%] left-[40%] md:bottom-[24.5%] md:left-[39%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[43%] left-[46%] md:bottom-[29%] md:left-[42%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[44%] left-[52%] md:bottom-[33%] md:left-[46%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[45%] left-[58%] md:bottom-[35%] md:left-[50%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[46%] left-[64%] md:bottom-[33%] md:left-[54%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="hidden md:block absolute bottom-[47%] left-[70%] md:bottom-[32%] md:left-[58%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="hidden md:block absolute bottom-[48%] left-[75%] md:bottom-[37%] md:left-[61%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="hidden md:block absolute bottom-[49%] left-[81%] md:bottom-[42%] md:left-[63%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
 
           {/* Path from Where Tien Shan meets Pamir up to Treasures of Tien Shan */}
      
-          <div className="absolute bottom-[49%] right-[17%] md:bottom-[49%] md:right-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[52%] right-[16%] md:bottom-[52%] md:right-[26%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[55%] right-[15%] md:bottom-[55%] md:right-[23%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[58%] right-[14%] md:bottom-[58%] md:right-[20%] w-1.5 h-1.5 rounded-full bg-white/30" />
-          <div className="absolute bottom-[61%] right-[13%] md:bottom-[61%] md:right-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[57%] right-[17%] md:bottom-[49%] md:right-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[60%] right-[16%] md:bottom-[52%] md:right-[26%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[63%] right-[15%] md:bottom-[55%] md:right-[23%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[66%] right-[14%] md:bottom-[58%] md:right-[20%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute bottom-[69%] right-[13%] md:bottom-[61%] md:right-[17%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
 
           {/* Path from Treasures curving left toward Nomads */}
       
-          <div className="absolute top-[25%] right-[23.5%] md:top-[17%] md:right-[23%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[21%] right-[23%] md:top-[17%] md:right-[23%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
-          <div className="absolute top-[23%] right-[26.5%] md:top-[15%] md:right-[28%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[20%] right-[27%] md:top-[15%] md:right-[28%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
-          <div className="absolute top-[24%] right-[25%] md:top-[14.3%] md:right-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[19%] right-[32%] md:top-[14.3%] md:right-[33%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
-          <div className="absolute top-[23%] right-[26.5%] md:top-[14%] md:right-[38%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="hidden md:block absolute top-[26%] right-[26.5%] md:top-[14%] md:right-[38%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
-          <div className="absolute top-[24%] right-[25%] md:top-[15%] md:right-[43%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[18%] right-[37%] md:top-[15%] md:right-[43%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
-          <div className="absolute top-[23%] right-[26.5%] md:top-[15%] md:right-[48%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="hidden md:block absolute top-[21%] right-[39%] md:top-[15%] md:right-[48%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
-          <div className="absolute top-[24%] right-[25%] md:top-[14%] md:right-[53%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[17%] right-[42%] md:top-[14%] md:right-[53%] w-1.5 h-1.5 rounded-full bg-white/30" />
 
           {/* Path from Nomads curving left toward Classic Kyrgyzstan */}
 
-          <div className="absolute top-[13%] left-[31%] md:top-[18%] md:left-[32%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[18%] left-[33%] md:top-[18%] md:left-[32%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
-          <div className="absolute top-[14%] left-[28%] md:top-[18%] md:left-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[19%] left-[29%] md:top-[18%] md:left-[29%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
-          <div className="absolute top-[15%] left-[25%] md:top-[17%] md:left-[25.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[20%] left-[25%] md:top-[17%] md:left-[25.5%] w-1.5 h-1.5 rounded-full bg-white/30" />
           
-          <div className="absolute top-[16%] left-[22%] md:top-[16%] md:left-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
+          <div className="absolute top-[21%] left-[21%] md:top-[16%] md:left-[22%] w-1.5 h-1.5 rounded-full bg-white/30" />
         
         </div>
       </section>
