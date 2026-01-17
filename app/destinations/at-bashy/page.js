@@ -51,6 +51,8 @@ function AtBashyValleyContent() {
       '/images/destinations/at-bashy/birinchi_mai9.jpg',
       '/images/destinations/at-bashy/birinchi_mai10.jpg',
       '/images/destinations/at-bashy/birinchi_mai11.jpg',
+      '/images/destinations/at-bashy/slide-10.jpg',
+      '/images/destinations/at-bashy/slide-11.jpg',
     ]}
     positions={[
       '10% center',  // slide-1
@@ -73,6 +75,8 @@ function AtBashyValleyContent() {
       'center 85%',  // birinchi_mai9
       'center 70%',  // birinchi_mai10
       'center center',  // birinchi_mai11
+      'center center',  // slide-10
+      'center center',  // slide-11
     ]}
     defaultPosition="center center"
   />
