@@ -40,6 +40,17 @@ function AtBashyValleyContent() {
       '/images/destinations/at-bashy/slide-7.jpg',
       '/images/destinations/at-bashy/slide-8.jpg',
       '/images/destinations/at-bashy/slide-9.jpg',
+      '/images/destinations/at-bashy/birinchi_mai.jpg',
+      '/images/destinations/at-bashy/birinchi_mai2.jpg',
+      '/images/destinations/at-bashy/birinchi_mai3.jpg',
+      '/images/destinations/at-bashy/birinchi_mai4.jpg',
+      '/images/destinations/at-bashy/birinchi_mai5.jpg',
+      '/images/destinations/at-bashy/birinchi_mai6.jpg',
+      '/images/destinations/at-bashy/birinchi_mai7.jpg',
+      '/images/destinations/at-bashy/birinchi_mai8.jpg',
+      '/images/destinations/at-bashy/birinchi_mai9.jpg',
+      '/images/destinations/at-bashy/birinchi_mai10.jpg',
+      '/images/destinations/at-bashy/birinchi_mai11.jpg',
     ]}
     positions={[
       '10% center',  // slide-1
@@ -51,6 +62,17 @@ function AtBashyValleyContent() {
       'center center',  // slide-7
       'center center',  // slide-8
       'center center',  // slide-9
+      'center center',  // birinchi_mai
+      'center 70%',  // birinchi_mai2
+      'center 90%',  // birinchi_mai3
+      'center bottom',  // birinchi_mai4
+      'center 95%',  // birinchi_mai5
+      'center center',  // birinchi_mai6
+      'center center',  // birinchi_mai7
+      'center 75%',  // birinchi_mai8
+      'center 85%',  // birinchi_mai9
+      'center 70%',  // birinchi_mai10
+      'center center',  // birinchi_mai11
     ]}
     defaultPosition="center center"
   />
