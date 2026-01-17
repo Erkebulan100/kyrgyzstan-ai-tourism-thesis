@@ -96,7 +96,7 @@ useEffect(() => {
     { name: "Song-Kul Lake", href: "/top-10-places/song-kul-lake" },
     { name: "Kel-Suu Lake", href: "/top-10-places/kel-suu-lake" },
     { name: "Sary-Chelek Lake", href: "/top-10-places/sary-chelek" },
-    { name: "Altyn-Arashan", href: "/top-10-places/altyn-arashan" },
+    { name: "Karakol and its surroundings", href: "/top-10-places/karakol-and-its-surroundings" },
     { name: "Jeti-Oguz Rocks", href: "/top-10-places/jeti-oguz" },
     { name: "Tash Rabat", href: "/top-10-places/tash-rabat" },
     { name: "Arslanbob", href: "/top-10-places/arslanbob" },

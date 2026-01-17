@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { MapPin, Clock, Calendar, Car, Mountain, Sun, ChevronLeft, ChevronRight, Droplets } from 'lucide-react';
 
 export const metadata = {
-  title: "Altyn-Arashan - Golden Hot Springs | Top 10 Places | Tien Shan Journeys",
-  description: "Discover Altyn-Arashan, a remote valley famous for natural hot springs and stunning mountain scenery. Trek through spruce forests to healing waters beneath glacial peaks.",
+  title: "Karakol & Surroundings | Gateway to the Tien Shan | Top 10 Places | Tien Shan Journeys",
+  description: "Discover Karakol and its surroundings, the adventure capital of eastern Kyrgyzstan. Explore alpine lakes, dramatic gorges, hot springs, and the heart of the Tien Shan mountains.",
 };
 
 // ============================================
@@ -11,40 +11,41 @@ export const metadata = {
 // ============================================
 const placeData = {
   rank: 6,
-  name: 'Altyn-Arashan',
-  tagline: 'Golden Hot Springs',
+  name: 'Karakol & Surroundings',
+  tagline: 'Gateway to the Tien Shan',
   region: 'Issyk-Kul Region',
   regionLink: '/destinations/issyk-kul-lake',
   
-  heroImage: '/images/top-10/altyn-arashan.jpg',
+  heroImage: '/images/top-10/karakol.jpg',
   
   quickFacts: {
-    location: 'Ak-Suu District, near Karakol',
-    altitude: '2,500 - 3,000 meters',
-    bestTime: 'June - September (trekking), Year-round (hot springs)',
-    duration: '1-3 days',
-    fromKarakol: '~2-3 hours (4x4 + hiking)',
-    fromBishkek: '~6-7 hours to Karakol, then 2-3 hrs',
+    location: 'Eastern Issyk-Kul, Kyrgyzstan',
+    altitude: '1,700 m (city) up to 3,800 m (surrounding passes)',
+    bestTime: 'Year-round (summer trekking, winter skiing)',
+    duration: '2-5 days',
+    fromKarakol: 'Located in Karakol',
+    fromBishkek: '~6-7 hours by road or 1 hour flight',
   },
   
   description: [
-    '[Placeholder: Altyn-Arashan means "Golden Spa" in Kyrgyz, and this remote valley has been drawing visitors to its natural hot springs for centuries. Nestled at 3,000 meters in a spectacular alpine valley, the hot springs range from pleasantly warm to almost too hot, with minerals said to have healing properties.]',
-    '[Placeholder: The journey to Altyn-Arashan is an adventure in itself. From the town of Karakol, a rough 4x4 track winds through dense Tien Shan spruce forests before giving way to alpine meadows. Many visitors choose to hike the final stretch—about 3-4 hours through some of Kyrgyzstan\'s most beautiful scenery.]',
-    '[Placeholder: The valley offers much more than hot springs. Surrounded by 4,000+ meter peaks including the majestic Palatka (Tent) Mountain, it\'s a base for serious treks to Ala-Kul Lake and beyond. But even a simple overnight stay, soaking in hot pools under a canopy of stars, is unforgettable.]',
-  ],
+  'Karakol is the main adventure hub of eastern Kyrgyzstan and the gateway to some of the most spectacular landscapes in the Tien Shan mountains. Founded in the 19th century, the town combines Russian imperial history with Kyrgyz nomadic culture.',
+  'From Karakol, travelers can easily access iconic natural attractions such as Ala-Kul Lake, Karakol Gorge, Jeti-Oguz red rock formations, and alpine valleys stretching toward the Chinese border. The area is ideal for trekking, horseback riding, and wildlife spotting.',
+  'Karakol is also known for its welcoming guesthouses, vibrant food scene influenced by Dungan and Uyghur cuisine, and year-round activities — from summer hiking to winter skiing at Karakol Ski Base.',
+],
+
   
   gallery: [
-    { src: '/images/top-10/altyn-arashan/gallery-1.jpg', alt: 'Altyn-Arashan valley panorama' },
-    { src: '/images/top-10/altyn-arashan/gallery-2.jpg', alt: 'Natural hot springs pools' },
-    { src: '/images/top-10/altyn-arashan/gallery-3.jpg', alt: 'Tien Shan spruce forest trail' },
-    { src: '/images/top-10/altyn-arashan/gallery-4.jpg', alt: 'Palatka peak view' },
-    { src: '/images/top-10/altyn-arashan/gallery-5.jpg', alt: 'Rustic guesthouse accommodation' },
-    { src: '/images/top-10/altyn-arashan/gallery-6.jpg', alt: 'Starry night over the valley' },
+    { src: '/images/top-10/karakol/gallery-1.jpg', alt: 'Altyn-Arashan valley panorama' },
+    { src: '/images/top-10/karakol/gallery-2.jpg', alt: 'Natural hot springs pools' },
+    { src: '/images/top-10/karakol/gallery-3.jpg', alt: 'Tien Shan spruce forest trail' },
+    { src: '/images/top-10/karakol/gallery-4.jpg', alt: 'Palatka peak view' },
+    { src: '/images/top-10/karakol/gallery-5.jpg', alt: 'Rustic guesthouse accommodation' },
+    { src: '/images/top-10/karakol/gallery-6.jpg', alt: 'Starry night over the valley' },
   ],
   
   activities: [
     {
-      title: 'Soak in Hot Springs',
+      title: 'Explore Karakol Gorge',
       description: '[Placeholder: Multiple natural hot spring pools offer varying temperatures. Some are enclosed in rustic wooden huts, others open to the sky.]',
     },
     {
@@ -52,11 +53,11 @@ const placeData = {
       description: '[Placeholder: A challenging but rewarding 2-day trek over a 3,800m pass to the stunning turquoise Ala-Kul alpine lake.]',
     },
     {
-      title: 'Hike from Karakol',
+      title: 'Visit Jeti-Oguz',
       description: '[Placeholder: The 15km trail from Ak-Suu village through spruce forests is one of Kyrgyzstan\'s most scenic day hikes.]',
     },
     {
-      title: 'Stargazing',
+      title: 'Ski & Winter Sports',
       description: '[Placeholder: With no electricity in most guesthouses, the night sky here is spectacular. Soak in a hot pool and watch for shooting stars.]',
     },
   ],
@@ -66,13 +67,13 @@ const placeData = {
       name: 'Classic Kyrgyzstan',
       slug: 'classic-kyrgyzstan',
       duration: '12 days',
-      description: 'This comprehensive tour includes time in the Karakol area with options to visit Altyn-Arashan\'s famous hot springs.',
+      description: 'This comprehensive tour includes time in Karakol, exploring nearby gorges, alpine lakes, and cultural landmarks.',
     },
     {
       name: 'Treasures of Tien Shan',
       slug: 'treasures-tien-shan',
       duration: '10 days',
-      description: 'Experience the natural wonders of the Issyk-Kul region including the healing waters of Altyn-Arashan.',
+      description: 'Experience the natural wonders of the Issyk-Kul region including the natural and cultural highlights of the Karakol region.',
     },
   ],
   
@@ -83,7 +84,7 @@ const placeData = {
 // END PLACE DATA
 // ============================================
 
-export default function AltynArashanPage() {
+export default function KarakolPage() {
   const place = placeData;
   const hasTours = place.relatedTours && place.relatedTours.length > 0;
 
@@ -132,10 +133,10 @@ export default function AltynArashanPage() {
           <div className="flex items-start gap-3">
             <Droplets className="w-5 h-5 text-sky-600 flex-shrink-0 mt-0.5" />
             <div>
-              <p className="text-sky-800 font-medium">Natural Hot Springs</p>
+              <p className="text-sky-800 font-medium">Outdoor Adventures & Nature</p>
               <p className="text-sky-700 text-sm">
-                The valley features multiple natural hot spring pools with temperatures ranging from 30°C to 50°C. 
-                Locals believe the mineral-rich waters have healing properties for joints and skin.
+                Karakol is the starting point for many of Kyrgyzstan’s most famous hikes, alpine lakes, gorges, and hot springs located in nearby valleys such as Altyn-Arashan and Ak-Suu.
+
               </p>
             </div>
           </div>
@@ -275,8 +276,8 @@ export default function AltynArashanPage() {
 
               {/* Access Note */}
               <div className="mt-4 p-3 bg-sky-50 rounded-lg border border-sky-100">
-                <p className="text-sky-800 text-xs font-medium">🚙 4x4 or Hiking Required</p>
-                <p className="text-sky-700 text-xs mt-1">The final section requires a 4x4 vehicle or a scenic 3-4 hour hike.</p>
+                <p className="text-sky-800 text-xs font-medium">🚗 Easy Access Adventure Hub</p>
+                <p className="text-sky-700 text-xs mt-1">Karakol is easily accessible by road and serves as a base for both easy excursions and challenging mountain adventures.</p>
               </div>
 
               {/* CTA Button */}
