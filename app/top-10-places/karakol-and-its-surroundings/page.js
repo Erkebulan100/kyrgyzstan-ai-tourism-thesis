@@ -35,12 +35,12 @@ const placeData = {
 
   
   gallery: [
-    { src: '/images/top-10/karakol/gallery-1.jpg', alt: 'Altyn-Arashan valley panorama' },
-    { src: '/images/top-10/karakol/gallery-2.jpg', alt: 'Natural hot springs pools' },
-    { src: '/images/top-10/karakol/gallery-3.jpg', alt: 'Tien Shan spruce forest trail' },
-    { src: '/images/top-10/karakol/gallery-4.jpg', alt: 'Palatka peak view' },
-    { src: '/images/top-10/karakol/gallery-5.jpg', alt: 'Rustic guesthouse accommodation' },
-    { src: '/images/top-10/karakol/gallery-6.jpg', alt: 'Starry night over the valley' },
+    { src: '/images/top-10/karakol/gallery-1.jpg', alt: 'Karakol town and surrounding Tien Shan mountains' },
+    { src: '/images/top-10/karakol/gallery-2.jpg', alt: 'Altyn-Arashan hot springs near Karakol' },
+    { src: '/images/top-10/karakol/gallery-3.jpg', alt: 'Spruce forest trail in Karakol Gorge' },
+    { src: '/images/top-10/karakol/gallery-4.jpg', alt: 'Ala-Kul Pass and surrounding peaks near Karakol' },
+    { src: '/images/top-10/karakol/gallery-5.jpg', alt: 'Guesthouse accommodation in Karakol' },
+    { src: '/images/top-10/karakol/gallery-6.jpg', alt: 'Starry night in the mountains near Karakol' },
   ],
   
   activities: [
