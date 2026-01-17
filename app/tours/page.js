@@ -86,14 +86,21 @@ export default function ToursPage() {
 
       {/* Tours Section */}
       <section 
-  className="relative pt-7 pb-7 overflow-hidden min-h-[630px] md:min-h-[730px] max-h-[630px] md:max-h-[730px]"
-  style={{
-    background: 'linear-gradient(135deg, #7f1d1d 0%, #991b1b 30%, #b45309 70%, #92400e 100%)'
-  }}
+  className="relative pt-7 pb-7 overflow-hidden min-h-[630px] md:min-h-[730px] max-h-[630px] md:max-h-[730px] bg-gradient-to-br from-red-900 via-red-800 to-amber-900"
 >
+  {/* Kyrgyz pattern overlay */}
+  <div className="absolute inset-0 opacity-5">
+    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <pattern id="kyrgyz-pattern-home" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M10 0 L20 10 L10 20 L0 10 Z" fill="none" stroke="white" strokeWidth="0.5"/>
+        <circle cx="10" cy="10" r="3" fill="none" stroke="white" strokeWidth="0.5"/>
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#kyrgyz-pattern-home)"/>
+    </svg>
+  </div>
   {/* Kyrgyzstan Map Outline Background */}
   <div 
-  className="absolute inset-0 opacity-10 bg-no-repeat bg-center pointer-events-none"
+  className="absolute inset-0 opacity-19 bg-no-repeat bg-center pointer-events-none"
   style={{
     backgroundImage: "url('/images/kyrgyzstan-outline.svg')",
     backgroundSize: '99%',  // Adjustable: 100%, 120%, 150%, 200%, etc.
